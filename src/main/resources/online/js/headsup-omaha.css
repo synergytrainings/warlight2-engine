@@ -1,0 +1,587 @@
+/* line 6, sass/headsup-omaha.scss */
+.heads-up-omaha #page section#banner {
+  height: 497px;
+  margin-top: 12px;
+}
+/* line 10, sass/headsup-omaha.scss */
+.heads-up-omaha #page section#banner img {
+  opacity: 1;
+}
+
+/* line 15, sass/headsup-omaha.scss */
+#page #wrapper.poker-ui {
+  position: relative;
+  height: 560px;
+  width: 1000px;
+  margin: 0 auto 0;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+/* line 26, sass/headsup-omaha.scss */
+.poker-ui #game-table {
+  position: relative;
+  background: url("/img/poker-background.png") center center no-repeat;
+  background-position: 0px 14px;
+  height: 510px;
+  width: inherit;
+  margin: auto;
+  color: white;
+  font-size: 14px;
+}
+/* line 39, sass/headsup-omaha.scss */
+.poker-ui .card {
+  background: url("/img/poker/poker-cards.png") no-repeat;
+  height: 78px;
+  width: 59px;
+  float: left;
+  margin: 0px 2px 0px 2px;
+}
+/* line 47, sass/headsup-omaha.scss */
+.poker-ui .card.blank {
+  background-position: 0px -348px;
+}
+/* line 48, sass/headsup-omaha.scss */
+.poker-ui .card.value-As {
+  background-position: 0px 0px;
+}
+/* line 49, sass/headsup-omaha.scss */
+.poker-ui .card.value-2s {
+  background-position: -64px 0px;
+}
+/* line 50, sass/headsup-omaha.scss */
+.poker-ui .card.value-3s {
+  background-position: -128px 0px;
+}
+/* line 51, sass/headsup-omaha.scss */
+.poker-ui .card.value-4s {
+  background-position: -192px 0px;
+}
+/* line 52, sass/headsup-omaha.scss */
+.poker-ui .card.value-5s {
+  background-position: -256px 0px;
+}
+/* line 53, sass/headsup-omaha.scss */
+.poker-ui .card.value-6s {
+  background-position: -320px 0px;
+}
+/* line 54, sass/headsup-omaha.scss */
+.poker-ui .card.value-7s {
+  background-position: -384px 0px;
+}
+/* line 55, sass/headsup-omaha.scss */
+.poker-ui .card.value-8s {
+  background-position: -448px 0px;
+}
+/* line 56, sass/headsup-omaha.scss */
+.poker-ui .card.value-9s {
+  background-position: -512px 0px;
+}
+/* line 57, sass/headsup-omaha.scss */
+.poker-ui .card.value-Ts {
+  background-position: -576px 0px;
+}
+/* line 58, sass/headsup-omaha.scss */
+.poker-ui .card.value-Js {
+  background-position: -640px 0px;
+}
+/* line 59, sass/headsup-omaha.scss */
+.poker-ui .card.value-Qs {
+  background-position: -704px 0px;
+}
+/* line 60, sass/headsup-omaha.scss */
+.poker-ui .card.value-Ks {
+  background-position: -768px 0px;
+}
+/* line 61, sass/headsup-omaha.scss */
+.poker-ui .card.value-Ac {
+  background-position: 0px -87px;
+}
+/* line 62, sass/headsup-omaha.scss */
+.poker-ui .card.value-2c {
+  background-position: -64px -87px;
+}
+/* line 63, sass/headsup-omaha.scss */
+.poker-ui .card.value-3c {
+  background-position: -128px -87px;
+}
+/* line 64, sass/headsup-omaha.scss */
+.poker-ui .card.value-4c {
+  background-position: -192px -87px;
+}
+/* line 65, sass/headsup-omaha.scss */
+.poker-ui .card.value-5c {
+  background-position: -256px -87px;
+}
+/* line 66, sass/headsup-omaha.scss */
+.poker-ui .card.value-6c {
+  background-position: -320px -87px;
+}
+/* line 67, sass/headsup-omaha.scss */
+.poker-ui .card.value-7c {
+  background-position: -384px -87px;
+}
+/* line 68, sass/headsup-omaha.scss */
+.poker-ui .card.value-8c {
+  background-position: -448px -87px;
+}
+/* line 69, sass/headsup-omaha.scss */
+.poker-ui .card.value-9c {
+  background-position: -512px -87px;
+}
+/* line 70, sass/headsup-omaha.scss */
+.poker-ui .card.value-Tc {
+  background-position: -576px -87px;
+}
+/* line 71, sass/headsup-omaha.scss */
+.poker-ui .card.value-Jc {
+  background-position: -640px -87px;
+}
+/* line 72, sass/headsup-omaha.scss */
+.poker-ui .card.value-Qc {
+  background-position: -704px -87px;
+}
+/* line 73, sass/headsup-omaha.scss */
+.poker-ui .card.value-Kc {
+  background-position: -768px -87px;
+}
+/* line 74, sass/headsup-omaha.scss */
+.poker-ui .card.value-Ah {
+  background-position: 0px -174px;
+}
+/* line 75, sass/headsup-omaha.scss */
+.poker-ui .card.value-2h {
+  background-position: -64px -174px;
+}
+/* line 76, sass/headsup-omaha.scss */
+.poker-ui .card.value-3h {
+  background-position: -128px -174px;
+}
+/* line 77, sass/headsup-omaha.scss */
+.poker-ui .card.value-4h {
+  background-position: -192px -174px;
+}
+/* line 78, sass/headsup-omaha.scss */
+.poker-ui .card.value-5h {
+  background-position: -256px -174px;
+}
+/* line 79, sass/headsup-omaha.scss */
+.poker-ui .card.value-6h {
+  background-position: -320px -174px;
+}
+/* line 80, sass/headsup-omaha.scss */
+.poker-ui .card.value-7h {
+  background-position: -384px -174px;
+}
+/* line 81, sass/headsup-omaha.scss */
+.poker-ui .card.value-8h {
+  background-position: -448px -174px;
+}
+/* line 82, sass/headsup-omaha.scss */
+.poker-ui .card.value-9h {
+  background-position: -512px -174px;
+}
+/* line 83, sass/headsup-omaha.scss */
+.poker-ui .card.value-Th {
+  background-position: -576px -174px;
+}
+/* line 84, sass/headsup-omaha.scss */
+.poker-ui .card.value-Jh {
+  background-position: -640px -174px;
+}
+/* line 85, sass/headsup-omaha.scss */
+.poker-ui .card.value-Qh {
+  background-position: -704px -174px;
+}
+/* line 86, sass/headsup-omaha.scss */
+.poker-ui .card.value-Kh {
+  background-position: -768px -174px;
+}
+/* line 87, sass/headsup-omaha.scss */
+.poker-ui .card.value-Ad {
+  background-position: 0px -261px;
+}
+/* line 88, sass/headsup-omaha.scss */
+.poker-ui .card.value-2d {
+  background-position: -64px -261px;
+}
+/* line 89, sass/headsup-omaha.scss */
+.poker-ui .card.value-3d {
+  background-position: -128px -261px;
+}
+/* line 90, sass/headsup-omaha.scss */
+.poker-ui .card.value-4d {
+  background-position: -192px -261px;
+}
+/* line 91, sass/headsup-omaha.scss */
+.poker-ui .card.value-5d {
+  background-position: -256px -261px;
+}
+/* line 92, sass/headsup-omaha.scss */
+.poker-ui .card.value-6d {
+  background-position: -320px -261px;
+}
+/* line 93, sass/headsup-omaha.scss */
+.poker-ui .card.value-7d {
+  background-position: -384px -261px;
+}
+/* line 94, sass/headsup-omaha.scss */
+.poker-ui .card.value-8d {
+  background-position: -448px -261px;
+}
+/* line 95, sass/headsup-omaha.scss */
+.poker-ui .card.value-9d {
+  background-position: -512px -261px;
+}
+/* line 96, sass/headsup-omaha.scss */
+.poker-ui .card.value-Td {
+  background-position: -576px -261px;
+}
+/* line 97, sass/headsup-omaha.scss */
+.poker-ui .card.value-Jd {
+  background-position: -640px -261px;
+}
+/* line 98, sass/headsup-omaha.scss */
+.poker-ui .card.value-Qd {
+  background-position: -704px -261px;
+}
+/* line 99, sass/headsup-omaha.scss */
+.poker-ui .card.value-Kd {
+  background-position: -768px -261px;
+}
+/* line 103, sass/headsup-omaha.scss */
+.poker-ui #game-hud {
+  top: 0px;
+  height: 36%;
+  width: 885px;
+  margin: 0 auto;
+  margin-top: -13px;
+}
+/* line 110, sass/headsup-omaha.scss */
+.poker-ui #game-hud #player1 {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 41%;
+  padding-top: 60px;
+}
+/* line 117, sass/headsup-omaha.scss */
+.poker-ui #game-hud #player1 > .avatar {
+  margin: 0px 8px 0px 11px;
+}
+/* line 121, sass/headsup-omaha.scss */
+.poker-ui #game-hud #player1 > .player-name {
+  left: 20px;
+}
+/* line 125, sass/headsup-omaha.scss */
+.poker-ui #game-hud #player1 .player-move {
+  float: right;
+}
+/* line 130, sass/headsup-omaha.scss */
+.poker-ui #game-hud #center-hud {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 18%;
+}
+/* line 136, sass/headsup-omaha.scss */
+.poker-ui #game-hud #center-hud > div {
+  margin-top: -2px;
+}
+/* line 140, sass/headsup-omaha.scss */
+.poker-ui #game-hud #center-hud #round-number {
+  height: 25%;
+  margin-top: 24px;
+  font-size: 23px;
+}
+/* line 148, sass/headsup-omaha.scss */
+.poker-ui #game-hud #center-hud #player-chips *, .poker-ui #game-hud #center-hud #player-odds *, .poker-ui #game-hud #center-hud #player-bet * {
+  float: left;
+  width: 33%;
+  font-weight: bold;
+}
+/* line 154, sass/headsup-omaha.scss */
+.poker-ui #game-hud #center-hud #player-chips > [id*="-text"], .poker-ui #game-hud #center-hud #player-odds > [id*="-text"], .poker-ui #game-hud #center-hud #player-bet > [id*="-text"] {
+  font-weight: normal;
+}
+/* line 161, sass/headsup-omaha.scss */
+.poker-ui #game-hud #player2 {
+  position: relative;
+  float: right;
+  height: 100%;
+  width: 41%;
+  padding-top: 60px;
+}
+/* line 168, sass/headsup-omaha.scss */
+.poker-ui #game-hud #player2 > .avatar {
+  margin: 0px 11px 0px 8px;
+}
+/* line 172, sass/headsup-omaha.scss */
+.poker-ui #game-hud #player2 > .player-name {
+  right: 20px;
+}
+/* line 176, sass/headsup-omaha.scss */
+.poker-ui #game-hud #player2 .player-move {
+  float: left;
+}
+/* line 181, sass/headsup-omaha.scss */
+.poker-ui #game-hud .avatar {
+  float: inherit;
+  height: 76px;
+  width: 76px;
+  border-radius: 2px;
+}
+/* line 188, sass/headsup-omaha.scss */
+.poker-ui #game-hud .player-name {
+  position: absolute;
+  top: 22px;
+  font-size: 20px;
+}
+/* line 194, sass/headsup-omaha.scss */
+.poker-ui #game-hud .player-cards {
+  float: inherit;
+}
+/* line 198, sass/headsup-omaha.scss */
+.poker-ui #game-hud .player-move {
+  font-size: 18px;
+  margin: 6px 17px 0px 17px;
+}
+/* line 204, sass/headsup-omaha.scss */
+.poker-ui .player-move-win {
+  font-weight: bold;
+}
+/* line 207, sass/headsup-omaha.scss */
+.poker-ui .player-move-loss {
+  opacity: 0.5;
+}
+/* line 211, sass/headsup-omaha.scss */
+.poker-ui #game-stacks {
+  height: 35%;
+  width: 100%;
+}
+/* line 215, sass/headsup-omaha.scss */
+.poker-ui #game-stacks #player1-stack, .poker-ui #game-stacks #player2-stack {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 38%;
+}
+/* line 221, sass/headsup-omaha.scss */
+.poker-ui #game-stacks #player1-stack .game-winner, .poker-ui #game-stacks #player2-stack .game-winner {
+  margin-top: 50px;
+  font-size: 30px;
+}
+/* line 227, sass/headsup-omaha.scss */
+.poker-ui #game-stacks #pot {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 24%;
+}
+/* line 233, sass/headsup-omaha.scss */
+.poker-ui #game-stacks #pot .chips-amount {
+  font-size: 20px;
+}
+/* line 238, sass/headsup-omaha.scss */
+.poker-ui #game-stacks .chips-amount {
+  font-size: 18px;
+  margin-top: 27px;
+}
+/* line 244, sass/headsup-omaha.scss */
+.poker-ui #game-cards {
+  display: inline-block;
+  height: inherit;
+  width: auto;
+}
+/* line 251, sass/headsup-omaha.scss */
+.poker-ui #controls {
+  position: absolute;
+  bottom: 0px;
+  height: 58px;
+  width: 100%;
+  z-index: 100;
+}
+/* line 259, sass/headsup-omaha.scss */
+.poker-ui #controls label, .poker-ui #controls input, .poker-ui #controls .control {
+  margin-top: 0;
+  background: url(/img/poker/ui.png) no-repeat;
+  cursor: pointer;
+}
+/* line 265, sass/headsup-omaha.scss */
+.poker-ui #controls button, .poker-ui #controls input[type=button] {
+  width: 44px;
+  height: 44px;
+  border: 0px;
+}
+/* line 271, sass/headsup-omaha.scss */
+.poker-ui #controls input[type=text] {
+  background: transparent;
+}
+/* line 275, sass/headsup-omaha.scss */
+.poker-ui #controls * {
+  display: inline-block;
+}
+/* line 279, sass/headsup-omaha.scss */
+.poker-ui #controls > div {
+  bottom: 4px;
+  height: 44px;
+  position: absolute;
+}
+/* line 286, sass/headsup-omaha.scss */
+.poker-ui #controls .forwardButtonImage {
+  background-position: -331px -40px;
+}
+/* line 289, sass/headsup-omaha.scss */
+.poker-ui #controls .forwardButtonImage:active {
+  background-position: -331px 0px;
+}
+/* line 292, sass/headsup-omaha.scss */
+.poker-ui #controls .skipforwardButtonImage {
+  background-position: -371px -40px;
+}
+/* line 295, sass/headsup-omaha.scss */
+.poker-ui #controls .skipforwardButtonImage:active {
+  background-position: -371px 0px;
+}
+/* line 298, sass/headsup-omaha.scss */
+.poker-ui #controls .backwardButtonImage {
+  background-position: -213px -40px;
+}
+/* line 301, sass/headsup-omaha.scss */
+.poker-ui #controls .backwardButtonImage:active {
+  background-position: -213px 0px;
+}
+/* line 304, sass/headsup-omaha.scss */
+.poker-ui #controls .skipbackwardButtonImage {
+  background-position: -170px -40px;
+}
+/* line 307, sass/headsup-omaha.scss */
+.poker-ui #controls .skipbackwardButtonImage:active {
+  background-position: -170px 0px;
+}
+/* line 312, sass/headsup-omaha.scss */
+.poker-ui #midControl {
+  left: -20px;
+  margin-left: 0px;
+  width: 750px;
+}
+/* line 319, sass/headsup-omaha.scss */
+.poker-ui #playButton.playing {
+  background-position: -254px -40px;
+}
+/* line 322, sass/headsup-omaha.scss */
+.poker-ui #playButton.playing:active {
+  background-position: -254px 0px;
+}
+/* line 325, sass/headsup-omaha.scss */
+.poker-ui #playButton.paused {
+  background-position: -298px -40px;
+}
+/* line 328, sass/headsup-omaha.scss */
+.poker-ui #playButton.paused:active {
+  background-position: -298px 0px;
+}
+/* line 333, sass/headsup-omaha.scss */
+.poker-ui #textBox {
+  height: 44px;
+  background: url(/img/poker/ui.png) no-repeat;
+  background-position: -10px -159px;
+  cursor: pointer;
+}
+/* line 341, sass/headsup-omaha.scss */
+.poker-ui #textBox.active {
+  background-position: -10px -199px;
+}
+/* line 344, sass/headsup-omaha.scss */
+.poker-ui #textBox.active #moveSelector {
+  pointer-events: auto;
+}
+/* line 347, sass/headsup-omaha.scss */
+.poker-ui #textBox.active #moveSelector > option {
+  display: list-item;
+}
+/* line 354, sass/headsup-omaha.scss */
+.poker-ui .slider {
+  width: 142px;
+  background: url(/img/poker/ui.png) no-repeat;
+  background-position: -178px -119px;
+  right: 5px;
+}
+/* line 360, sass/headsup-omaha.scss */
+.poker-ui .slider > .slider-thumb {
+  width: 44px;
+  height: 44px;
+  margin-left: -10px;
+  position: absolute;
+  z-index: 2;
+  background: url(/img/poker/ui.png) no-repeat;
+  background-position: -330px -119px;
+  cursor: pointer;
+}
+/* line 374, sass/headsup-omaha.scss */
+.poker-ui #backButtons {
+  position: relative;
+  float: left;
+  left: 3%;
+}
+/* line 379, sass/headsup-omaha.scss */
+.poker-ui #textBox {
+  position: absolute;
+  left: 50%;
+  margin-left: -255px;
+  border: 0px;
+  width: 510px;
+  text-align: left;
+}
+/* line 387, sass/headsup-omaha.scss */
+.poker-ui #moveText {
+  display: block;
+  position: relative;
+  color: #716955;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  margin: 0 auto;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 405, sass/headsup-omaha.scss */
+.poker-ui #forwardButtons {
+  position: relative;
+  left: 3%;
+  float: right;
+}
+/* line 411, sass/headsup-omaha.scss */
+.poker-ui #moveBox {
+  position: relative;
+  z-index: 10;
+}
+/* line 415, sass/headsup-omaha.scss */
+.poker-ui #moveSelector {
+  height: 0px;
+  width: 498px;
+  max-width: 100%;
+  position: absolute;
+  bottom: 39px;
+  margin-left: 3px;
+  margin-bottom: 0px;
+  border: 0px;
+  opacity: 0;
+  background-color: #111b08;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  color: #8fa061;
+  font-size: 13px;
+}

@@ -1,0 +1,211 @@
+setting up game
+Starting game...
+initialmap {"Regions":[{"id": "1","superRegion": "1","neighbors":["2"]},{"id": "2","superRegion": "1","neighbors":["5","3","4","7"]},{"id": "3","superRegion": "1","neighbors":["6","4"]},{"id": "4","superRegion": "1","neighbors":["7","6","27"]},{"id": "5","superRegion": "1","neighbors":["7","16"]},{"id": "6","superRegion": "1","neighbors":["29","28","27"]},{"id": "7","superRegion": "1","neighbors":["27","16"]},{"id": "8","superRegion": "2","neighbors":["11","9","24"]},{"id": "9","superRegion": "2","neighbors":["19","24","10"]},{"id": "10","superRegion": "2","neighbors":["19","12"]},{"id": "11","superRegion": "2","neighbors":["24","28"]},{"id": "12","superRegion": "3","neighbors":["20","13","14","21","19"]},{"id": "13","superRegion": "3","neighbors":["14"]},{"id": "14","superRegion": "3","neighbors":["21","15"]},{"id": "15","superRegion": "3","neighbors":["38","22","19","21"]},{"id": "16","superRegion": "4","neighbors":["35","18","17","36","27"]},{"id": "17","superRegion": "4","neighbors":["34","18","35"]},{"id": "18","superRegion": "4","neighbors":[]},{"id": "19","superRegion": "5","neighbors":["24","20","23","22","21","26"]},{"id": "20","superRegion": "5","neighbors":[]},{"id": "21","superRegion": "5","neighbors":[]},{"id": "22","superRegion": "5","neighbors":["23","38","40","43","26"]},{"id": "23","superRegion": "5","neighbors":[]},{"id": "24","superRegion": "6","neighbors":["25","26","42","43"]},{"id": "25","superRegion": "6","neighbors":["26"]},{"id": "26","superRegion": "6","neighbors":["43"]},{"id": "27","superRegion": "7","neighbors":["30","31","36","29","32","28"]},{"id": "28","superRegion": "7","neighbors":["32","29"]},{"id": "29","superRegion": "7","neighbors":[]},{"id": "30","superRegion": "7","neighbors":["60","36","31","61"]},{"id": "31","superRegion": "7","neighbors":["32","33","61"]},{"id": "32","superRegion": "7","neighbors":["33","42"]},{"id": "33","superRegion": "7","neighbors":["62"]},{"id": "34","superRegion": "8","neighbors":["36","35","37"]},{"id": "35","superRegion": "8","neighbors":["36"]},{"id": "36","superRegion": "8","neighbors":["53","37","60"]},{"id": "37","superRegion": "8","neighbors":["53"]},{"id": "38","superRegion": "9","neighbors":["39","40"]},{"id": "39","superRegion": "9","neighbors":["46","41","40"]},{"id": "40","superRegion": "9","neighbors":["41","49","43","45","46","48"]},{"id": "41","superRegion": "9","neighbors":["46"]},{"id": "42","superRegion": "10","neighbors":["43","47","44"]},{"id": "43","superRegion": "10","neighbors":["45","44"]},{"id": "44","superRegion": "10","neighbors":["45","47"]},{"id": "45","superRegion": "10","neighbors":["50","47","48"]},{"id": "46","superRegion": "11","neighbors":["49"]},{"id": "47","superRegion": "11","neighbors":["50"]},{"id": "48","superRegion": "11","neighbors":["50","49"]},{"id": "49","superRegion": "11","neighbors":["50","51","52"]},{"id": "50","superRegion": "11","neighbors":["51"]},{"id": "51","superRegion": "11","neighbors":[]},{"id": "52","superRegion": "11","neighbors":[]},{"id": "53","superRegion": "12","neighbors":["61","55","56","54","60"]},{"id": "54","superRegion": "12","neighbors":["56","58","57"]},{"id": "55","superRegion": "12","neighbors":["61","56","65","59","63"]},{"id": "56","superRegion": "12","neighbors":["58","59"]},{"id": "57","superRegion": "12","neighbors":["58"]},{"id": "58","superRegion": "12","neighbors":["59"]},{"id": "59","superRegion": "12","neighbors":[]},{"id": "60","superRegion": "13","neighbors":["61"]},{"id": "61","superRegion": "13","neighbors":["63","62"]},{"id": "62","superRegion": "13","neighbors":["67","66","63"]},{"id": "63","superRegion": "13","neighbors":["64","67","65"]},{"id": "64","superRegion": "13","neighbors":["70","67","65"]},{"id": "65","superRegion": "13","neighbors":[]},{"id": "66","superRegion": "14","neighbors":["67","68","69"]},{"id": "67","superRegion": "14","neighbors":["68","70"]},{"id": "68","superRegion": "14","neighbors":["69","70"]},{"id": "69","superRegion": "14","neighbors":[]},{"id": "70","superRegion": "14","neighbors":[]}],"SuperRegions":[{"id": "1", "bonus": "4"},{"id": "2", "bonus": "2"},{"id": "3", "bonus": "2"},{"id": "4", "bonus": "1"},{"id": "5", "bonus": "4"},{"id": "6", "bonus": "1"},{"id": "7", "bonus": "7"},{"id": "8", "bonus": "4"},{"id": "9", "bonus": "4"},{"id": "10", "bonus": "2"},{"id": "11", "bonus": "6"},{"id": "12", "bonus": "5"},{"id": "13", "bonus": "6"},{"id": "14", "bonus": "3"}]}
+stopping...
+winner: draw
+Saving the game...
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;neutral;2 5;neutral;2 6;neutral;2 7;neutral;2 8;neutral;2 9;neutral;2 10;neutral;2 11;neutral;2 12;neutral;2 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;6 25;neutral;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;2 33;neutral;2 34;neutral;6 35;neutral;2 36;neutral;2 37;neutral;2 38;neutral;2 39;neutral;2 40;neutral;2 41;neutral;6 42;neutral;6 43;neutral;2 44;neutral;2 45;neutral;6 46;neutral;2 47;neutral;2 48;neutral;2 49;neutral;2 50;neutral;2 51;neutral;2 52;neutral;2 53;neutral;2 54;neutral;2 55;neutral;2 56;neutral;2 57;neutral;2 58;neutral;2 59;neutral;2 60;neutral;2 61;neutral;2 62;neutral;2 63;neutral;6 64;neutral;2 65;neutral;2 66;neutral;2 67;neutral;6 68;neutral;2 69;neutral;2 70;neutral;2 
+round 0
+player1 place_armies 39 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;neutral;2 5;neutral;2 6;neutral;2 7;neutral;2 8;neutral;2 9;neutral;2 10;neutral;2 11;neutral;2 12;neutral;2 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;6 25;neutral;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;2 33;neutral;2 34;neutral;6 35;neutral;2 36;neutral;2 37;neutral;2 38;neutral;2 39;player1;2 40;neutral;2 41;neutral;6 42;neutral;6 43;neutral;2 44;neutral;2 45;neutral;6 46;neutral;2 47;neutral;2 48;neutral;2 49;neutral;2 50;neutral;2 51;neutral;2 52;neutral;2 53;neutral;2 54;neutral;2 55;neutral;2 56;neutral;2 57;neutral;2 58;neutral;2 59;neutral;2 60;neutral;2 61;neutral;2 62;neutral;2 63;neutral;6 64;neutral;2 65;neutral;2 66;neutral;2 67;neutral;6 68;neutral;2 69;neutral;2 70;neutral;2 
+player2 place_armies 57 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;neutral;2 5;neutral;2 6;neutral;2 7;neutral;2 8;neutral;2 9;neutral;2 10;neutral;2 11;neutral;2 12;neutral;2 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;6 25;neutral;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;2 33;neutral;2 34;neutral;6 35;neutral;2 36;neutral;2 37;neutral;2 38;neutral;2 39;player1;2 40;neutral;2 41;neutral;6 42;neutral;6 43;neutral;2 44;neutral;2 45;neutral;6 46;neutral;2 47;neutral;2 48;neutral;2 49;neutral;2 50;neutral;2 51;neutral;2 52;neutral;2 53;neutral;2 54;neutral;2 55;neutral;2 56;neutral;2 57;player2;2 58;neutral;2 59;neutral;2 60;neutral;2 61;neutral;2 62;neutral;2 63;neutral;6 64;neutral;2 65;neutral;2 66;neutral;2 67;neutral;6 68;neutral;2 69;neutral;2 70;neutral;2 
+player2 place_armies 35 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;neutral;2 5;neutral;2 6;neutral;2 7;neutral;2 8;neutral;2 9;neutral;2 10;neutral;2 11;neutral;2 12;neutral;2 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;6 25;neutral;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;2 33;neutral;2 34;neutral;6 35;player2;2 36;neutral;2 37;neutral;2 38;neutral;2 39;player1;2 40;neutral;2 41;neutral;6 42;neutral;6 43;neutral;2 44;neutral;2 45;neutral;6 46;neutral;2 47;neutral;2 48;neutral;2 49;neutral;2 50;neutral;2 51;neutral;2 52;neutral;2 53;neutral;2 54;neutral;2 55;neutral;2 56;neutral;2 57;player2;2 58;neutral;2 59;neutral;2 60;neutral;2 61;neutral;2 62;neutral;2 63;neutral;6 64;neutral;2 65;neutral;2 66;neutral;2 67;neutral;6 68;neutral;2 69;neutral;2 70;neutral;2 
+player1 place_armies 25 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;neutral;2 5;neutral;2 6;neutral;2 7;neutral;2 8;neutral;2 9;neutral;2 10;neutral;2 11;neutral;2 12;neutral;2 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;6 25;player1;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;2 33;neutral;2 34;neutral;6 35;player2;2 36;neutral;2 37;neutral;2 38;neutral;2 39;player1;2 40;neutral;2 41;neutral;6 42;neutral;6 43;neutral;2 44;neutral;2 45;neutral;6 46;neutral;2 47;neutral;2 48;neutral;2 49;neutral;2 50;neutral;2 51;neutral;2 52;neutral;2 53;neutral;2 54;neutral;2 55;neutral;2 56;neutral;2 57;player2;2 58;neutral;2 59;neutral;2 60;neutral;2 61;neutral;2 62;neutral;2 63;neutral;6 64;neutral;2 65;neutral;2 66;neutral;2 67;neutral;6 68;neutral;2 69;neutral;2 70;neutral;2 
+player1 place_armies 9 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;neutral;2 5;neutral;2 6;neutral;2 7;neutral;2 8;neutral;2 9;player1;2 10;neutral;2 11;neutral;2 12;neutral;2 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;6 25;player1;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;2 33;neutral;2 34;neutral;6 35;player2;2 36;neutral;2 37;neutral;2 38;neutral;2 39;player1;2 40;neutral;2 41;neutral;6 42;neutral;6 43;neutral;2 44;neutral;2 45;neutral;6 46;neutral;2 47;neutral;2 48;neutral;2 49;neutral;2 50;neutral;2 51;neutral;2 52;neutral;2 53;neutral;2 54;neutral;2 55;neutral;2 56;neutral;2 57;player2;2 58;neutral;2 59;neutral;2 60;neutral;2 61;neutral;2 62;neutral;2 63;neutral;6 64;neutral;2 65;neutral;2 66;neutral;2 67;neutral;6 68;neutral;2 69;neutral;2 70;neutral;2 
+player2 place_armies 62 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;neutral;2 5;neutral;2 6;neutral;2 7;neutral;2 8;neutral;2 9;player1;2 10;neutral;2 11;neutral;2 12;neutral;2 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;6 25;player1;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;2 33;neutral;2 34;neutral;6 35;player2;2 36;neutral;2 37;neutral;2 38;neutral;2 39;player1;2 40;neutral;2 41;neutral;6 42;neutral;6 43;neutral;2 44;neutral;2 45;neutral;6 46;neutral;2 47;neutral;2 48;neutral;2 49;neutral;2 50;neutral;2 51;neutral;2 52;neutral;2 53;neutral;2 54;neutral;2 55;neutral;2 56;neutral;2 57;player2;2 58;neutral;2 59;neutral;2 60;neutral;2 61;neutral;2 62;player2;2 63;neutral;6 64;neutral;2 65;neutral;2 66;neutral;2 67;neutral;6 68;neutral;2 69;neutral;2 70;neutral;2 
+player2 place_armies 70 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;neutral;2 5;neutral;2 6;neutral;2 7;neutral;2 8;neutral;2 9;player1;2 10;neutral;2 11;neutral;2 12;neutral;2 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;6 25;player1;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;2 33;neutral;2 34;neutral;6 35;player2;2 36;neutral;2 37;neutral;2 38;neutral;2 39;player1;2 40;neutral;2 41;neutral;6 42;neutral;6 43;neutral;2 44;neutral;2 45;neutral;6 46;neutral;2 47;neutral;2 48;neutral;2 49;neutral;2 50;neutral;2 51;neutral;2 52;neutral;2 53;neutral;2 54;neutral;2 55;neutral;2 56;neutral;2 57;player2;2 58;neutral;2 59;neutral;2 60;neutral;2 61;neutral;2 62;player2;2 63;neutral;6 64;neutral;2 65;neutral;2 66;neutral;2 67;neutral;6 68;neutral;2 69;neutral;2 70;player2;2 
+player1 place_armies 6 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;neutral;2 5;neutral;2 6;player1;2 7;neutral;2 8;neutral;2 9;player1;2 10;neutral;2 11;neutral;2 12;neutral;2 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;6 25;player1;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;2 33;neutral;2 34;neutral;6 35;player2;2 36;neutral;2 37;neutral;2 38;neutral;2 39;player1;2 40;neutral;2 41;neutral;6 42;neutral;6 43;neutral;2 44;neutral;2 45;neutral;6 46;neutral;2 47;neutral;2 48;neutral;2 49;neutral;2 50;neutral;2 51;neutral;2 52;neutral;2 53;neutral;2 54;neutral;2 55;neutral;2 56;neutral;2 57;player2;2 58;neutral;2 59;neutral;2 60;neutral;2 61;neutral;2 62;player2;2 63;neutral;6 64;neutral;2 65;neutral;2 66;neutral;2 67;neutral;6 68;neutral;2 69;neutral;2 70;player2;2 
+player1 place_armies 17 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;neutral;2 5;neutral;2 6;player1;2 7;neutral;2 8;neutral;2 9;player1;2 10;neutral;2 11;neutral;2 12;neutral;2 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;player1;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;6 25;player1;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;2 33;neutral;2 34;neutral;6 35;player2;2 36;neutral;2 37;neutral;2 38;neutral;2 39;player1;2 40;neutral;2 41;neutral;6 42;neutral;6 43;neutral;2 44;neutral;2 45;neutral;6 46;neutral;2 47;neutral;2 48;neutral;2 49;neutral;2 50;neutral;2 51;neutral;2 52;neutral;2 53;neutral;2 54;neutral;2 55;neutral;2 56;neutral;2 57;player2;2 58;neutral;2 59;neutral;2 60;neutral;2 61;neutral;2 62;player2;2 63;neutral;6 64;neutral;2 65;neutral;2 66;neutral;2 67;neutral;6 68;neutral;2 69;neutral;2 70;player2;2 
+player2 place_armies 20 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;neutral;2 5;neutral;2 6;player1;2 7;neutral;2 8;neutral;2 9;player1;2 10;neutral;2 11;neutral;2 12;neutral;2 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;player1;2 18;neutral;2 19;neutral;2 20;player2;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;6 25;player1;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;2 33;neutral;2 34;neutral;6 35;player2;2 36;neutral;2 37;neutral;2 38;neutral;2 39;player1;2 40;neutral;2 41;neutral;6 42;neutral;6 43;neutral;2 44;neutral;2 45;neutral;6 46;neutral;2 47;neutral;2 48;neutral;2 49;neutral;2 50;neutral;2 51;neutral;2 52;neutral;2 53;neutral;2 54;neutral;2 55;neutral;2 56;neutral;2 57;player2;2 58;neutral;2 59;neutral;2 60;neutral;2 61;neutral;2 62;player2;2 63;neutral;6 64;neutral;2 65;neutral;2 66;neutral;2 67;neutral;6 68;neutral;2 69;neutral;2 70;player2;2 
+player2 place_armies 50 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;neutral;2 5;neutral;2 6;player1;2 7;neutral;2 8;neutral;2 9;player1;2 10;neutral;2 11;neutral;2 12;neutral;2 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;player1;2 18;neutral;2 19;neutral;2 20;player2;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;6 25;player1;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;2 33;neutral;2 34;neutral;6 35;player2;2 36;neutral;2 37;neutral;2 38;neutral;2 39;player1;2 40;neutral;2 41;neutral;6 42;neutral;6 43;neutral;2 44;neutral;2 45;neutral;6 46;neutral;2 47;neutral;2 48;neutral;2 49;neutral;2 50;player2;2 51;neutral;2 52;neutral;2 53;neutral;2 54;neutral;2 55;neutral;2 56;neutral;2 57;player2;2 58;neutral;2 59;neutral;2 60;neutral;2 61;neutral;2 62;player2;2 63;neutral;6 64;neutral;2 65;neutral;2 66;neutral;2 67;neutral;6 68;neutral;2 69;neutral;2 70;player2;2 
+player1 place_armies 43 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;neutral;2 5;neutral;2 6;player1;2 7;neutral;2 8;neutral;2 9;player1;2 10;neutral;2 11;neutral;2 12;neutral;2 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;player1;2 18;neutral;2 19;neutral;2 20;player2;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;6 25;player1;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;2 33;neutral;2 34;neutral;6 35;player2;2 36;neutral;2 37;neutral;2 38;neutral;2 39;player1;2 40;neutral;2 41;neutral;6 42;neutral;6 43;player1;2 44;neutral;2 45;neutral;6 46;neutral;2 47;neutral;2 48;neutral;2 49;neutral;2 50;player2;2 51;neutral;2 52;neutral;2 53;neutral;2 54;neutral;2 55;neutral;2 56;neutral;2 57;player2;2 58;neutral;2 59;neutral;2 60;neutral;2 61;neutral;2 62;player2;2 63;neutral;6 64;neutral;2 65;neutral;2 66;neutral;2 67;neutral;6 68;neutral;2 69;neutral;2 70;player2;2 
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;neutral;2 5;neutral;2 6;player1;2 7;neutral;2 8;neutral;2 9;player1;2 10;neutral;2 11;neutral;2 12;neutral;2 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;player1;2 18;neutral;2 19;neutral;2 20;player2;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;6 25;player1;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;2 33;neutral;2 34;neutral;6 35;player2;2 36;neutral;2 37;neutral;2 38;neutral;2 39;player1;2 40;neutral;2 41;neutral;6 42;neutral;6 43;player1;2 44;neutral;2 45;neutral;6 46;neutral;2 47;neutral;2 48;neutral;2 49;neutral;2 50;player2;2 51;neutral;2 52;neutral;2 53;neutral;2 54;neutral;2 55;neutral;2 56;neutral;2 57;player2;2 58;neutral;2 59;neutral;2 60;neutral;2 61;neutral;2 62;player2;2 63;neutral;6 64;neutral;2 65;neutral;2 66;neutral;2 67;neutral;6 68;neutral;2 69;neutral;2 70;player2;2 
+round 1
+round 2
+round 3
+round 4
+round 5
+round 6
+round 7
+round 8
+round 9
+round 10
+round 11
+round 12
+round 13
+round 14
+round 15
+round 16
+round 17
+round 18
+round 19
+round 20
+round 21
+round 22
+round 23
+round 24
+round 25
+round 26
+round 27
+round 28
+round 29
+round 30
+round 31
+round 32
+round 33
+round 34
+round 35
+round 36
+round 37
+round 38
+round 39
+round 40
+round 41
+round 42
+round 43
+round 44
+round 45
+round 46
+round 47
+round 48
+round 49
+round 50
+round 51
+round 52
+round 53
+round 54
+round 55
+round 56
+round 57
+round 58
+round 59
+round 60
+round 61
+round 62
+round 63
+round 64
+round 65
+round 66
+round 67
+round 68
+round 69
+round 70
+round 71
+round 72
+round 73
+round 74
+round 75
+round 76
+round 77
+round 78
+round 79
+round 80
+round 81
+round 82
+round 83
+round 84
+round 85
+round 86
+round 87
+round 88
+round 89
+round 90
+round 91
+round 92
+round 93
+round 94
+round 95
+round 96
+round 97
+round 98
+round 99
+round 100
+round 101
+round 102
+round 103
+round 104
+round 105
+round 106
+round 107
+round 108
+round 109
+round 110
+round 111
+round 112
+round 113
+round 114
+round 115
+round 116
+round 117
+round 118
+round 119
+round 120
+round 121
+round 122
+round 123
+round 124
+round 125
+round 126
+round 127
+round 128
+round 129
+round 130
+round 131
+round 132
+round 133
+round 134
+round 135
+round 136
+round 137
+round 138
+round 139
+round 140
+round 141
+round 142
+round 143
+round 144
+round 145
+round 146
+round 147
+round 148
+round 149
+round 150
+round 151
+round 152
+round 153
+round 154
+round 155
+round 156
+round 157
+round 158
+round 159
+round 160
+round 161
+round 162
+round 163
+round 164
+round 165
+round 166
+round 167
+round 168
+round 169
+round 170
+round 171
+round 172
+round 173
+round 174
+round 175
+Nobody won
+
+Done.

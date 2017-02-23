@@ -1,0 +1,289 @@
+/* line 6, sass/warlight-ai-challenge-2.scss */
+.warlight-ai-challenge-2 #page #wrapper {
+  width: 1515px;
+  height: initial;
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  margin-left: 15px;
+}
+/* line 14, sass/warlight-ai-challenge-2.scss */
+.warlight-ai-challenge-2 #page #game {
+  margin-top: -100px;
+  cursor: default;
+}
+/* line 19, sass/warlight-ai-challenge-2.scss */
+.warlight-ai-challenge-2 #page #game svg,
+.warlight-ai-challenge-2 #page #game-teaser svg {
+  background: url(/img/background-warlight2.png) no-repeat;
+}
+/* line 24, sass/warlight-ai-challenge-2.scss */
+.warlight-ai-challenge-2 #page .tooltip {
+  display: none;
+  position: absolute;
+  color: black;
+  font-family: Exo;
+  font-size: 18px;
+  border: 3px solid black;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 2;
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+
+/* line 41, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #controls {
+  position: absolute;
+  bottom: 0px;
+  height: 58px;
+  width: 100%;
+  z-index: 100;
+}
+/* line 49, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #controls label, .warlight2-ui #controls input, .warlight2-ui #controls .control {
+  margin-top: 0;
+  background: url(/img/controls-warlight2.png) no-repeat;
+  cursor: pointer;
+}
+/* line 55, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #controls button, .warlight2-ui #controls input[type=button] {
+  width: 44px;
+  height: 44px;
+  border: 0px;
+}
+/* line 61, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #controls input[type=text] {
+  background: transparent;
+}
+/* line 65, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #controls * {
+  display: inline-block;
+}
+/* line 69, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #controls > div {
+  bottom: 6px;
+  height: 44px;
+  position: absolute;
+}
+/* line 76, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #controls .forwardButtonImage {
+  background-position: -355px -61px;
+}
+/* line 82, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #controls .skipforwardButtonImage {
+  background-position: -396px -61px;
+}
+/* line 88, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #controls .backwardButtonImage {
+  background-position: -240px -61px;
+}
+/* line 94, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #controls .skipbackwardButtonImage {
+  background-position: -197px -61px;
+}
+/* line 102, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #midControl {
+  left: 338px;
+  margin-left: 0px;
+  width: 790px;
+}
+/* line 108, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #changeViewButtons {
+  width: 138px;
+  left: 10px;
+}
+/* line 112, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #changeViewButtons label {
+  height: 38px;
+  width: 46px;
+  padding: 0;
+}
+/* line 117, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #changeViewButtons label[for$=_1] {
+  background-position: -38px -102px;
+}
+/* line 120, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #changeViewButtons label[for$=_1][checked] {
+  background-position: -38px -142px;
+}
+/* line 126, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #changeViewButtons label[for$=_2] {
+  background-position: -84px -102px;
+}
+/* line 129, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #changeViewButtons label[for$=_2][checked] {
+  background-position: -84px -142px;
+}
+/* line 135, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #changeViewButtons label[for$=_all] {
+  background-position: -130px -102px;
+}
+/* line 138, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #changeViewButtons label[for$=_all][checked] {
+  background-position: -130px -142px;
+}
+/* line 145, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #changeViewButtons input {
+  display: none;
+}
+/* line 151, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #playButton.playing {
+  background-position: -280px -61px;
+}
+/* line 154, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #playButton.playing:active {
+  background-position: -280px -21px;
+}
+/* line 157, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #playButton.paused {
+  background-position: -323px -61px;
+}
+/* line 165, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui .slider {
+  width: 142px;
+  background: url(/img/controls-warlight2.png) no-repeat;
+  background-position: -204px -138px;
+  right: 15px;
+}
+/* line 171, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui .slider .slider-thumb {
+  width: 44px;
+  height: 44px;
+  margin-left: -10px;
+  position: absolute;
+  z-index: 2;
+  background: url(/img/controls-warlight2.png) no-repeat;
+  background-position: -356px -139px;
+  cursor: pointer;
+}
+/* line 183, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #backButtons {
+  position: relative;
+  float: left;
+  left: 3%;
+}
+/* line 188, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #textBox {
+  position: absolute;
+  left: 50%;
+  margin-left: -275px;
+  border: 0px;
+  width: 550px;
+  text-align: left;
+  height: 44px;
+  background: url(/img/controls-warlight2.png) no-repeat;
+  background-position: -38px -180px;
+  cursor: pointer;
+}
+/* line 200, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #textBox.active {
+  background-position: -38px -220px;
+}
+/* line 203, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #textBox.active #moveSelector {
+  pointer-events: auto;
+}
+/* line 206, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #textBox.active #moveSelector > option {
+  display: list-item;
+}
+/* line 212, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #moveText {
+  display: block;
+  position: relative;
+  font-size: 15px;
+  font-family: Exo;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  margin: 0 auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/* line 227, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #forwardButtons {
+  position: relative;
+  left: 3%;
+  float: right;
+}
+/* line 233, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #moveBox {
+  position: relative;
+  z-index: 10;
+}
+/* line 237, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui #moveSelector {
+  position: absolute;
+  display: none;
+  height: 0px;
+  width: 549px;
+  max-width: 100%;
+  bottom: 38px;
+  margin-bottom: 0px;
+  border: 0px;
+  opacity: 0;
+  background-color: #ffec9e;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  font-size: 16px;
+  font-family: Arial;
+}
+/* line 255, sass/warlight-ai-challenge-2.scss */
+.warlight2-ui .option-bold {
+  font-weight: bold !important;
+}
+
+/* line 262, sass/warlight-ai-challenge-2.scss */
+#page #game-teaser #wrapper.warlight2-ui {
+  height: 524px;
+  width: 100%;
+  margin-left: 0px;
+}
+/* line 268, sass/warlight-ai-challenge-2.scss */
+#page #game-teaser #wrapper.warlight2-ui #gamediv {
+  position: absolute;
+  left: -9999px;
+  right: -9999px;
+  -webkit-transform: scale(0.625);
+      -ms-transform: scale(0.625);
+          transform: scale(0.625);
+  -webkit-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  z-index: 10;
+}
+/* line 278, sass/warlight-ai-challenge-2.scss */
+#page #game-teaser #gridmap {
+  background: url(/img/background-warlight2.png) no-repeat;
+}
+/* line 282, sass/warlight-ai-challenge-2.scss */
+#page #game-teaser .warlight2-background {
+  position: absolute;
+  width: 500px;
+  height: inherit;
+  background-image: url(/img/knight-background-white.png);
+  background-repeat: no-repeat;
+  bottom: -25px;
+}
+/* line 291, sass/warlight-ai-challenge-2.scss */
+#page #game-teaser #warlight2-background-2 {
+  right: 0px;
+}
+/* line 295, sass/warlight-ai-challenge-2.scss */
+#page #game-teaser #warlight2-background-1 {
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+}

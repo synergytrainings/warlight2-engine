@@ -1,0 +1,28 @@
+/* line 1, sass/gameviewer-large.scss */
+.go #game,
+.ultimate-tic-tac-toe #game,
+.ai-block-battle #game {
+  margin-top: -60px;
+}
+
+/* line 7, sass/gameviewer-large.scss */
+.go #game .u-wrapper,
+.ultimate-tic-tac-toe #game .u-wrapper,
+.ai-block-battle #game .u-wrapper {
+  max-width: 1200px;
+}
+
+/* line 13, sass/gameviewer-large.scss */
+.go #game-teaser .u-wrapper,
+.ultimate-tic-tac-toe #game-teaser .u-wrapper,
+.ai-block-battle #game-teaser .u-wrapper {
+  max-width: 960px;
+  height: 525px;
+}
+
+/* line 20, sass/gameviewer-large.scss */
+.go #game-teaser .GamePlayer-chrome.u-row,
+.ultimate-tic-tac-toe #game-teaser .GamePlayer-chrome.u-row,
+.ai-block-battle #game-teaser .GamePlayer-chrome.u-row {
+  display: none;
+}

@@ -1,0 +1,387 @@
+/*set fonts*/
+@font-face {
+  font-family: celticgaramond;
+  src: url(../fonts/celticgaramond.eot) format("embedded-opentype"), url(../fonts/celticgaramond.ttf) format("truetype");
+}
+/* line 11, sass/conquest.scss */
+#game #wrapper {
+  width: 1475px;
+  height: 790px;
+}
+
+/* line 16, sass/conquest.scss */
+#wrapper {
+  position: relative;
+  margin: 10px auto 0;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+/* line 23, sass/conquest.scss */
+#gamediv {
+  position: relative;
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+/* line 30, sass/conquest.scss */
+#conquestMapSvg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+
+/* line 40, sass/conquest.scss */
+.warlight-ui #controls {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+/* line 47, sass/conquest.scss */
+.warlight-ui #controls label, .warlight-ui #controls input, .warlight-ui #controls .control {
+  margin-top: 0;
+  background: url(/img/UI-map.png) no-repeat;
+  cursor: pointer;
+}
+/* line 53, sass/conquest.scss */
+.warlight-ui #controls button, .warlight-ui #controls input[type=button] {
+  width: 44px;
+  height: 44px;
+  border: 0px;
+}
+/* line 59, sass/conquest.scss */
+.warlight-ui #controls input[type=text] {
+  background: transparent;
+}
+/* line 63, sass/conquest.scss */
+.warlight-ui #controls * {
+  display: inline-block;
+}
+/* line 67, sass/conquest.scss */
+.warlight-ui #controls > div {
+  bottom: 4px;
+  height: 44px;
+  position: absolute;
+}
+/* line 73, sass/conquest.scss */
+.warlight-ui #controls > div > label {
+  width: 46px;
+  height: 100%;
+  background-position: -58px -6px;
+}
+/* line 79, sass/conquest.scss */
+.warlight-ui #controls > div > label > input {
+  display: none;
+}
+/* line 83, sass/conquest.scss */
+.warlight-ui #controls > div > label[for$=_1] {
+  width: 48px;
+  background-position: -10px -6px;
+}
+/* line 87, sass/conquest.scss */
+.warlight-ui #controls > div > label[for$=_1][checked] {
+  background-position: -10px -52px;
+}
+/* line 93, sass/conquest.scss */
+.warlight-ui #controls > div > label[for$=_2][checked] {
+  background-position: -58px -52px;
+}
+/* line 98, sass/conquest.scss */
+.warlight-ui #controls > div > label[for$=_all] {
+  width: 48px;
+  background-position: -104px -6px;
+}
+/* line 102, sass/conquest.scss */
+.warlight-ui #controls > div > label[for$=_all][checked] {
+  background-position: -104px -52px;
+}
+/* line 108, sass/conquest.scss */
+.warlight-ui #controls > div:first-child {
+  left: 2%;
+}
+/* line 112, sass/conquest.scss */
+.warlight-ui #controls > div:last-child {
+  right: 2%;
+}
+/* line 118, sass/conquest.scss */
+.warlight-ui #midControl {
+  left: 50%;
+  margin-left: -375px;
+  width: 750px;
+}
+/* line 126, sass/conquest.scss */
+.warlight-ui #backButtons > input:first-child {
+  background-position: -180px -6px;
+}
+/* line 130, sass/conquest.scss */
+.warlight-ui #backButtons > input:last-child {
+  background-position: -224px -6px;
+}
+/* line 137, sass/conquest.scss */
+.warlight-ui #forwardButtons > input {
+  background-position: -268px -6px;
+}
+/* line 140, sass/conquest.scss */
+.warlight-ui #forwardButtons > input:last-child {
+  background-position: -312px -6px;
+}
+/* line 147, sass/conquest.scss */
+.warlight-ui #playButton.playing {
+  background-position: -425px -52px;
+}
+/* line 150, sass/conquest.scss */
+.warlight-ui #playButton.paused {
+  background-position: -468px -52px;
+}
+/* line 156, sass/conquest.scss */
+.warlight-ui #textBox {
+  height: 44px;
+  background: url(/img/UI-map.png) no-repeat;
+  background-position: -10px -98px;
+  cursor: pointer;
+}
+/* line 164, sass/conquest.scss */
+.warlight-ui #textBox.active {
+  background-position: -10px -191px;
+}
+/* line 167, sass/conquest.scss */
+.warlight-ui #textBox.active #moveSelector {
+  pointer-events: auto;
+  margin-bottom: 0px;
+}
+/* line 171, sass/conquest.scss */
+.warlight-ui #textBox.active #moveSelector > option {
+  display: list-item;
+}
+/* line 178, sass/conquest.scss */
+.warlight-ui .slider {
+  width: 142px;
+  background: url(/img/UI-map.png) no-repeat;
+  background-position: -366px -6px;
+  position: relative;
+}
+/* line 184, sass/conquest.scss */
+.warlight-ui .slider > .slider-thumb {
+  width: 44px;
+  height: 44px;
+  margin-left: -10px;
+  position: absolute;
+  z-index: 2;
+  background: url(/img/UI-map.png) no-repeat;
+  background-position: -355px -52px;
+  cursor: pointer;
+}
+
+/* line 199, sass/conquest.scss */
+.regionText {
+  font: bold 16px celticgaramond;
+}
+
+/* line 202, sass/conquest.scss */
+.playerViewText {
+  font: bold 23px celticgaramond;
+}
+
+/* line 205, sass/conquest.scss */
+.armiesViewText {
+  font: normal 17px celticgaramond;
+  fill: #595343;
+}
+
+/* line 209, sass/conquest.scss */
+.roundText {
+  font: normal 28px celticgaramond;
+  fill: #595343;
+}
+
+/* line 213, sass/conquest.scss */
+.gameEndText {
+  font: normal 65px celticgaramond;
+  stroke: white;
+  stroke-width: 0.6px;
+}
+
+/*set controls sizes and images*/
+/* line 220, sass/conquest.scss */
+.warlight-ui {
+  /*element positioning*/
+  /** Jackie's top overrides */
+  /*for small screens*/
+}
+/* line 221, sass/conquest.scss */
+.warlight-ui .forwardButtonImage:active {
+  background-position: -259px -48px;
+}
+/* line 225, sass/conquest.scss */
+.warlight-ui .skipforwardButtonImage:active {
+  background-position: -302px -48px;
+}
+/* line 228, sass/conquest.scss */
+.warlight-ui .backwardButtonImage:active {
+  background-position: -215px -48px;
+}
+/* line 231, sass/conquest.scss */
+.warlight-ui .skipbackwardButtonImage:active {
+  background-position: -171px -48px;
+}
+/* line 235, sass/conquest.scss */
+.warlight-ui .playButtonImage:active {
+  background-position: -416px -140px;
+}
+/* line 239, sass/conquest.scss */
+.warlight-ui .pauseButtonImage:active {
+  background-position: -459px -140px;
+}
+/* line 243, sass/conquest.scss */
+.warlight-ui .fullGameViewButtonImageActive {
+  background-position: -91px -46px;
+}
+/* line 248, sass/conquest.scss */
+.warlight-ui #paper {
+  position: relative;
+  float: left;
+  z-index: 1;
+  padding-bottom: 16px;
+}
+/* line 255, sass/conquest.scss */
+.warlight-ui #controlsSmall {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 530px;
+  margin-left: -265px;
+}
+/* line 262, sass/conquest.scss */
+.warlight-ui #backButtons {
+  position: relative;
+  float: left;
+  left: 3%;
+}
+/* line 267, sass/conquest.scss */
+.warlight-ui #textBox {
+  position: absolute;
+  left: 50%;
+  margin-left: -255px;
+  border: 0px;
+  width: 510px;
+  text-align: left;
+}
+/* line 275, sass/conquest.scss */
+.warlight-ui #moveText {
+  display: block;
+  position: relative;
+  color: #716955;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  padding-top: 1px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  margin: 0 auto;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 294, sass/conquest.scss */
+.warlight-ui #forwardButtons {
+  position: relative;
+  left: 3%;
+  float: right;
+}
+/* line 300, sass/conquest.scss */
+.warlight-ui #moveBox {
+  position: relative;
+  z-index: 10;
+}
+/* line 304, sass/conquest.scss */
+.warlight-ui #moveSelector {
+  height: 0px;
+  width: 498px;
+  max-width: 100%;
+  position: absolute;
+  bottom: 40px;
+  margin-left: 3px;
+  border: 0px;
+  opacity: 0;
+  background-color: #716955;
+  pointer-events: none;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  color: #fbe6b8;
+  font-size: 13px;
+}
+/* line 322, sass/conquest.scss */
+.warlight-ui #titleText {
+  font-size: 3.2em;
+  padding: 10px;
+  text-align: center;
+}
+@media screen and (max-width: 1333px) {
+  /* line 330, sass/conquest.scss */
+  .warlight-ui #midControl {
+    width: 510px;
+    left: 50%;
+    margin-left: -255px;
+  }
+  /* line 336, sass/conquest.scss */
+  .warlight-ui #backButtons {
+    left: 50%;
+    margin-left: -110px;
+  }
+  /* line 341, sass/conquest.scss */
+  .warlight-ui #forwardButtons {
+    left: 50%;
+    margin-left: -22px;
+  }
+  /* line 346, sass/conquest.scss */
+  .warlight-ui #textBox {
+    bottom: 42px;
+    left: 50%;
+  }
+  /* line 350, sass/conquest.scss */
+  .warlight-ui #changeViewButtons {
+    position: relative;
+    float: left;
+  }
+  /* line 354, sass/conquest.scss */
+  .warlight-ui #forwardButtons {
+    float: left;
+  }
+  /* line 357, sass/conquest.scss */
+  .warlight-ui .slider {
+    position: relative;
+    float: left;
+    bottom: -10px;
+    right: -4%;
+  }
+}
+
+/* line 381, sass/conquest.scss */
+#page #game-teaser #wrapper.warlight-ui {
+  margin-top: 0;
+  width: 960px;
+  height: 482px;
+}
+/* line 386, sass/conquest.scss */
+#page #game-teaser #wrapper.warlight-ui #gamediv {
+  -webkit-transform: scale(0.651);
+      -ms-transform: scale(0.651);
+          transform: scale(0.651);
+}

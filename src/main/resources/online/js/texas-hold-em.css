@@ -1,0 +1,354 @@
+/* line 9, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #game-table {
+  background: url("/img/texasholdem-background.png") center center no-repeat;
+}
+/* line 13, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card {
+  background: url("/img/poker/texasholdem-cards.png") no-repeat;
+  height: 78px;
+  width: 59px;
+  float: left;
+  margin: 0px 2px 0px 2px;
+}
+/* line 21, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.blank {
+  background-position: 0px -348px;
+}
+/* line 22, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-As {
+  background-position: 0px 0px;
+}
+/* line 23, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-2s {
+  background-position: -64px 0px;
+}
+/* line 24, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-3s {
+  background-position: -128px 0px;
+}
+/* line 25, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-4s {
+  background-position: -192px 0px;
+}
+/* line 26, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-5s {
+  background-position: -256px 0px;
+}
+/* line 27, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-6s {
+  background-position: -320px 0px;
+}
+/* line 28, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-7s {
+  background-position: -384px 0px;
+}
+/* line 29, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-8s {
+  background-position: -448px 0px;
+}
+/* line 30, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-9s {
+  background-position: -512px 0px;
+}
+/* line 31, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Ts {
+  background-position: -576px 0px;
+}
+/* line 32, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Js {
+  background-position: -640px 0px;
+}
+/* line 33, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Qs {
+  background-position: -704px 0px;
+}
+/* line 34, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Ks {
+  background-position: -768px 0px;
+}
+/* line 35, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Ac {
+  background-position: 0px -87px;
+}
+/* line 36, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-2c {
+  background-position: -64px -87px;
+}
+/* line 37, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-3c {
+  background-position: -128px -87px;
+}
+/* line 38, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-4c {
+  background-position: -192px -87px;
+}
+/* line 39, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-5c {
+  background-position: -256px -87px;
+}
+/* line 40, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-6c {
+  background-position: -320px -87px;
+}
+/* line 41, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-7c {
+  background-position: -384px -87px;
+}
+/* line 42, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-8c {
+  background-position: -448px -87px;
+}
+/* line 43, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-9c {
+  background-position: -512px -87px;
+}
+/* line 44, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Tc {
+  background-position: -576px -87px;
+}
+/* line 45, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Jc {
+  background-position: -640px -87px;
+}
+/* line 46, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Qc {
+  background-position: -704px -87px;
+}
+/* line 47, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Kc {
+  background-position: -768px -87px;
+}
+/* line 48, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Ah {
+  background-position: 0px -174px;
+}
+/* line 49, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-2h {
+  background-position: -64px -174px;
+}
+/* line 50, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-3h {
+  background-position: -128px -174px;
+}
+/* line 51, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-4h {
+  background-position: -192px -174px;
+}
+/* line 52, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-5h {
+  background-position: -256px -174px;
+}
+/* line 53, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-6h {
+  background-position: -320px -174px;
+}
+/* line 54, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-7h {
+  background-position: -384px -174px;
+}
+/* line 55, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-8h {
+  background-position: -448px -174px;
+}
+/* line 56, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-9h {
+  background-position: -512px -174px;
+}
+/* line 57, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Th {
+  background-position: -576px -174px;
+}
+/* line 58, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Jh {
+  background-position: -640px -174px;
+}
+/* line 59, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Qh {
+  background-position: -704px -174px;
+}
+/* line 60, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Kh {
+  background-position: -768px -174px;
+}
+/* line 61, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Ad {
+  background-position: 0px -261px;
+}
+/* line 62, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-2d {
+  background-position: -64px -261px;
+}
+/* line 63, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-3d {
+  background-position: -128px -261px;
+}
+/* line 64, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-4d {
+  background-position: -192px -261px;
+}
+/* line 65, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-5d {
+  background-position: -256px -261px;
+}
+/* line 66, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-6d {
+  background-position: -320px -261px;
+}
+/* line 67, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-7d {
+  background-position: -384px -261px;
+}
+/* line 68, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-8d {
+  background-position: -448px -261px;
+}
+/* line 69, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-9d {
+  background-position: -512px -261px;
+}
+/* line 70, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Td {
+  background-position: -576px -261px;
+}
+/* line 71, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Jd {
+  background-position: -640px -261px;
+}
+/* line 72, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Qd {
+  background-position: -704px -261px;
+}
+/* line 73, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .card.value-Kd {
+  background-position: -768px -261px;
+}
+/* line 77, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #game-hud .avatar {
+  width: 105px;
+  height: 105px;
+}
+/* line 82, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #game-hud .player-move {
+  min-width: 100px;
+}
+/* line 87, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #game-hud #player1 > .avatar {
+  margin: 0px 8px 0px 29px;
+}
+/* line 91, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #game-hud #player1 > .player-name {
+  left: 29px;
+}
+/* line 95, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #game-hud #player1 > .player-cards {
+  margin-left: 12px;
+}
+/* line 99, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #game-hud #player1 > .player-move {
+  float: left;
+  text-align: left;
+  margin-left: 12px;
+}
+/* line 107, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #game-hud #player2 > .avatar {
+  margin: 0px 29px 0px 8px;
+}
+/* line 111, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #game-hud #player2 > .player-name {
+  right: 29px;
+}
+/* line 115, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #game-hud #player2 > .player-cards {
+  margin-right: 10px;
+}
+/* line 119, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #game-hud #player2 > .player-move {
+  float: right;
+  text-align: right;
+  margin-right: 14px;
+}
+/* line 127, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #game-stacks {
+  height: 32%;
+}
+/* line 130, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #game-stacks #player1-stack, .texasholdem-ui.poker-ui #game-stacks #player2-stack {
+  width: 37%;
+}
+/* line 134, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #game-stacks #pot {
+  width: 26%;
+}
+/* line 138, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #game-stacks .chips-amount {
+  margin-top: 22px;
+}
+/* line 144, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #controls label, .texasholdem-ui.poker-ui #controls input, .texasholdem-ui.poker-ui #controls .control {
+  background: url(/img/poker/texasholdem-ui.png) no-repeat;
+}
+/* line 148, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #controls .forwardButtonImage {
+  background-position: -355px -61px;
+}
+/* line 151, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #controls .skipforwardButtonImage {
+  background-position: -396px -61px;
+}
+/* line 154, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #controls .backwardButtonImage {
+  background-position: -240px -61px;
+}
+/* line 157, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #controls .skipbackwardButtonImage {
+  background-position: -197px -61px;
+}
+/* line 161, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #controls #moveText {
+  background: none;
+  color: black;
+}
+/* line 168, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #playButton.playing {
+  background-position: -280px -61px;
+}
+/* line 171, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #playButton.playing:active {
+  background-position: -280px -21px;
+}
+/* line 174, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #playButton.paused {
+  background-position: -323px -61px;
+}
+/* line 179, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #textBox {
+  background: url(/img/poker/texasholdem-ui.png) no-repeat;
+  background-position: -38px -180px;
+  width: 550px;
+}
+/* line 183, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #textBox.active {
+  background-position: -38px -220px;
+}
+/* line 188, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #forwardButtons {
+  left: 9%;
+}
+/* line 192, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui #moveSelector {
+  background-color: #ebe7f3;
+  color: #323232;
+  width: 550px;
+  margin-bottom: -1px;
+  margin-left: 0px;
+}
+/* line 200, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .slider {
+  background: url(/img/poker/texasholdem-ui.png) no-repeat;
+  background-position: -204px -138px;
+}
+/* line 204, sass/texas-hold-em.scss */
+.texasholdem-ui.poker-ui .slider > .slider-thumb {
+  background: url(/img/poker/texasholdem-ui.png) no-repeat;
+  background-position: -356px -139px;
+}

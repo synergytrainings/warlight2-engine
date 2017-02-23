@@ -1,0 +1,5311 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../usr/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+/* line 13, sass/_typeface.scss */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+/* line 31, sass/_typeface.scss */
+.icon-github, .icon-github-2, .icon-facebook, .icon-facebook-2, .icon-twitter, .icon-twitter-2, .icon-twitter-3, .icon-stackoverflow, .icon-google-plus, .icon-google-plus-2, .icon-reddit {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 41, sass/_typeface.scss */
+.icon-github:before {
+  content: "\e000";
+}
+
+/* line 44, sass/_typeface.scss */
+.icon-github-2:before {
+  content: "\e001";
+}
+
+/* line 47, sass/_typeface.scss */
+.icon-facebook:before {
+  content: "\e002";
+}
+
+/* line 50, sass/_typeface.scss */
+.icon-facebook-2:before {
+  content: "\e003";
+}
+
+/* line 53, sass/_typeface.scss */
+.icon-twitter:before {
+  content: "\e004";
+}
+
+/* line 56, sass/_typeface.scss */
+.icon-twitter-2:before {
+  content: "\e005";
+}
+
+/* line 59, sass/_typeface.scss */
+.icon-twitter-3:before {
+  content: "\e006";
+}
+
+/* line 62, sass/_typeface.scss */
+.icon-stackoverflow:before {
+  content: "\e007";
+}
+
+/* line 65, sass/_typeface.scss */
+.icon-google-plus:before {
+  content: "\e008";
+}
+
+/* line 68, sass/_typeface.scss */
+.icon-google-plus-2:before {
+  content: "\e009";
+}
+
+/* line 71, sass/_typeface.scss */
+.icon-reddit:before {
+  content: "\e00a";
+}
+
+/* line 1, sass/_form.scss */
+input {
+  font-family: "Maven Pro", Helvetica, Arial, sans-serif;
+  height: 32px;
+  margin-bottom: 10px;
+  max-width: 640px;
+  width: 100%;
+  padding: 0px 10px;
+  margin: 5px 0;
+  border: 2px solid black;
+  font-size: 1.3rem;
+}
+/* line 7, sass/_form.scss */
+input[type=submit] {
+  padding: 0 20px;
+  width: auto;
+  margin: 28px auto;
+  border: none;
+  color: white;
+  background-color: black;
+  font-family: Exo;
+  font-weight: normal;
+  font-size: 15px;
+}
+/* line 19, sass/_form.scss */
+input[type=submit]:hover {
+  cursor: pointer;
+}
+/* line 24, sass/_form.scss */
+input[type=file] {
+  padding: 5px 10px;
+}
+/* line 28, sass/_form.scss */
+input[type=checkbox] {
+  margin: 20px auto;
+}
+/* line 32, sass/_form.scss */
+input ::-webkit-input-placeholder {
+  font-weight: normal;
+}
+/* line 35, sass/_form.scss */
+input :-moz-placeholder {
+  font-weight: normal;
+}
+/* line 38, sass/_form.scss */
+input ::-moz-placeholder {
+  font-weight: normal;
+}
+/* line 41, sass/_form.scss */
+input :-ms-input-placeholder {
+  font-weight: normal;
+}
+
+/* line 46, sass/_form.scss */
+textarea {
+  font-family: "Maven Pro", Helvetica, Arial, sans-serif;
+  height: 400px;
+  max-width: 640px;
+  width: 100%;
+  padding: 0px 10px;
+  margin: 5px 0;
+  border: 2px solid black;
+  font-size: 1.3rem;
+  padding: 7px 10px;
+}
+
+/* line 54, sass/_form.scss */
+select {
+  max-width: 640px;
+  width: 100%;
+  padding: 0px 10px;
+  margin: 5px 0;
+  border: 2px solid black;
+  font-size: 1.3rem;
+  height: 35px;
+  background-color: white;
+  font-size: 15px;
+  padding: 6px 0px 6px 10px;
+}
+
+/* line 62, sass/_form.scss */
+label {
+  width: 100%;
+  height: 24px;
+  padding: 3px 10px;
+  color: gray;
+  display: block;
+  text-align: left;
+  text-transform: lowercase;
+  font-family: Exo;
+  padding: 6px 10px;
+  font-size: 1.35rem;
+  color: black;
+  font-weight: 300;
+}
+/* line 79, sass/_form.scss */
+label:first-letter {
+  text-transform: capitalize;
+}
+
+/* line 84, sass/_form.scss */
+section form {
+  width: 640px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+/* line 89, sass/_form.scss */
+section form > a {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* line 97, sass/_form.scss */
+.upload-bot-form {
+  cursor: pointer;
+  position: relative;
+  background: none;
+  display: block;
+  width: 250px;
+  height: 235px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #919191;
+  text-align: center;
+}
+/* line 109, sass/_form.scss */
+.upload-bot-form div {
+  margin: 0 auto;
+}
+/* line 113, sass/_form.scss */
+.upload-bot-form:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+/* line 117, sass/_form.scss */
+.upload-bot-form h3 {
+  color: black;
+}
+/* line 121, sass/_form.scss */
+.upload-bot-form input {
+  /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 125, sass/_form.scss */
+.upload-bot-form label {
+  /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 130, sass/_form.scss */
+#upload-bot-image {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 46px;
+  left: 0;
+  right: 0;
+}
+/* line 140, sass/_form.scss */
+#upload-bot-image img {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 146, sass/_form.scss */
+#upload-bot-text {
+  position: absolute;
+  bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  font-size: 16px;
+}
+
+/* line 156, sass/_form.scss */
+#updatePost-form {
+  padding: 0px 20px 0px 20px;
+  width: auto;
+}
+/* line 158, sass/_form.scss */
+#updatePost-form textarea {
+  height: 200px;
+  max-width: 750px;
+  display: block;
+}
+
+/* line 168, sass/_form.scss */
+#login-form {
+  width: 320px;
+}
+
+/* line 1, sass/_code.scss */
+pre,
+.raw {
+  width: 100%;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  border: none !important;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 15px;
+}
+
+/* line 12, sass/_code.scss */
+.raw br {
+  line-height: 200%;
+}
+
+/* line 16, sass/_code.scss */
+code {
+  max-width: 960px;
+  padding: 30px 10px;
+  text-align: left;
+  display: block;
+  width: 960px;
+  margin: 0 auto;
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
+
+@font-face {
+  font-family: celticgaramond;
+  src: url(../fonts/celticgaramond.eot) format("embedded-opentype"), url(../fonts/celticgaramond.ttf) format("truetype");
+}
+@font-face {
+  font-family: CafeNero;
+  src: url(../fonts/Cafe-Nero-M54.ttf) format("truetype");
+}
+@font-face {
+  font-family: Exo;
+  src: url(../fonts/Exo-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Exo;
+  src: url(../fonts/Exo-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Exo;
+  src: url(../fonts/Exo-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Exo;
+  src: url(../fonts/Exo-Italic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: Exo;
+  src: url(../fonts/Exo-BoldItalic.ttf) format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: Exo;
+  src: url(../fonts/Exo-LightItalic.ttf) format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+/* line 1, sass/_spinner.scss */
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+/* line 9, sass/_spinner.scss */
+.container1 > div, .container2 > div, .container3 > div {
+  width: 6px;
+  height: 6px;
+  background-color: #333;
+  border-radius: 100%;
+  position: absolute;
+  -webkit-animation: bouncedelay 1.2s infinite ease-in-out;
+  animation: bouncedelay 1.2s infinite ease-in-out;
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 23, sass/_spinner.scss */
+.spinner .spinner-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 29, sass/_spinner.scss */
+.container2 {
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+/* line 34, sass/_spinner.scss */
+.container3 {
+  -webkit-transform: rotateZ(90deg);
+  transform: rotateZ(90deg);
+}
+
+/* line 39, sass/_spinner.scss */
+.circle1 {
+  top: 0;
+  left: 0;
+}
+
+/* line 40, sass/_spinner.scss */
+.circle2 {
+  top: 0;
+  right: 0;
+}
+
+/* line 41, sass/_spinner.scss */
+.circle3 {
+  right: 0;
+  bottom: 0;
+}
+
+/* line 42, sass/_spinner.scss */
+.circle4 {
+  left: 0;
+  bottom: 0;
+}
+
+/* line 44, sass/_spinner.scss */
+.container2 .circle1 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+/* line 49, sass/_spinner.scss */
+.container3 .circle1 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+/* line 54, sass/_spinner.scss */
+.container1 .circle2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+/* line 59, sass/_spinner.scss */
+.container2 .circle2 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+/* line 64, sass/_spinner.scss */
+.container3 .circle2 {
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
+}
+
+/* line 69, sass/_spinner.scss */
+.container1 .circle3 {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+
+/* line 74, sass/_spinner.scss */
+.container2 .circle3 {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+
+/* line 79, sass/_spinner.scss */
+.container3 .circle3 {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+
+/* line 84, sass/_spinner.scss */
+.container1 .circle4 {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+
+/* line 89, sass/_spinner.scss */
+.container2 .circle4 {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+
+/* line 94, sass/_spinner.scss */
+.container3 .circle4 {
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
+}
+
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+/* line 17, sass/screen.scss */
+html {
+  font-family: "Maven Pro", Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* line 25, sass/screen.scss */
+body {
+  font-size: 1.4rem;
+  overflow-x: hidden;
+}
+
+/* line 30, sass/screen.scss */
+* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+/* line 34, sass/screen.scss */
+#page .fa {
+  font-size: 18px;
+  cursor: pointer;
+  color: #7d7d7d;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 42, sass/screen.scss */
+a {
+  text-decoration: none;
+}
+/* line 46, sass/screen.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 55, sass/screen.scss */
+p {
+  margin: 0 auto 30px;
+  max-width: 960px;
+  text-align: left;
+}
+
+/* line 71, sass/screen.scss */
+hr {
+  margin: 30px auto 0;
+  padding: 0 30px 0 15px;
+  max-width: 700px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 0px;
+}
+
+/* line 81, sass/screen.scss */
+#page header > nav {
+  height: 44px;
+  line-height: 1.4rem;
+}
+/* line 85, sass/screen.scss */
+#page header > nav > ul {
+  margin: 0;
+}
+/* line 88, sass/screen.scss */
+#page header > nav > ul > li {
+  background: rgba(255, 255, 255, 0.65);
+}
+
+/* line 95, sass/screen.scss */
+table {
+  margin: 35px auto;
+  max-width: 960px;
+  width: 100%;
+  font-weight: initial;
+}
+/* line 101, sass/screen.scss */
+table thead {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 106, sass/screen.scss */
+table tr {
+  height: 35px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 111, sass/screen.scss */
+table tr:last-child {
+  border-bottom: 0;
+}
+/* line 115, sass/screen.scss */
+table tr > td, table tr th {
+  padding-left: 20px;
+}
+/* line 118, sass/screen.scss */
+table tr > td:last-child, table tr th:last-child {
+  padding-right: 20px;
+  text-align: right;
+}
+
+/* line 127, sass/screen.scss */
+aside#top-ranking {
+  margin-top: -5px;
+}
+/* line 130, sass/screen.scss */
+aside#top-ranking table {
+  margin: 0 auto;
+}
+/* line 134, sass/screen.scss */
+aside#top-ranking td {
+  text-align: left;
+}
+/* line 137, sass/screen.scss */
+aside#top-ranking td:first-child {
+  width: auto;
+}
+/* line 141, sass/screen.scss */
+aside#top-ranking td:last-child {
+  text-align: right;
+}
+
+/* line 148, sass/screen.scss */
+sup {
+  font-size: xx-small;
+  vertical-align: super;
+}
+
+/* line 153, sass/screen.scss */
+nav.pagination {
+  margin: 35px auto;
+  max-width: 960px;
+  width: 100%;
+  /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+  /* OLD: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* MID: IE 10 */
+  display: -webkit-flex;
+  /* NEW, Chrome 21+ */
+  display: flex;
+  /* NEW: Opera 12.1, Firefox 22+ */
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+/* line 160, sass/screen.scss */
+nav.pagination > a:first-child {
+  padding-left: 20px;
+}
+/* line 164, sass/screen.scss */
+nav.pagination > a:last-child {
+  padding-right: 20px;
+}
+
+/* line 169, sass/screen.scss */
+.statistics {
+  margin: 28px 0;
+}
+/* line 172, sass/screen.scss */
+.statistics li {
+  /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+  /* OLD: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* MID: IE 10 */
+  display: -webkit-flex;
+  /* NEW, Chrome 21+ */
+  display: flex;
+  /* NEW: Opera 12.1, Firefox 22+ */
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 175, sass/screen.scss */
+.statistics li > * {
+  width: 320px;
+  margin: 0;
+  padding: 0 20px;
+}
+/* line 180, sass/screen.scss */
+.statistics li > *:first-child {
+  text-align: right;
+}
+/* line 185, sass/screen.scss */
+.statistics li > *:last-child {
+  text-align: left;
+}
+
+/* line 192, sass/screen.scss */
+.brand {
+  background: white;
+  border: 1px solid black;
+  z-index: 1000;
+}
+
+/* line 198, sass/screen.scss */
+a > span[class^=icon-] {
+  padding: 0 10px;
+  font-size: 1.4rem;
+  color: #9c9c9c;
+}
+/* line 204, sass/screen.scss */
+a > span[class^=icon-]:hover {
+  text-decoration: none;
+}
+
+/* line 209, sass/screen.scss */
+#game-log > table {
+  max-width: 960px;
+}
+
+/* line 215, sass/screen.scss */
+#profile-bots {
+  min-height: 900px;
+}
+/* line 218, sass/screen.scss */
+#profile-bots .profile-competition {
+  padding: 0;
+}
+/* line 221, sass/screen.scss */
+#profile-bots .profile-competition .profile-competition-header {
+  padding: 12px 0;
+  cursor: pointer;
+}
+/* line 226, sass/screen.scss */
+#profile-bots .profile-competition .profile-competition-content {
+  padding-bottom: 15px;
+}
+/* line 230, sass/screen.scss */
+#profile-bots .profile-competition .profile-competition-nobot {
+  margin: 15px 0px;
+}
+
+/* line 236, sass/screen.scss */
+.beta-label {
+  display: none;
+}
+
+/* line 240, sass/screen.scss */
+.button {
+  max-width: 300px;
+  width: auto;
+  padding: 8px 20px 9px;
+  margin: 28px auto;
+  display: inline-block;
+  background: black;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+/* line 255, sass/screen.scss */
+.button:hover {
+  text-decoration: none;
+}
+
+/* line 266, sass/screen.scss */
+html {
+  font-weight: normal;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* line 275, sass/screen.scss */
+body {
+  font-family: "Maven Pro", Helvetica, Arial, sans-serif;
+  font-size: 1.7rem;
+  overflow-x: hidden;
+}
+/* line 280, sass/screen.scss */
+body em {
+  color: #fbb817;
+}
+/* line 283, sass/screen.scss */
+body b {
+  font-weight: bold;
+}
+/* line 286, sass/screen.scss */
+body i {
+  font-style: italic;
+}
+
+/* line 291, sass/screen.scss */
+#main {
+  height: auto;
+  width: auto;
+}
+
+/* line 296, sass/screen.scss */
+.disable-hover,
+.disable-hover * {
+  pointer-events: none !important;
+}
+
+/* line 301, sass/screen.scss */
+.wait {
+  cursor: wait;
+}
+
+/* line 305, sass/screen.scss */
+h1, h2, h3 {
+  font-family: Exo;
+}
+
+/* line 309, sass/screen.scss */
+#page {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  padding-bottom: 50px;
+  min-height: 90vh;
+  min-height: 90vh;
+  min-height: 90vh;
+  min-height: 90vh;
+  background: -webkit-linear-gradient(left, #fef1d2, white, #fef1d2);
+  background: linear-gradient(to right, #fef1d2, white, #fef1d2);
+  text-align: center;
+  line-height: 2.4rem;
+  padding-top: 60px;
+  -webkit-transition: width 0.25s;
+          transition: width 0.25s;
+}
+/* line 327, sass/screen.scss */
+#page h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding: 10px 0;
+  line-height: 50px;
+}
+/* line 333, sass/screen.scss */
+#page h2 {
+  font-size: 3.0rem;
+  padding: 10px 0;
+  line-height: 40px;
+}
+/* line 338, sass/screen.scss */
+#page h3 {
+  font-size: 2.4rem;
+  padding: 5px 0;
+  line-height: 30px;
+}
+/* line 343, sass/screen.scss */
+#page article {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 10px;
+}
+/* line 349, sass/screen.scss */
+#page strong {
+  font-weight: bold;
+}
+/* line 352, sass/screen.scss */
+#page ul, #page ol {
+  display: inline-block;
+  list-style: initial;
+  margin-left: 60px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+/* line 361, sass/screen.scss */
+#page ol {
+  list-style-type: decimal;
+}
+/* line 365, sass/screen.scss */
+#page header {
+  margin-bottom: 30px;
+}
+/* line 368, sass/screen.scss */
+#page header h1 {
+  line-height: 55px;
+  font-size: 4.8rem;
+  font-weight: normal;
+  padding: 0;
+  margin-top: 30px;
+}
+/* line 376, sass/screen.scss */
+#page header nav {
+  height: 50px;
+}
+/* line 383, sass/screen.scss */
+#page section#content {
+  text-align: left;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 40px;
+}
+/* line 390, sass/screen.scss */
+#page section#content > article {
+  display: inline-block;
+  max-width: 640px;
+  margin: 0;
+}
+/* line 398, sass/screen.scss */
+#page section#content > div, #page section#content > img, #page section#content > iframe {
+  width: 320px;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 404, sass/screen.scss */
+#page section#content > img, #page section#content > div > img, #page section#content > iframe {
+  width: 320px;
+}
+/* line 408, sass/screen.scss */
+#page section#content p {
+  padding: 0;
+}
+@media screen and (max-width: 970px) {
+  /* line 413, sass/screen.scss */
+  #page section#content > div, #page section#content > article, #page section#content > iframe, #page section#content > img {
+    display: block;
+    margin: 10px auto;
+  }
+}
+/* line 421, sass/screen.scss */
+#page .left, #page .middle, #page .right {
+  display: table-cell;
+  width: 380px;
+}
+/* line 426, sass/screen.scss */
+#page .facts {
+  font-family: Exo;
+  font-style: italic;
+  display: table;
+  margin: 0 auto;
+  padding: 75px 0 55px 0;
+  font-weight: 300;
+  font-size: 1.4em;
+}
+/* line 436, sass/screen.scss */
+#page.showSider {
+  width: calc(100% - 300px);
+  min-width: 600px;
+}
+/* line 441, sass/screen.scss */
+#page:after, #page:before {
+  content: "";
+  display: table;
+}
+/* line 445, sass/screen.scss */
+#page:after {
+  clear: both;
+}
+
+/* line 450, sass/screen.scss */
+#faq h3 {
+  font-size: 2.3rem;
+}
+
+/* line 454, sass/screen.scss */
+#banner-homepage {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+/* line 460, sass/screen.scss */
+#banner-homepage a {
+  color: black;
+}
+/* line 463, sass/screen.scss */
+#banner-homepage a:visited {
+  color: black;
+}
+
+/* line 468, sass/screen.scss */
+#banner-top {
+  position: relative;
+  display: table;
+  height: 250px;
+  z-index: 10;
+  margin: 0 auto;
+}
+/* line 475, sass/screen.scss */
+#banner-top .middle {
+  height: 250px;
+}
+/* line 478, sass/screen.scss */
+#banner-top .middle > img {
+  vertical-align: middle;
+  height: 100%;
+}
+/* line 484, sass/screen.scss */
+#banner-top > .left {
+  text-align: right;
+}
+/* line 488, sass/screen.scss */
+#banner-top > .right {
+  text-align: left;
+}
+/* line 492, sass/screen.scss */
+#banner-top a:hover {
+  color: #fbb817;
+}
+/* line 495, sass/screen.scss */
+#banner-top a:active {
+  color: #fbd266;
+}
+
+/* line 500, sass/screen.scss */
+#banner-text {
+  position: absolute;
+  width: 100%;
+  top: 42%;
+  z-index: 10;
+}
+/* line 506, sass/screen.scss */
+#banner-text h1 {
+  font-size: 4.3rem;
+}
+/* line 508, sass/screen.scss */
+#banner-text h1 a, #banner-text h1 a:hover, #banner-text h1 a:active {
+  color: black;
+  text-decoration: none;
+}
+/* line 512, sass/screen.scss */
+#banner-text h1 a:hover {
+  text-decoration: underline;
+}
+
+/* line 518, sass/screen.scss */
+#banner-bottom {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 310px;
+  right: 0;
+  left: 0;
+  top: 84.2%;
+  z-index: 10;
+}
+
+/* line 529, sass/screen.scss */
+#page .join-button-link {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 534, sass/screen.scss */
+#join-button {
+  background: url("/img/join-button.png") center center no-repeat;
+  background-size: cover;
+  background-position: 0px -119px;
+  width: 310px;
+  height: 70px;
+  cursor: pointer;
+  text-align: center;
+}
+/* line 543, sass/screen.scss */
+#join-button:after {
+  content: "Join!";
+  font-family: Exo;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 77px;
+}
+/* line 551, sass/screen.scss */
+#join-button:hover {
+  color: white;
+}
+
+/* line 556, sass/screen.scss */
+.banner-companies {
+  position: relative;
+  margin: 50px 0 70px 0;
+  background-image: url(/img/banner-warlight2.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 306px;
+}
+
+/* line 566, sass/screen.scss */
+.banner-universities {
+  background-image: url(/img/banner-texasholdem.png);
+}
+
+/* line 570, sass/screen.scss */
+#page .companies-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  max-width: 720px;
+}
+
+/* line 578, sass/screen.scss */
+#page .hackathon-text {
+  max-width: 520px;
+}
+
+/* line 582, sass/screen.scss */
+#page .hackathon-text img {
+  display: block;
+  margin: 0 auto 0px auto;
+  max-width: 480px;
+}
+
+/* line 589, sass/screen.scss */
+#page .hackathon-text img {
+  display: block;
+  margin: 0 auto 0px auto;
+  max-width: 480px;
+}
+/* line 595, sass/screen.scss */
+#page .hackathon-text #join-button {
+  margin: 0 auto;
+}
+/* line 598, sass/screen.scss */
+#page .hackathon-text #join-button:after {
+  content: "Sign up!";
+  font-size: 33px;
+}
+
+/* line 605, sass/screen.scss */
+.global-stat > p,
+.bot-stat > p {
+  display: inline-block;
+  padding: 0;
+  width: 138px;
+  margin: 0;
+  color: black;
+}
+
+/* line 615, sass/screen.scss */
+#page #content.languages-page {
+  padding-top: 20px;
+}
+/* line 619, sass/screen.scss */
+#page .languages-list ul,
+#page .languages-description ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+}
+/* line 626, sass/screen.scss */
+#page .languages-list ul li {
+  padding-bottom: 5px;
+}
+/* line 630, sass/screen.scss */
+#page .languages-description p {
+  text-align: justify;
+}
+
+/* line 635, sass/screen.scss */
+#languages-form {
+  width: 600px;
+  padding: 0;
+}
+
+/* line 640, sass/screen.scss */
+#languages-form.hidden {
+  display: none;
+}
+
+/* line 644, sass/screen.scss */
+.language-name {
+  color: blue;
+}
+
+/* line 648, sass/screen.scss */
+.language-name.selected {
+  font-weight: bold;
+}
+
+/* line 652, sass/screen.scss */
+#page .form-control {
+  background-color: white;
+  width: 100%;
+  top: 10px;
+  left: 140px;
+  border: 2px solid black;
+  text-align: initial;
+  font-weight: normal;
+  margin: 5px 0;
+}
+/* line 662, sass/screen.scss */
+#page .form-control > * {
+  margin-top: 6px;
+}
+
+/* line 666, sass/screen.scss */
+#page .tokenfield {
+  height: auto;
+  min-height: 35px;
+  padding: 0 10px;
+  max-width: 960px;
+}
+
+/* line 672, sass/screen.scss */
+#page .tokenfield .token {
+  margin-top: 6px;
+}
+
+/* line 675, sass/screen.scss */
+#page .token-label {
+  margin-top: -1px;
+}
+
+/* line 678, sass/screen.scss */
+#page .close {
+  color: black;
+  margin-top: -2px;
+}
+
+/* line 682, sass/screen.scss */
+#page .tokenfield.focus {
+  outline: black auto 5px;
+  box-shadow: none;
+}
+
+/* line 686, sass/screen.scss */
+#page .token-input {
+  max-width: none;
+  padding: 0;
+  line-height: 24px;
+  font-size: 15px;
+}
+
+/* line 693, sass/screen.scss */
+#page .token {
+  border-radius: 0;
+}
+
+/* line 696, sass/screen.scss */
+.token-label {
+  font-size: 15px;
+}
+
+/* line 699, sass/screen.scss */
+#page .token.active {
+  border-color: #fbb817;
+}
+
+/* line 702, sass/screen.scss */
+.tt-dropdown-menu {
+  font-size: 15px;
+  margin: 7px 0 0 -10px;
+  top: 120%;
+  background-color: white;
+  box-shadow: 2px 2px 0px #a0a0a0;
+  color: #5a5a5a;
+  border: none;
+}
+
+/* line 711, sass/screen.scss */
+.tt-hint {
+  color: #999999;
+}
+
+/* line 714, sass/screen.scss */
+.tt-suggestions {
+  padding: 7px 0;
+}
+
+/* line 717, sass/screen.scss */
+.tt-suggestion {
+  height: 35px;
+  padding: 7px 5px;
+}
+
+/* line 721, sass/screen.scss */
+.tt-suggestion.tt-cursor {
+  color: black;
+  cursor: pointer;
+}
+
+/* line 725, sass/screen.scss */
+.twitter-typeahead pre {
+  display: none;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+/* line 1, sass/_menus.scss */
+.menu-item {
+  width: auto;
+  height: 44px;
+  margin: 0 5px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 14px;
+}
+/* line 9, sass/_menus.scss */
+.menu-item a {
+  color: black;
+}
+/* line 13, sass/_menus.scss */
+.menu-item:first-child {
+  margin-left: 0;
+}
+/* line 17, sass/_menus.scss */
+.menu-item:last-child {
+  margin-right: 0;
+}
+
+/* line 22, sass/_menus.scss */
+.navigation-menu a, #menu a {
+  text-decoration: none;
+}
+/* line 25, sass/_menus.scss */
+.navigation-menu .menu-item:hover, #menu .menu-item:hover {
+  text-decoration: none;
+  color: #fbb817;
+}
+/* line 29, sass/_menus.scss */
+.navigation-menu .menu-item:active, #menu .menu-item:active {
+  color: #fbd266;
+}
+
+/* line 34, sass/_menus.scss */
+#menu {
+  font-family: Exo;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  height: 60px;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px;
+  border-bottom-color: #cecece;
+  border-style: solid;
+  -webkit-transition: -webkit-transform 0.16s linear;
+          transition: transform 0.16s linear;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/* line 48, sass/_menus.scss */
+#menu * {
+  display: inline-block;
+}
+/* line 52, sass/_menus.scss */
+#menu .sub-menu {
+  position: absolute;
+  padding-right: 8px;
+  right: 0px;
+  top: 0px;
+}
+/* line 58, sass/_menus.scss */
+#menu .sub-menu #user-avatar {
+  height: 54px;
+  float: left;
+  padding: 4px 14px 4px 14px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+/* line 65, sass/_menus.scss */
+#menu .sub-menu #user-avatar > img {
+  height: 100%;
+  border-radius: 40px;
+}
+/* line 70, sass/_menus.scss */
+#menu .sub-menu #user-avatar:hover + #user-name > a {
+  color: #fbb817;
+}
+/* line 73, sass/_menus.scss */
+#menu .sub-menu #user-avatar:active + #user-name > a {
+  color: #fbd266;
+}
+/* line 78, sass/_menus.scss */
+#menu .sub-menu #user-name {
+  font-weight: bold;
+  font-size: 2.0rem;
+  padding: 21px 14px 21px 2px;
+}
+/* line 85, sass/_menus.scss */
+#menu .menu-item {
+  height: 60px;
+  float: left;
+  padding: 22px 14px 22px 14px;
+}
+/* line 90, sass/_menus.scss */
+#menu .menu-item:hover a {
+  color: #fbb817;
+}
+/* line 93, sass/_menus.scss */
+#menu .menu-item:active a {
+  color: #fbd266;
+}
+/* line 97, sass/_menus.scss */
+#menu .menu-item#menu-home {
+  margin-top: -3px;
+  padding: 0px 10px 0px 10px;
+}
+/* line 101, sass/_menus.scss */
+#menu .menu-item#menu-home > #home-button {
+  width: 50px;
+  height: 51px;
+  margin: 7px 0 0 2px;
+  background: url("/img/AI-Logo-SpriteMap-64x64.png") center center no-repeat;
+  background-size: cover;
+  background-position: 0px 0px;
+}
+/* line 112, sass/_menus.scss */
+#menu .header-text {
+  padding: 22px 60px;
+  font: -webkit-small-control;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+/* line 119, sass/_menus.scss */
+#menu .header-text a:link {
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 122, sass/_menus.scss */
+#menu .header-text a:visited {
+  color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width: 900px) {
+  /* line 126, sass/_menus.scss */
+  #menu .header-text.show {
+    display: inline-block;
+  }
+}
+
+/* line 134, sass/_menus.scss */
+#main footer {
+  position: relative;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  color: #e6e6e6;
+  background-color: gray;
+  padding-bottom: 40px;
+  font-size: 1.6rem;
+  text-align: left;
+  -webkit-transition: width 0.25s;
+          transition: width 0.25s;
+}
+/* line 146, sass/_menus.scss */
+#main footer a:link, #main footer a:visited {
+  color: #e6e6e6;
+}
+/* line 149, sass/_menus.scss */
+#main footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+/* line 153, sass/_menus.scss */
+#main footer a:active {
+  color: #fbb817;
+  text-decoration: none;
+}
+/* line 158, sass/_menus.scss */
+#main footer > nav {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* line 163, sass/_menus.scss */
+#main footer > nav > section {
+  display: inline-block;
+  width: 160px;
+  min-width: 110px;
+  padding: 15px 0px 0px 10px;
+  vertical-align: top;
+  line-height: 24px;
+}
+/* line 171, sass/_menus.scss */
+#main footer > nav > section * {
+  display: block;
+}
+/* line 175, sass/_menus.scss */
+#main footer > nav > section#footer-legal {
+  margin-right: 80px;
+}
+/* line 179, sass/_menus.scss */
+#main footer > nav > section:last-child {
+  position: absolute;
+  top: 8px;
+  right: 0px;
+  width: initial;
+  min-width: initial;
+  float: right;
+}
+/* line 189, sass/_menus.scss */
+#main footer > nav > div {
+  position: absolute;
+  text-align: right;
+  padding: 0px 9px;
+  width: 100%;
+  bottom: -25px;
+  right: 0px;
+}
+/* line 199, sass/_menus.scss */
+#main footer.showSider {
+  width: calc(100% - 300px);
+}
+
+/* line 204, sass/_menus.scss */
+#social button {
+  border: none;
+  color: #4d4d4d;
+  padding: 6px 9px 5px;
+  text-align: right;
+  width: 63px;
+  margin: 0 0 7px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  position: relative;
+}
+/* line 215, sass/_menus.scss */
+#social button::before {
+  opacity: 0.87;
+  font-family: FontAwesome;
+  font-size: 16px;
+  position: absolute;
+  left: 7px;
+  top: 5px;
+  text-align: center;
+}
+/* line 225, sass/_menus.scss */
+#social button:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+/* line 231, sass/_menus.scss */
+#twitter-follow::before {
+  content: "\f099";
+}
+
+/* line 235, sass/_menus.scss */
+#google-plus-1::before {
+  content: "\f0d5";
+  padding-left: 1px;
+}
+
+/* line 239, sass/_menus.scss */
+#facebook-like::before {
+  content: "\f09a";
+  padding-left: 3px;
+}
+
+/* line 244, sass/_menus.scss */
+#sider {
+  position: fixed;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #e6e6e6;
+  z-index: 100;
+  -webkit-transition: -webkit-transform 0.25s;
+          transition: transform 0.25s;
+}
+
+/* line 256, sass/_menus.scss */
+#sider-content {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  top: 60px;
+  -webkit-transition: -webkit-transform 0.16s linear;
+          transition: transform 0.16s linear;
+}
+/* line 263, sass/_menus.scss */
+#sider-content form {
+  width: 100%;
+  padding: 0;
+}
+/* line 267, sass/_menus.scss */
+#sider-content form input[type=submit] {
+  color: black;
+  background-color: white;
+  margin: 3px auto;
+}
+
+/* line 275, sass/_menus.scss */
+#log-in {
+  padding-top: 25px;
+}
+/* line 278, sass/_menus.scss */
+#log-in > h2 {
+  background-color: #cecece;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+/* line 284, sass/_menus.scss */
+#log-in #username, #log-in #password {
+  width: 90%;
+  margin: 10px 0 10px 0;
+}
+
+/* line 290, sass/_menus.scss */
+#login-form-sider {
+  text-align: center;
+}
+/* line 293, sass/_menus.scss */
+#login-form-sider > a {
+  font-size: 14px;
+  display: block;
+  margin-top: 15px;
+  padding-bottom: 12px;
+}
+/* line 299, sass/_menus.scss */
+#login-form-sider > a:visited {
+  color: black;
+}
+
+/* line 305, sass/_menus.scss */
+#sider.show {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+/* line 309, sass/_menus.scss */
+#sider-content.menu-hidden {
+  -webkit-transform: translateY(-60px);
+      -ms-transform: translateY(-60px);
+          transform: translateY(-60px);
+}
+
+/* line 313, sass/_menus.scss */
+#menu.hidden {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+/* line 317, sass/_menus.scss */
+.alertBar {
+  position: fixed;
+  padding: 4px 0;
+  top: 60px;
+  width: 100%;
+  z-index: 1100;
+  -webkit-transition: -webkit-transform 0.16s linear;
+          transition: transform 0.16s linear;
+}
+/* line 325, sass/_menus.scss */
+.alertBar.hidden {
+  -webkit-transform: translateY(-60px);
+      -ms-transform: translateY(-60px);
+          transform: translateY(-60px);
+}
+
+/* line 330, sass/_menus.scss */
+.alert-success {
+  background: #dff0d8;
+  color: #468847;
+  opacity: 0.8;
+}
+/* line 335, sass/_menus.scss */
+.alert-success:before {
+  content: 'Success: ';
+  font-weight: bold;
+}
+
+/* line 341, sass/_menus.scss */
+.alert-error {
+  background: #f2dede;
+  color: #b94a48;
+  opacity: 0.8;
+}
+/* line 346, sass/_menus.scss */
+.alert-error:before {
+  content: 'Error: ';
+  font-weight: bold;
+}
+
+/* line 352, sass/_menus.scss */
+.alert-warning {
+  background: #fcf8e3;
+  color: #c09853;
+  opacity: 0.8;
+}
+/* line 357, sass/_menus.scss */
+.alert-warning:before {
+  content: 'Warning: ';
+  font-weight: bold;
+}
+
+/* line 363, sass/_menus.scss */
+.alert-notice {
+  background: #d9edf7;
+  color: #3a87ad;
+  opacity: 0.8;
+  cursor: pointer;
+}
+/* line 369, sass/_menus.scss */
+.alert-notice:before {
+  content: 'Notice: ';
+  font-weight: bold;
+}
+/* line 374, sass/_menus.scss */
+.alert-notice .underline {
+  text-decoration: underline;
+}
+
+/* line 1, sass/_forum.scss */
+.style-discussions #page {
+  background: none;
+}
+
+/* line 4, sass/_forum.scss */
+.navigation-discussions {
+  font-weight: bold;
+}
+
+/* line 7, sass/_forum.scss */
+#page .header-discussions {
+  font-size: 3.5rem;
+}
+
+/* line 10, sass/_forum.scss */
+#posts-navigation {
+  margin: 25px auto 5px auto;
+}
+/* line 13, sass/_forum.scss */
+#posts-navigation a.page-current {
+  text-decoration: underline;
+  color: #505050;
+  cursor: default;
+}
+/* line 19, sass/_forum.scss */
+#posts-navigation a {
+  font-weight: normal;
+  color: black;
+  font-weight: bold;
+}
+/* line 24, sass/_forum.scss */
+#posts-navigation a:hover {
+  color: #505050;
+}
+
+/* line 30, sass/_forum.scss */
+#forum {
+  font-size: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* line 35, sass/_forum.scss */
+#forum .fa {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* line 43, sass/_forum.scss */
+.forums td:first-child,
+.discussions td:first-child {
+  padding: 3px 0 3px 7px;
+}
+/* line 46, sass/_forum.scss */
+.forums th, .forums th:last-child,
+.discussions th,
+.discussions th:last-child {
+  padding: 0 7px;
+}
+/* line 49, sass/_forum.scss */
+.forums tbody > tr:hover,
+.discussions tbody > tr:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+/* line 54, sass/_forum.scss */
+.forums td a,
+.discussions td a {
+  font-weight: bold;
+}
+
+/* line 62, sass/_forum.scss */
+.forums td > a {
+  font-weight: bold;
+}
+/* line 65, sass/_forum.scss */
+.forums td:first-child {
+  max-width: 840px;
+  color: rgba(0, 0, 0, 0.6);
+}
+/* line 69, sass/_forum.scss */
+.forums td:last-child {
+  text-align: center;
+}
+/* line 73, sass/_forum.scss */
+.forums th:last-child {
+  text-align: center;
+  width: 120px;
+}
+
+/* line 80, sass/_forum.scss */
+.discussions th:not(:first-child) {
+  text-align: center;
+  padding-left: 0px;
+}
+/* line 84, sass/_forum.scss */
+.discussions th:nth-child(2), .discussions th:nth-child(3) {
+  width: 63px;
+}
+/* line 88, sass/_forum.scss */
+.discussions td {
+  padding: 0;
+  text-align: center;
+  /*for breaking up words that are too long*/
+}
+/* line 92, sass/_forum.scss */
+.discussions td:first-child {
+  min-width: 500px;
+  max-width: 500px;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+}
+/* line 98, sass/_forum.scss */
+.discussions td:last-child {
+  text-align: center;
+  padding-right: 5px;
+}
+/* line 104, sass/_forum.scss */
+.discussions td > div {
+  width: 100%;
+  word-wrap: break-word;
+}
+/* line 110, sass/_forum.scss */
+.discussions .fa {
+  padding-right: 4px;
+}
+/* line 114, sass/_forum.scss */
+.discussions .fa-thumb-tack {
+  padding-right: 6px;
+}
+
+/* line 120, sass/_forum.scss */
+#page .discussions .fa-check {
+  color: #83a56d;
+}
+/* line 124, sass/_forum.scss */
+#page .discussions .fa-times {
+  color: #a54d4d;
+}
+
+/* line 129, sass/_forum.scss */
+#forum-menu {
+  display: inline-block;
+}
+
+/* line 133, sass/_forum.scss */
+.navigation-discussions a {
+  color: black;
+}
+
+/* line 137, sass/_forum.scss */
+#search-forum {
+  display: none;
+}
+
+/* line 140, sass/_forum.scss */
+#page .navigation-discussions .form-control {
+  display: block;
+  max-width: 960px;
+  margin: 20px auto -20px auto;
+  max-width: 960px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* line 147, sass/_forum.scss */
+#page .navigation-discussions .token.active {
+  border-color: #0000ee;
+}
+
+/* line 151, sass/_forum.scss */
+a .highlight-search-forum {
+  text-decoration: underline;
+}
+
+/* line 154, sass/_forum.scss */
+.search-description .highlight-search-forum {
+  text-decoration: underline;
+  color: black;
+}
+
+/* line 159, sass/_forum.scss */
+#page .discussion {
+  width: 100%;
+  max-width: 960px;
+  margin: 35px auto 0 auto;
+  list-style: none;
+}
+/* line 165, sass/_forum.scss */
+#page .discussion > li:first-child > .normalPost {
+  border-top-width: 1px;
+}
+/* line 169, sass/_forum.scss */
+#page .discussion > li:last-child > .post {
+  border-bottom-width: 0px;
+}
+
+/* line 174, sass/_forum.scss */
+.post {
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-bottom-width: 1px;
+  margin-top: -1px;
+}
+
+/* line 185, sass/_forum.scss */
+.firstPost {
+  color: rgba(0, 0, 0, 0.3);
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+}
+
+/* line 191, sass/_forum.scss */
+.post-left {
+  position: relative;
+  margin: 30px 0 10px 0;
+  width: 80px;
+  float: left;
+  z-index: 100;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+}
+@media screen and (max-width: 970px) {
+  /* line 191, sass/_forum.scss */
+  .post-left {
+    margin-left: 20px;
+  }
+}
+
+/* line 206, sass/_forum.scss */
+.post-top {
+  text-align: right;
+  color: gray;
+  font-size: 13px;
+}
+
+/* line 212, sass/_forum.scss */
+.post-right {
+  width: 100%;
+  max-width: 810px;
+  margin-left: 20px;
+  color: black;
+  float: left;
+  word-wrap: break-word;
+  font-size: 16px;
+}
+/* line 221, sass/_forum.scss */
+.post-right img {
+  width: 100%;
+}
+/* line 225, sass/_forum.scss */
+.post-right ul, .post-right ol {
+  list-style: initial;
+  margin-left: 60px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+/* line 232, sass/_forum.scss */
+.post-right ol {
+  list-style-type: decimal;
+}
+/* line 236, sass/_forum.scss */
+.post-right em {
+  color: black;
+  font-style: italic;
+}
+/* line 241, sass/_forum.scss */
+.post-right code {
+  max-width: 810px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* line 247, sass/_forum.scss */
+.post-bottom {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  z-index: 0;
+}
+
+/* line 254, sass/_forum.scss */
+#createPost-form {
+  width: 100%;
+  min-width: 400px;
+  max-width: 740px;
+}
+
+/* line 259, sass/_forum.scss */
+#updatePost-form {
+  text-align: center;
+}
+
+/* line 263, sass/_forum.scss */
+#postContent {
+  max-width: 100%;
+  height: 130px;
+}
+
+/* line 268, sass/_forum.scss */
+section #discussion-role {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0;
+}
+
+/* line 1, sass/_finals.scss */
+#scheme-semifinals {
+  position: relative;
+  width: 1100px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 9, sass/_finals.scss */
+#scheme-finals {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 28%;
+  width: 100%;
+  min-width: 1300px;
+}
+
+/* line 17, sass/_finals.scss */
+g .stroke {
+  opacity: 0;
+}
+
+/* line 21, sass/_finals.scss */
+#semifinals-data {
+  display: none;
+}
+
+/* line 24, sass/_finals.scss */
+#finals-data {
+  display: none;
+}
+
+/* line 28, sass/_finals.scss */
+#conquest-semifinals {
+  font: normal 14px celticgaramond;
+}
+
+/* line 32, sass/_finals.scss */
+#semifinals-overlays {
+  position: absolute;
+  width: 100%;
+  height: 99.5%;
+}
+
+/* line 37, sass/_finals.scss */
+#finals-overlays {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+}
+/* line 42, sass/_finals.scss */
+#finals-overlays > div {
+  height: 100%;
+}
+
+/* line 46, sass/_finals.scss */
+#finals-games-live {
+  width: 470px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* line 51, sass/_finals.scss */
+.finals-timer {
+  width: 960px;
+  margin: -40px auto 20px auto;
+  font-size: 3rem;
+  opacity: 0.5;
+}
+
+/* line 57, sass/_finals.scss */
+.finals-timer-left {
+  display: inline-block;
+  width: 50%;
+  text-align: end;
+}
+
+/* line 62, sass/_finals.scss */
+.finals-timer-right {
+  display: inline-block;
+  width: 50%;
+  text-align: start;
+  padding-left: 15px;
+}
+
+/* line 70, sass/_finals.scss */
+[id^="tournament-round"] {
+  height: 100%;
+  background-color: black;
+  display: table-cell;
+  float: left;
+  opacity: 0;
+}
+
+/* line 77, sass/_finals.scss */
+[id^="tournament-round"]:hover {
+  opacity: 0.5;
+}
+
+/* line 80, sass/_finals.scss */
+[id^="tournament-round"]:hover {
+  opacity: 0.5;
+}
+
+/* line 83, sass/_finals.scss */
+[id^="finals-round"] {
+  display: table-cell;
+  float: left;
+}
+
+/* line 89, sass/_finals.scss */
+#tournament-round-1 {
+  margin-left: 11.8%;
+  width: 7%;
+}
+
+/* line 93, sass/_finals.scss */
+#tournament-round-3 {
+  width: 13.7%;
+}
+
+/* line 96, sass/_finals.scss */
+#tournament-round-finals {
+  width: 27.8%;
+}
+
+/* line 99, sass/_finals.scss */
+#tournament-round-8 {
+  width: 8%;
+}
+
+/* line 102, sass/_finals.scss */
+#tournament-round-6 {
+  width: 6.4%;
+}
+
+/* line 105, sass/_finals.scss */
+#tournament-round-4 {
+  width: 6.6%;
+}
+
+/* line 108, sass/_finals.scss */
+#tournament-round-2 {
+  width: 7.8%;
+}
+
+/* line 111, sass/_finals.scss */
+#finals-round-1 {
+  width: 7.8%;
+  margin-left: 13.1%;
+}
+
+/* line 115, sass/_finals.scss */
+#finals-round-2 {
+  width: 7.3%;
+}
+
+/* line 118, sass/_finals.scss */
+#finals-round-3 {
+  width: 23%;
+}
+
+/* line 121, sass/_finals.scss */
+#tournament-round-101 {
+  margin-top: 20.5%;
+  height: 15.9%;
+  width: 100%;
+}
+
+/* line 126, sass/_finals.scss */
+#tournament-round-102 {
+  margin-top: 40%;
+  height: 15.9%;
+  width: 100%;
+}
+
+/* line 131, sass/_finals.scss */
+#tournament-round-103 {
+  margin-top: 42%;
+  height: 15.9%;
+  width: 100%;
+}
+
+/* line 136, sass/_finals.scss */
+#tournament-round-104 {
+  margin-top: 42%;
+  height: 15.8%;
+  width: 100%;
+}
+
+/* line 141, sass/_finals.scss */
+#tournament-round-109 {
+  margin-top: 52%;
+  height: 27.7%;
+  width: 100%;
+}
+
+/* line 146, sass/_finals.scss */
+#tournament-round-110 {
+  margin-top: 108%;
+  height: 27.8%;
+  width: 100%;
+}
+
+/* line 151, sass/_finals.scss */
+#tournament-round-112 {
+  margin-top: 35.8%;
+  height: 52.5%;
+  width: 100%;
+}
+
+/* line 1, sass/_slideshow.scss */
+#banner-middle {
+  position: relative;
+  width: 100%;
+}
+/* line 6, sass/_slideshow.scss */
+#banner-middle > h3 {
+  position: absolute;
+  width: 100%;
+  top: 33%;
+  z-index: 10;
+  font-size: 2.9rem;
+}
+
+/* line 14, sass/_slideshow.scss */
+#banner-slide-show {
+  overflow: hidden;
+  width: calc(100% * 3);
+  margin-top: -66px;
+  -webkit-transition: width 0.25s;
+          transition: width 0.25s;
+}
+/* line 20, sass/_slideshow.scss */
+#banner-slide-show .banner-image {
+  background-position: center;
+  background-origin: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 360px;
+  width: 100%;
+  top: 33%;
+}
+
+/* line 56, sass/_slideshow.scss */
+.banner-slide {
+  position: relative;
+  float: left;
+  width: calc(100% / 3);
+  z-index: 0;
+  -webkit-transition: width 0.25s;
+          transition: width 0.25s;
+}
+
+/* line 64, sass/_slideshow.scss */
+.slide-show-button {
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  z-index: 90;
+  cursor: pointer;
+}
+/* line 71, sass/_slideshow.scss */
+.slide-show-button #button-image {
+  width: 60px;
+  height: 125px;
+  margin: 125px 0 125px 0;
+  background: url("/img/slideshow-buttons.png");
+  background-repeat: no-repeat;
+}
+
+/* line 79, sass/_slideshow.scss */
+#slide-show-button-left {
+  left: 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+/* line 83, sass/_slideshow.scss */
+#slide-show-button-right {
+  right: 0;
+}
+
+/* line 88, sass/_slideshow.scss */
+#slide-show-button-left #button-image, #slide-show-button-right #button-image {
+  background-position: 0px -134px;
+}
+/* line 93, sass/_slideshow.scss */
+#slide-show-button-left:hover #button-image, #slide-show-button-right:hover #button-image {
+  background-position: 0px 0px;
+}
+
+/* line 101, sass/_slideshow.scss */
+#banner-competition-index {
+  position: relative;
+  margin: 50px 0 70px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
+}
+
+/* line 110, sass/_slideshow.scss */
+.banner-slide.competition-index #banner-text {
+  top: 15%;
+}
+/* line 113, sass/_slideshow.scss */
+.banner-slide.competition-index #banner-text h1 {
+  font-size: 3.5rem;
+}
+
+/* line 119, sass/_slideshow.scss */
+#banner-description {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+}
+/* line 124, sass/_slideshow.scss */
+#banner-description p {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 420px;
+}
+
+/* line 131, sass/_slideshow.scss */
+.banner-competition-button {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  margin-left: -70px;
+  padding: 10px 20px;
+  font-family: Exo;
+  font-size: 19px;
+  background-color: #fbb817;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+/* line 144, sass/_slideshow.scss */
+.banner-competition-button:hover {
+  text-decoration: none;
+}
+
+/* line 149, sass/_slideshow.scss */
+.banner-foreground-image {
+  position: absolute;
+  bottom: -1px;
+  left: 7%;
+  height: 350px;
+  width: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 100;
+}
+@media screen and (max-width: 1280px) {
+  /* line 149, sass/_slideshow.scss */
+  .banner-foreground-image {
+    display: none;
+  }
+}
+
+/* line 2, sass/_competition-page.scss */
+#page header > nav {
+  max-width: 960px;
+  margin: 10px auto;
+  font-family: Exo;
+  white-space: nowrap;
+}
+/* line 8, sass/_competition-page.scss */
+#page header > nav > ul#competition-menu {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+}
+@media screen and (max-width: 970px) {
+  /* line 8, sass/_competition-page.scss */
+  #page header > nav > ul#competition-menu {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+}
+/* line 18, sass/_competition-page.scss */
+#page header > nav > ul#competition-menu > li {
+  background: transparent;
+}
+/* line 21, sass/_competition-page.scss */
+#page header > nav > ul#competition-menu > li a {
+  color: black;
+  font-weight: normal;
+  font-size: 18px;
+}
+/* line 26, sass/_competition-page.scss */
+#page header > nav > ul#competition-menu > li a:hover {
+  text-decoration: none;
+}
+/* line 29, sass/_competition-page.scss */
+#page header > nav > ul#competition-menu > li a:hover.selected {
+  color: black;
+}
+/* line 34, sass/_competition-page.scss */
+#page header > nav > ul#competition-menu > li a.selected {
+  font-weight: bold;
+}
+
+/* line 43, sass/_competition-page.scss */
+.competition-logo {
+  margin-bottom: -12px;
+}
+
+/* line 47, sass/_competition-page.scss */
+#game .competition-logo {
+  margin: -50px 0 10px 0;
+}
+
+/* line 51, sass/_competition-page.scss */
+#game #player,
+#game-teaser #player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border: none;
+}
+
+/* line 61, sass/_competition-page.scss */
+.u-wrapper {
+  text-align: left;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 68, sass/_competition-page.scss */
+.u-warlight2Ratio {
+  position: relative;
+}
+
+/* line 72, sass/_competition-page.scss */
+.u-warlight2Ratio:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: calc(588 / 1000 * 100%);
+}
+
+/* line 79, sass/_competition-page.scss */
+#page #game-teaser {
+  margin-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+/* line 83, sass/_competition-page.scss */
+#page #game-teaser #wrapper {
+  height: 497px;
+}
+/* line 86, sass/_competition-page.scss */
+#page #game-teaser #controls {
+  display: none;
+}
+
+/* line 91, sass/_competition-page.scss */
+#join-button-wrapper-homepage {
+  margin: 60px 0;
+}
+
+/* line 95, sass/_competition-page.scss */
+#page #show-prizes {
+  max-width: 480px;
+  min-width: 480px;
+}
+
+/* line 100, sass/_competition-page.scss */
+#page section#content #prizes-description {
+  width: 480px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* line 106, sass/_competition-page.scss */
+#page section#content #upload-bot-homepage {
+  height: 260px;
+}
+
+/* line 110, sass/_competition-page.scss */
+#currency-buttons {
+  text-align: right;
+  margin-bottom: -15px;
+}
+
+/* line 115, sass/_competition-page.scss */
+.button-round,
+.button-square {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-family: Exo;
+  box-shadow: 2px 2px 0px #c8c8c8;
+  cursor: pointer;
+  opacity: 1;
+  z-index: 10;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/* line 127, sass/_competition-page.scss */
+.button-round:hover,
+.button-square:hover {
+  opacity: 0.7;
+}
+/* line 131, sass/_competition-page.scss */
+.button-round.wait,
+.button-square.wait {
+  cursor: wait;
+}
+
+/* line 136, sass/_competition-page.scss */
+#page .button-round,
+#page .button-square {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 142, sass/_competition-page.scss */
+.button-round {
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+  line-height: 40px;
+}
+
+/* line 149, sass/_competition-page.scss */
+.button-square {
+  display: inline-block;
+  height: 35px;
+  width: 100px;
+  line-height: 35px;
+}
+
+/* line 156, sass/_competition-page.scss */
+#page .button-round i {
+  margin: 0;
+}
+
+/* line 160, sass/_competition-page.scss */
+.button-currency {
+  opacity: 0.5;
+  margin-left: 10px;
+}
+/* line 164, sass/_competition-page.scss */
+.button-currency.selected {
+  opacity: 1;
+  cursor: default;
+}
+
+/* line 170, sass/_competition-page.scss */
+#page .button-reviewMatch,
+#page .button-dump {
+  color: #5a5a5a;
+  height: 35px;
+  width: 35px;
+}
+
+/* line 176, sass/_competition-page.scss */
+#page .button-reviewMatch i,
+#page .button-dump i {
+  color: #5a5a5a;
+}
+
+/* line 181, sass/_competition-page.scss */
+.table {
+  border-collapse: separate;
+  border-spacing: 15px 18px;
+  margin: 0 auto;
+  font-family: Exo;
+}
+
+/* line 188, sass/_competition-page.scss */
+.cell-table-round {
+  background-color: white;
+  box-shadow: 3px 3px 0px #c8c8c8;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0;
+  height: 35px;
+  width: 35px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 35px;
+}
+
+/* line 201, sass/_competition-page.scss */
+#page .cell-table-square {
+  background-color: white;
+  box-shadow: 3px 3px 0px #c8c8c8;
+  text-align: center;
+  padding: 0;
+  width: 70px;
+  height: 35px;
+  line-height: 35px;
+  margin-bottom: -4px;
+}
+
+/* line 212, sass/_competition-page.scss */
+.cell-table-pointRight:before,
+.cell-table-pointRight:after,
+.cell-table-pointLeft:before,
+.cell-table-pointLeft:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+/* line 222, sass/_competition-page.scss */
+.cell-table-pointRight:before,
+.cell-table-pointRight:after {
+  border-right: 35px solid transparent;
+}
+
+/* line 227, sass/_competition-page.scss */
+.cell-table-pointLeft:before,
+.cell-table-pointLeft:after {
+  border-left: 35px solid transparent;
+  width: 100%;
+}
+
+/* line 235, sass/_competition-page.scss */
+#prizes-table .row-table:first-child .cell-table-rank,
+#leaderboard-table .row-table:first-child .cell-table-rank {
+  background: url("/img/leaderboard-icon-1.png") center center no-repeat;
+  box-shadow: initial;
+  border-radius: 0;
+  height: 61px;
+  width: 37px;
+  line-height: 70px;
+}
+/* line 244, sass/_competition-page.scss */
+#prizes-table .row-table:nth-child(2) .cell-table-rank, #prizes-table .row-table:nth-child(3) .cell-table-rank,
+#leaderboard-table .row-table:nth-child(2) .cell-table-rank,
+#leaderboard-table .row-table:nth-child(3) .cell-table-rank {
+  background: url("/img/leaderboard-icon-2.png") center center no-repeat;
+  box-shadow: initial;
+  border-radius: 0;
+  height: 47px;
+  width: 37px;
+  line-height: 46px;
+  margin-bottom: -7px;
+}
+
+/* line 256, sass/_competition-page.scss */
+#prizes-table {
+  width: 480px;
+}
+/* line 259, sass/_competition-page.scss */
+#prizes-table .row-table {
+  text-align: left;
+}
+/* line 263, sass/_competition-page.scss */
+#prizes-table .row-table > td {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+/* line 269, sass/_competition-page.scss */
+#prizes-table .cell-table-rank {
+  margin-right: 18px;
+}
+/* line 273, sass/_competition-page.scss */
+#prizes-table .cell-table-pointRight {
+  width: 305px;
+}
+/* line 276, sass/_competition-page.scss */
+#prizes-table .cell-table-pointRight:before {
+  top: -3px;
+  width: 268px;
+  border-top: 35px solid #c8c8c8;
+}
+/* line 281, sass/_competition-page.scss */
+#prizes-table .cell-table-pointRight:after {
+  top: -6px;
+  width: 265px;
+  border-top: 35px solid white;
+}
+/* line 288, sass/_competition-page.scss */
+#prizes-table .cell-table-pointLeft {
+  width: 90px;
+  font-weight: bold;
+  padding-right: 0;
+}
+/* line 293, sass/_competition-page.scss */
+#prizes-table .cell-table-pointLeft:before {
+  top: -3px;
+  -webkit-transform: translateX(-17px);
+      -ms-transform: translateX(-17px);
+          transform: translateX(-17px);
+  border-bottom: 35px solid #c8c8c8;
+}
+/* line 298, sass/_competition-page.scss */
+#prizes-table .cell-table-pointLeft:after {
+  top: -6px;
+  -webkit-transform: translateX(-20px);
+      -ms-transform: translateX(-20px);
+          transform: translateX(-20px);
+  border-bottom: 35px solid white;
+}
+
+/* line 306, sass/_competition-page.scss */
+#leaderboard-table {
+  width: 645px;
+}
+/* line 309, sass/_competition-page.scss */
+#leaderboard-table .row-table {
+  height: 100%;
+  color: #5a5a5a;
+  cursor: pointer;
+  -webkit-transform: translateX(-8px);
+      -ms-transform: translateX(-8px);
+          transform: translateX(-8px);
+}
+/* line 315, sass/_competition-page.scss */
+#leaderboard-table .row-table:hover td {
+  color: black;
+}
+/* line 319, sass/_competition-page.scss */
+#leaderboard-table .row-table.selected td {
+  color: black;
+  font-weight: bold;
+}
+/* line 324, sass/_competition-page.scss */
+#leaderboard-table .row-table.myBot td {
+  font-weight: bold;
+}
+/* line 329, sass/_competition-page.scss */
+#leaderboard-table .cell-table {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+/* line 335, sass/_competition-page.scss */
+#leaderboard-table .cell-table-rank {
+  -webkit-transform: translateX(-20px);
+      -ms-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+/* line 339, sass/_competition-page.scss */
+#leaderboard-table .cell-table-square {
+  -webkit-transform: translateX(13px);
+      -ms-transform: translateX(13px);
+          transform: translateX(13px);
+}
+/* line 343, sass/_competition-page.scss */
+#leaderboard-table .cell-leaderboard-riseFall {
+  width: 38px;
+  height: 18px;
+  background-repeat: no-repeat;
+  -webkit-transform: translateX(-27px);
+      -ms-transform: translateX(-27px);
+          transform: translateX(-27px);
+  margin-left: -12px;
+}
+/* line 350, sass/_competition-page.scss */
+#leaderboard-table .cell-leaderboard-riseFall.rise {
+  background-image: url(/img/leaderboard-up.png);
+}
+/* line 353, sass/_competition-page.scss */
+#leaderboard-table .cell-leaderboard-riseFall.fall {
+  background-image: url(/img/leaderboard-down.png);
+}
+/* line 358, sass/_competition-page.scss */
+#leaderboard-table .cell-table-pointRight {
+  width: 280px;
+  margin-top: -34px;
+}
+/* line 362, sass/_competition-page.scss */
+#leaderboard-table .cell-table-pointRight > div {
+  position: absolute;
+  top: 6px;
+}
+/* line 366, sass/_competition-page.scss */
+#leaderboard-table .cell-table-pointRight > div.bot-name {
+  width: 180px;
+  left: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 373, sass/_competition-page.scss */
+#leaderboard-table .cell-table-pointRight > div.bot-revision {
+  color: #919191;
+  left: 196px;
+  font-size: 15px;
+}
+/* line 380, sass/_competition-page.scss */
+#leaderboard-table .cell-table-pointRight:before {
+  top: 3px;
+  width: 231px;
+  border-top: 35px solid #c8c8c8;
+}
+/* line 385, sass/_competition-page.scss */
+#leaderboard-table .cell-table-pointRight:after {
+  top: 0;
+  width: 229px;
+  border-top: 35px solid white;
+}
+/* line 392, sass/_competition-page.scss */
+#leaderboard-table .cell-table-pointLeft {
+  width: 180px;
+  padding-right: 0;
+  margin-top: -22px;
+}
+/* line 397, sass/_competition-page.scss */
+#leaderboard-table .cell-table-pointLeft > div {
+  position: absolute;
+}
+/* line 400, sass/_competition-page.scss */
+#leaderboard-table .cell-table-pointLeft > div.user-name {
+  width: 148px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  left: 2px;
+}
+/* line 407, sass/_competition-page.scss */
+#leaderboard-table .cell-table-pointLeft > div.country-flag {
+  right: 12px;
+  top: 1px;
+}
+/* line 413, sass/_competition-page.scss */
+#leaderboard-table .cell-table-pointLeft:before {
+  top: -2px;
+  -webkit-transform: translateX(-32px);
+      -ms-transform: translateX(-32px);
+          transform: translateX(-32px);
+  border-bottom: 35px solid #c8c8c8;
+}
+/* line 419, sass/_competition-page.scss */
+#leaderboard-table .cell-table-pointLeft:after {
+  top: -5px;
+  -webkit-transform: translateX(-35px);
+      -ms-transform: translateX(-35px);
+          transform: translateX(-35px);
+  border-bottom: 35px solid white;
+}
+/* line 426, sass/_competition-page.scss */
+#leaderboard-table .institutes-bots-nr {
+  right: 25px;
+}
+/* line 429, sass/_competition-page.scss */
+#leaderboard-table .institute-bots-nr-small {
+  opacity: 0.5;
+}
+/* line 433, sass/_competition-page.scss */
+#leaderboard-table .country-flag {
+  right: 55px;
+  width: 16px;
+  height: 22px;
+}
+/* line 439, sass/_competition-page.scss */
+#leaderboard-table .institute-name {
+  width: 210px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* line 447, sass/_competition-page.scss */
+#page .table-gameLog {
+  font-size: 16px;
+  width: 960px;
+}
+/* line 451, sass/_competition-page.scss */
+#page .table-gameLog .row-table {
+  color: #5a5a5a;
+}
+/* line 454, sass/_competition-page.scss */
+#page .table-gameLog .row-table.finalsLive-playing {
+  color: black;
+}
+/* line 457, sass/_competition-page.scss */
+#page .table-gameLog .row-table.finalsLive-toBePlayed {
+  color: #afafaf;
+}
+/* line 462, sass/_competition-page.scss */
+#page .table-gameLog .cell-table {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+/* line 468, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-age {
+  width: 110px;
+  -webkit-transform: translateX(-16px);
+      -ms-transform: translateX(-16px);
+          transform: translateX(-16px);
+}
+/* line 473, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-pointRight,
+#page .table-gameLog .cell-table-pointLeft {
+  width: 265px;
+  margin-top: -31px;
+  font-weight: 300;
+}
+/* line 479, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-pointRight > div,
+#page .table-gameLog .cell-table-pointLeft > div {
+  position: absolute;
+  top: 6px;
+}
+/* line 483, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-pointRight > div.div-botName-gameLog,
+#page .table-gameLog .cell-table-pointLeft > div.div-botName-gameLog {
+  width: 195px;
+  left: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 490, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-pointRight > div.div-revision-gameLog,
+#page .table-gameLog .cell-table-pointLeft > div.div-revision-gameLog {
+  color: #919191;
+  left: 215px;
+  font-size: 15px;
+}
+/* line 497, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-pointRight:before,
+#page .table-gameLog .cell-table-pointLeft:before {
+  top: 3px;
+  width: 252px;
+}
+/* line 501, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-pointRight:after,
+#page .table-gameLog .cell-table-pointLeft:after {
+  top: 0;
+  width: 249px;
+}
+/* line 507, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-pointLeft > div.div-botName-gameLog {
+  left: 36px;
+}
+/* line 510, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-pointLeft > div.div-revision-gameLog {
+  left: 240px;
+}
+/* line 514, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-pointRight:before {
+  border-top: 35px solid #c8c8c8;
+}
+/* line 517, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-pointRight:after {
+  border-top: 35px solid white;
+}
+/* line 521, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-pointLeft:before {
+  border-bottom: 35px solid #c8c8c8;
+}
+/* line 524, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-pointLeft:after {
+  border-bottom: 35px solid white;
+}
+/* line 528, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-score,
+#page .table-gameLog .cell-table-gameLogButton {
+  -webkit-transform: translateX(34px);
+      -ms-transform: translateX(34px);
+          transform: translateX(34px);
+}
+/* line 533, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-score {
+  width: 110px;
+  margin-right: 22px;
+}
+/* line 538, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-score.is-noWinner {
+  color: red;
+}
+/* line 542, sass/_competition-page.scss */
+#page .table-gameLog .cell-table-gameLogButton {
+  color: #5a5a5a;
+  width: 42px;
+  padding: 0;
+  margin-bottom: -5px;
+}
+/* line 549, sass/_competition-page.scss */
+#page .table-gameLog .is-game-winner {
+  font-weight: bold;
+}
+/* line 553, sass/_competition-page.scss */
+#page .table-gameLog td:last-child {
+  margin-right: 20px;
+}
+/* line 557, sass/_competition-page.scss */
+#page .table-gameLog .button-round {
+  line-height: 38px;
+}
+
+/* line 563, sass/_competition-page.scss */
+#page .table-finalsMatch .cell-table-match {
+  margin: 3px 20px 0 -15px;
+}
+/* line 567, sass/_competition-page.scss */
+#page .table-finalsMatch .cell-table-finalsMatchScore {
+  width: 70px;
+  margin: 3px -9px 0 26px;
+}
+
+/* line 573, sass/_competition-page.scss */
+.finalsMatch-versus,
+.finalsMatch-winner {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 579, sass/_competition-page.scss */
+#page .finalsMatch-versus h3 {
+  padding-top: 20px;
+}
+
+/* line 582, sass/_competition-page.scss */
+#page .finalsMatch-winner h3 {
+  margin-bottom: 50px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+/* line 588, sass/_competition-page.scss */
+#page .finalsMatch-winner h3 em {
+  font-weight: normal;
+}
+
+/* line 593, sass/_competition-page.scss */
+.finals #controls {
+  display: none;
+}
+
+/* line 597, sass/_competition-page.scss */
+.gamelog-bot-click:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* line 602, sass/_competition-page.scss */
+#page .div-search-gameLog {
+  position: relative;
+  height: 55px;
+  width: 960px;
+  margin: 10px auto;
+}
+/* line 608, sass/_competition-page.scss */
+#page .div-search-gameLog > a:first-child {
+  left: 28px;
+}
+/* line 611, sass/_competition-page.scss */
+#page .div-search-gameLog > a:last-child {
+  right: 28px;
+}
+
+/* line 615, sass/_competition-page.scss */
+.button-nav-gameLog {
+  position: absolute;
+  top: 10px;
+}
+
+/* line 619, sass/_competition-page.scss */
+#page .button-nav-gameLog-refresh .fa {
+  margin: 0 1px 0 8px;
+}
+
+/* line 622, sass/_competition-page.scss */
+#page .button-nav-gameLog-newer .fa {
+  margin: 0 10px 0 -4px;
+}
+
+/* line 625, sass/_competition-page.scss */
+#game-log .form-control {
+  position: absolute;
+  width: 680px;
+  border: none;
+  box-shadow: 2px 2px 0px #c8c8c8;
+  margin: 0;
+}
+
+/* line 632, sass/_competition-page.scss */
+#game-log .tokenfield.focus {
+  border: none;
+  box-shadow: 2px 2px 0px #a0a0a0;
+  outline: none;
+}
+
+/* line 637, sass/_competition-page.scss */
+#game-log .token-input {
+  margin-top: 1px;
+}
+
+/* line 640, sass/_competition-page.scss */
+#search-gameLog {
+  visibility: hidden;
+}
+
+/* line 644, sass/_competition-page.scss */
+#leaderboard-title {
+  margin-top: -40px;
+  font-size: 2.7rem;
+}
+
+/* line 649, sass/_competition-page.scss */
+#leaderboard {
+  position: relative;
+  display: inline-block;
+  width: 645px;
+  -webkit-transition: width 0.16s linear;
+          transition: width 0.16s linear;
+}
+/* line 655, sass/_competition-page.scss */
+#leaderboard.show-sider {
+  width: 956px;
+}
+/* line 659, sass/_competition-page.scss */
+#leaderboard ul {
+  display: initial;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 666, sass/_competition-page.scss */
+#leaderboard-wrapper {
+  position: relative;
+  display: inline-block;
+  float: left;
+  z-index: 10;
+  min-height: 600px;
+  min-width: 646px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* line 675, sass/_competition-page.scss */
+#page #leaderboard-buttons {
+  margin: 0;
+}
+
+/* line 678, sass/_competition-page.scss */
+#leaderboard-buttons {
+  display: inline-block;
+  width: 645px;
+}
+/* line 682, sass/_competition-page.scss */
+#leaderboard-buttons li {
+  display: inline-block;
+  width: 151px;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 13.5px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 692, sass/_competition-page.scss */
+#leaderboard-buttons li:nth-child(4) {
+  margin-right: 0px;
+}
+/* line 696, sass/_competition-page.scss */
+#leaderboard-buttons li.selected {
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-bottom: 60px;
+  cursor: default;
+}
+/* line 703, sass/_competition-page.scss */
+#leaderboard-buttons li a {
+  color: black;
+  text-decoration: none;
+  font-family: Exo;
+}
+
+/* line 711, sass/_competition-page.scss */
+#leaderboard-sider {
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  margin-left: -144px;
+  top: 60px;
+  opacity: 0;
+  right: 0;
+  -webkit-transition: opacity 0.16s linear;
+          transition: opacity 0.16s linear;
+}
+/* line 722, sass/_competition-page.scss */
+#leaderboard-sider.fixed {
+  position: fixed;
+  top: 10px;
+  right: initial;
+  margin-left: -301px;
+  -webkit-transition: -webkit-transform 0.16s linear, opacity 0.16s linear, margin-left 0.16s linear;
+          transition: transform 0.16s linear, opacity 0.16s linear, margin-left 0.16s linear;
+}
+/* line 730, sass/_competition-page.scss */
+#page:not(.showSider) #leaderboard-sider.fixed.menu-visible {
+  -webkit-transform: translateY(60px);
+      -ms-transform: translateY(60px);
+          transform: translateY(60px);
+}
+/* line 734, sass/_competition-page.scss */
+#leaderboard-sider.show {
+  opacity: 1;
+}
+/* line 738, sass/_competition-page.scss */
+#leaderboard-sider.show.fixed {
+  margin-left: -145px;
+}
+
+/* line 743, sass/_competition-page.scss */
+#leaderboard-sider-content {
+  margin: 5px 12px;
+}
+
+/* line 747, sass/_competition-page.scss */
+#page.showSider #leaderboard-sider.fixed {
+  position: relative;
+  margin-left: 0px;
+  top: 0px;
+}
+
+/* line 753, sass/_competition-page.scss */
+#player-info-header {
+  margin-bottom: 30px;
+}
+
+/* line 757, sass/_competition-page.scss */
+#player-info-header-left {
+  display: inline-block;
+  margin-right: 10px;
+  width: 80px;
+  height: 0px;
+  -webkit-transform: translateY(3px);
+      -ms-transform: translateY(3px);
+          transform: translateY(3px);
+  margin-left: -1px;
+}
+/* line 765, sass/_competition-page.scss */
+#player-info-header-left img {
+  border-radius: 50px;
+}
+
+/* line 770, sass/_competition-page.scss */
+#player-info-header-right {
+  display: inline-block;
+  text-align: left;
+}
+/* line 774, sass/_competition-page.scss */
+#player-info-header-right #player-info-username {
+  width: 185px;
+}
+/* line 776, sass/_competition-page.scss */
+#player-info-header-right #player-info-username > h2 {
+  display: inline-block;
+  max-width: 160px;
+  padding: 0 0 4px 0;
+  font-size: 25px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: 7px;
+}
+/* line 786, sass/_competition-page.scss */
+#player-info-header-right #player-info-username img {
+  display: inline-block;
+  margin-bottom: 18px;
+}
+/* line 792, sass/_competition-page.scss */
+#player-info-header-right > ul {
+  font-size: 15px;
+}
+/* line 795, sass/_competition-page.scss */
+#player-info-header-right > ul > li {
+  margin-right: 3px;
+}
+/* line 798, sass/_competition-page.scss */
+#player-info-header-right > ul > li > p:first-child {
+  width: 100px;
+}
+/* line 801, sass/_competition-page.scss */
+#player-info-header-right > ul > li > p:last-child {
+  width: 80px;
+  text-align: right;
+}
+
+/* line 810, sass/_competition-page.scss */
+#player-info-bottom {
+  text-align: left;
+  font-size: 16px;
+}
+
+/* line 815, sass/_competition-page.scss */
+#player-info-challenge {
+  font-size: 17px;
+}
+
+/* line 819, sass/_competition-page.scss */
+#page #player-info-bot-stats {
+  display: inline-block;
+}
+/* line 822, sass/_competition-page.scss */
+#page #player-info-bot-stats li {
+  height: 22px;
+}
+/* line 825, sass/_competition-page.scss */
+#page #player-info-bot-stats li p {
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 829, sass/_competition-page.scss */
+#page #player-info-bot-stats li p:first-child {
+  width: 92px;
+}
+/* line 833, sass/_competition-page.scss */
+#page #player-info-bot-stats li p:nth-child(2) {
+  width: 142px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 839, sass/_competition-page.scss */
+#page #player-info-bot-stats li p a {
+  color: black;
+}
+/* line 844, sass/_competition-page.scss */
+#page #player-info-bot-stats li:first-child p:nth-child(2) {
+  font-weight: bold;
+}
+/* line 848, sass/_competition-page.scss */
+#page #player-info-bot-stats li:last-child {
+  margin: 24px 0 0 0;
+  height: 80px;
+}
+/* line 852, sass/_competition-page.scss */
+#page #player-info-bot-stats li:last-child p {
+  height: 74px;
+}
+
+/* line 859, sass/_competition-page.scss */
+#page #leaderboard-ranks {
+  margin-top: 20px;
+}
+/* line 862, sass/_competition-page.scss */
+#page #leaderboard-ranks h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+/* line 867, sass/_competition-page.scss */
+#page #leaderboard-ranks li.current-competition:hover {
+  cursor: default;
+  opacity: 1;
+}
+
+/* line 873, sass/_competition-page.scss */
+#player-info-graph {
+  display: inline-block;
+  width: 30px;
+  font-size: 11px;
+  font-family: Exo;
+}
+/* line 879, sass/_competition-page.scss */
+#player-info-graph .graph-bar {
+  height: 179px;
+  cursor: default;
+  opacity: 1;
+}
+/* line 885, sass/_competition-page.scss */
+#player-info-graph #graph-bar-games {
+  text-align: center;
+  margin-left: -2px;
+}
+/* line 890, sass/_competition-page.scss */
+#player-info-graph #graph-loss-text, #player-info-graph #graph-win-text, #player-info-graph #graph-tie-text {
+  min-height: 22px;
+  font-size: 11px;
+  -webkit-transform: translateX(120%);
+      -ms-transform: translateX(120%);
+          transform: translateX(120%);
+}
+
+/* line 899, sass/_competition-page.scss */
+#leaderboard-sider-content.institute-sider h2 {
+  font-size: 2.4rem;
+  overflow: hidden;
+  line-height: 28px;
+}
+/* line 904, sass/_competition-page.scss */
+#leaderboard-sider-content.institute-sider h2 a {
+  color: black;
+}
+/* line 909, sass/_competition-page.scss */
+#leaderboard-sider-content.institute-sider ul {
+  font-size: 16px;
+}
+/* line 913, sass/_competition-page.scss */
+#leaderboard-sider-content.institute-sider .global-stat {
+  margin: 0 8px;
+}
+/* line 916, sass/_competition-page.scss */
+#leaderboard-sider-content.institute-sider .global-stat p:first-child {
+  width: 170px;
+}
+/* line 919, sass/_competition-page.scss */
+#leaderboard-sider-content.institute-sider .global-stat p:last-child {
+  text-align: right;
+  width: 90px;
+}
+
+/* line 926, sass/_competition-page.scss */
+#text-page p {
+  max-width: inherit;
+}
+
+/* line 929, sass/_competition-page.scss */
+#page #text-page .just-text {
+  max-width: 960px;
+}
+@media screen and (max-width: 974px) {
+  /* line 929, sass/_competition-page.scss */
+  #page #text-page .just-text {
+    max-width: 640px;
+  }
+}
+
+/* line 936, sass/_competition-page.scss */
+#text-page iframe {
+  margin-top: 20px;
+}
+
+/* line 939, sass/_competition-page.scss */
+#text-page table {
+  width: 90%;
+  margin: 15px auto 0px auto;
+}
+/* line 943, sass/_competition-page.scss */
+#text-page table td:first-child {
+  font-weight: bold;
+}
+
+/* line 947, sass/_competition-page.scss */
+#text-page .div-table-starterbots {
+  margin-top: 61px;
+}
+/* line 949, sass/_competition-page.scss */
+#text-page .div-table-starterbots h3 {
+  padding: 0;
+  margin-left: 17px;
+}
+/* line 953, sass/_competition-page.scss */
+#text-page .div-table-starterbots table {
+  width: 100%;
+}
+
+/* line 959, sass/_competition-page.scss */
+#text-page .list-pokerHands {
+  margin-bottom: 25px;
+}
+/* line 962, sass/_competition-page.scss */
+#text-page .list-pokerHands > div {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* line 971, sass/_competition-page.scss */
+#text-page .table-pokerHands {
+  width: 100%;
+}
+/* line 974, sass/_competition-page.scss */
+#text-page .table-pokerHands td:first-child {
+  padding-left: 0;
+}
+/* line 978, sass/_competition-page.scss */
+#text-page .table-pokerHands td:last-child {
+  width: 317px;
+  padding: 0;
+}
+/* line 983, sass/_competition-page.scss */
+#text-page .table-pokerHands .card {
+  -webkit-transform: scale(0.85);
+      -ms-transform: scale(0.85);
+          transform: scale(0.85);
+}
+
+/* line 987, sass/_competition-page.scss */
+#text-page .table-outputs {
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+/* line 992, sass/_competition-page.scss */
+#text-page .table-outputs td:first-child {
+  width: 35%;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 14px;
+}
+/* line 997, sass/_competition-page.scss */
+#text-page .table-outputs td:last-child, #text-page .table-outputs th:last-child {
+  text-align: left;
+}
+
+/* line 1001, sass/_competition-page.scss */
+.paragraph-no-margin-bottom {
+  margin-bottom: 0px;
+}
+
+/* line 2, sass/_competitions-index.scss */
+#page #competitions {
+  margin-bottom: 20px;
+}
+/* line 6, sass/_competitions-index.scss */
+#page .competitions-list {
+  margin: 0 auto;
+  width: 1280px;
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@media screen and (max-width: 1280px) {
+  /* line 6, sass/_competitions-index.scss */
+  #page .competitions-list {
+    display: block;
+    width: 640px;
+  }
+}
+/* line 17, sass/_competitions-index.scss */
+#page .competitions-list .competition-list-item {
+  display: inline-block;
+  height: 240px;
+  width: 640px;
+  list-style: none;
+  margin: 0 0 25px 0;
+}
+/* line 25, sass/_competitions-index.scss */
+#page .competitions-list .competition-link {
+  display: block;
+  background: transparent;
+  width: inherit;
+  height: inherit;
+  color: black;
+  cursor: pointer;
+}
+/* line 32, sass/_competitions-index.scss */
+#page .competitions-list .competition-link #competition-list-image {
+  float: left;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+/* line 37, sass/_competitions-index.scss */
+#page .competitions-list .competition-link #competition-list-image > img {
+  width: 140px;
+  height: 140px;
+  border-radius: 85px;
+}
+/* line 44, sass/_competitions-index.scss */
+#page .competitions-list .competition-link #competition-list-text {
+  float: left;
+  width: 460px;
+  padding-bottom: 8px;
+}
+/* line 49, sass/_competitions-index.scss */
+#page .competitions-list .competition-link #competition-list-text > p {
+  padding: 0 10px;
+  margin: 0;
+  width: 460px;
+}
+/* line 56, sass/_competitions-index.scss */
+#page .competitions-list .competition-link #competition-list-text > h3 {
+  margin: 10px 10px;
+}
+/* line 60, sass/_competitions-index.scss */
+#page .competitions-list .competition-link #competition-list-text > a {
+  padding: 10px 0;
+  display: block;
+}
+/* line 66, sass/_competitions-index.scss */
+#page .competitions-list .competition-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* line 75, sass/_competitions-index.scss */
+.competition-index-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+/* line 85, sass/_competitions-index.scss */
+.competition-index-overlay.show {
+  display: initial;
+}
+
+/* line 88, sass/_competitions-index.scss */
+.competition-index-message-window {
+  width: 640px;
+  height: 310px;
+  background-color: #fef1d2;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: calc(50vh - 155px);
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/* line 98, sass/_competitions-index.scss */
+.competition-index-message-text {
+  padding: 30px 30px 0 30px;
+}
+
+/* line 101, sass/_competitions-index.scss */
+.competition-index-message-cancel {
+  cursor: pointer;
+  margin: 0 15px;
+}
+
+/* line 105, sass/_competitions-index.scss */
+.competition-index-message-cancel:hover {
+  text-decoration: underline;
+}
+
+/* line 108, sass/_competitions-index.scss */
+.competition-index-message-button {
+  padding: 5px 20px;
+  width: auto;
+  margin: 0 5px;
+  border: none;
+  color: white;
+  background-color: black;
+  font-family: Exo;
+  font-weight: normal;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* line 1, sass/_profile-page.scss */
+#profile {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+/* line 6, sass/_profile-page.scss */
+#profile p {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, sass/_profile-page.scss */
+#profile-header {
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
+/* line 18, sass/_profile-page.scss */
+#profile-content, .profile-content-right {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+/* line 22, sass/_profile-page.scss */
+#header-left {
+  display: inline-block;
+  width: 240px;
+  text-align: right;
+}
+/* line 27, sass/_profile-page.scss */
+#header-left > img {
+  margin-top: 15px;
+  border-radius: 70px;
+}
+
+/* line 33, sass/_profile-page.scss */
+#header-right {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 21px;
+}
+/* line 39, sass/_profile-page.scss */
+#header-right > h1, #header-right a {
+  display: inline-block;
+}
+/* line 43, sass/_profile-page.scss */
+#header-right > h1 {
+  font-size: 4rem;
+  margin-bottom: 33px;
+}
+
+/* line 49, sass/_profile-page.scss */
+#profile-tabs {
+  display: inline-block;
+  min-height: 525px;
+  width: 240px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/* line 55, sass/_profile-page.scss */
+#profile-tabs .profile-tab {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 75px;
+  text-align: left;
+}
+/* line 61, sass/_profile-page.scss */
+#profile-tabs .profile-tab > img {
+  height: 59px;
+  width: 59px;
+  border-radius: 35px;
+  margin: 10px 10px 10px 10px;
+}
+/* line 68, sass/_profile-page.scss */
+#profile-tabs .profile-tab > p {
+  width: 150px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+/* line 74, sass/_profile-page.scss */
+#profile-tabs .profile-tab:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+/* line 87, sass/_profile-page.scss */
+#profile-tabs .tab-selected {
+  font-weight: bold;
+}
+/* line 90, sass/_profile-page.scss */
+#profile-tabs .tab-selected:hover {
+  opacity: 1;
+  cursor: default;
+}
+
+/* line 97, sass/_profile-page.scss */
+.profile-section {
+  width: 320px;
+}
+
+/* line 101, sass/_profile-page.scss */
+#bot-upload {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 106, sass/_profile-page.scss */
+.bot-column-content {
+  width: 320px;
+  padding: 22px;
+  padding-bottom: 14px;
+  font-family: Exo;
+  font-size: 16px;
+}
+
+/* line 114, sass/_profile-page.scss */
+#bot-info {
+  z-index: 10;
+}
+
+/* line 119, sass/_profile-page.scss */
+#profile ul {
+  display: initial;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 126, sass/_profile-page.scss */
+.bot-stat {
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 130, sass/_profile-page.scss */
+.bot-stat > p {
+  display: inline-block;
+  width: 50%;
+}
+
+/* line 138, sass/_profile-page.scss */
+#page .bot-stats li {
+  margin-bottom: 6px;
+}
+/* line 141, sass/_profile-page.scss */
+#page .bot-stats li > p:first-child {
+  color: #919191;
+}
+/* line 148, sass/_profile-page.scss */
+#page #bot-stats-versions li:first-child {
+  font-weight: bold;
+}
+/* line 152, sass/_profile-page.scss */
+#page #bot-stats-versions li:first-child p:first-child {
+  font-weight: normal;
+}
+/* line 156, sass/_profile-page.scss */
+#page #bot-stats-versions li:nth-child(2) {
+  margin-bottom: 30px;
+}
+/* line 159, sass/_profile-page.scss */
+#page #bot-stats-versions li:nth-child(4) {
+  margin-bottom: 17px;
+}
+/* line 163, sass/_profile-page.scss */
+#page #bot-stats-versions #bot-name {
+  white-space: nowrap;
+}
+/* line 166, sass/_profile-page.scss */
+#page #bot-stats-versions #bot-name.hidden {
+  display: none;
+}
+/* line 170, sass/_profile-page.scss */
+#page #bot-stats-versions #bot-name span {
+  padding: 0 10px;
+  font-size: 1.4rem;
+  color: #9c9c9c;
+}
+/* line 175, sass/_profile-page.scss */
+#page #bot-stats-versions #bot-name span:hover {
+  cursor: pointer;
+}
+/* line 181, sass/_profile-page.scss */
+#page #bot-stats-versions form {
+  display: inline-block;
+  width: 135px;
+  margin: 0;
+  padding: 0;
+}
+/* line 187, sass/_profile-page.scss */
+#page #bot-stats-versions form input {
+  margin: 0;
+  border: 1px solid black;
+}
+/* line 192, sass/_profile-page.scss */
+#page #bot-stats-versions form.hidden {
+  display: none;
+}
+/* line 198, sass/_profile-page.scss */
+#page .bot-ranks-list {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/* line 201, sass/_profile-page.scss */
+#page .bot-ranks-list li {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-bottom: 7px;
+  cursor: default;
+}
+/* line 206, sass/_profile-page.scss */
+#page .bot-ranks-list li a {
+  color: black;
+}
+/* line 210, sass/_profile-page.scss */
+#page .bot-ranks-list li > p {
+  width: 77%;
+  font-size: 17px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 221, sass/_profile-page.scss */
+#page .bot-ranks-list li.clickable:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+/* line 228, sass/_profile-page.scss */
+#page #bot-ranks-profile li:first-child > p {
+  font-weight: bold;
+}
+
+/* line 233, sass/_profile-page.scss */
+.rank {
+  display: inline-block;
+  background-color: white;
+  height: 42px;
+  width: 42px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 0px #c8c8c8;
+  text-align: center;
+  line-height: 44px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  margin-right: 20px;
+}
+/* line 247, sass/_profile-page.scss */
+.rank a {
+  color: black;
+  text-decoration: none;
+}
+/* line 251, sass/_profile-page.scss */
+.rank a:hover {
+  color: black;
+}
+/* line 254, sass/_profile-page.scss */
+.rank a:active {
+  color: black;
+}
+
+/* line 260, sass/_profile-page.scss */
+#bot-ranks h3 {
+  font-size: 2rem;
+  margin: 18px 0 5px 0;
+}
+
+/* line 266, sass/_profile-page.scss */
+#bot-status {
+  margin: 27px 0 33px 0;
+  height: 120px;
+}
+/* line 270, sass/_profile-page.scss */
+#bot-status p {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #737373;
+}
+
+/* line 277, sass/_profile-page.scss */
+#set-active-bot {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+/* line 283, sass/_profile-page.scss */
+#set-active-bot p {
+  text-align: center;
+}
+/* line 287, sass/_profile-page.scss */
+#set-active-bot form {
+  display: inline-block;
+  width: auto;
+  padding: 0;
+}
+/* line 293, sass/_profile-page.scss */
+#set-active-bot #set-ranked-form select {
+  display: inline-block;
+  width: 63px;
+  height: 26px;
+  border: none !important;
+  font-size: 16px;
+  font-family: Exo;
+  font-weight: bold;
+  padding: 0;
+}
+
+/* line 306, sass/_profile-page.scss */
+#set-ranked-button,
+#disable-ranked-button {
+  display: inline-block;
+  margin: 0;
+  height: 26px;
+}
+
+/* line 313, sass/_profile-page.scss */
+#disable-ranked-button {
+  background-color: #c8c8c8;
+  width: 63px;
+  padding: 0;
+}
+
+/* line 319, sass/_profile-page.scss */
+#set-ranked-button.disabled {
+  cursor: default;
+  background-color: #cdcdcd;
+}
+
+/* line 324, sass/_profile-page.scss */
+.bot-graph-container {
+  position: absolute;
+  width: 640px;
+  clip: rect(0px, 320px, 500px, 0px);
+  left: 0px;
+  -webkit-transition: clip 0.2s linear, left 0.2s linear;
+          transition: clip 0.2s linear, left 0.2s linear;
+}
+/* line 331, sass/_profile-page.scss */
+.bot-graph-container .bot-column-content {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+/* line 337, sass/_profile-page.scss */
+.bot-graph-container.shift-right {
+  clip: rect(0px, 640px, 500px, 320px);
+  left: -320px;
+}
+
+/* line 343, sass/_profile-page.scss */
+#bot-graph {
+  position: relative;
+}
+/* line 345, sass/_profile-page.scss */
+#bot-graph p {
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+}
+/* line 350, sass/_profile-page.scss */
+#bot-graph p a {
+  color: black;
+}
+/* line 355, sass/_profile-page.scss */
+#bot-graph .gamelog-link {
+  position: absolute;
+  width: 100%;
+  top: 465px;
+}
+
+/* line 362, sass/_profile-page.scss */
+#profile-rankingOverTime {
+  margin-left: -22px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* line 367, sass/_profile-page.scss */
+.graph-navigation {
+  position: absolute;
+  top: 34px;
+}
+/* line 371, sass/_profile-page.scss */
+.graph-navigation.fa-arrow-left {
+  left: 10px;
+}
+/* line 374, sass/_profile-page.scss */
+.graph-navigation.fa-arrow-right {
+  right: 10px;
+}
+
+/* line 379, sass/_profile-page.scss */
+#profile-graph {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 13px;
+  margin-top: 19px;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/* line 389, sass/_profile-page.scss */
+#profile-graph #graph-win-text, #profile-graph #graph-tie-text, #profile-graph #graph-loss-text {
+  min-height: 22px;
+  z-index: 0;
+  font-size: 16px;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.1s linear, opacity 0.15s linear;
+          transition: transform 0.1s linear, opacity 0.15s linear;
+}
+/* line 396, sass/_profile-page.scss */
+#profile-graph #graph-win-text.show, #profile-graph #graph-tie-text.show, #profile-graph #graph-loss-text.show {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 1;
+}
+
+/* line 403, sass/_profile-page.scss */
+.graph {
+  width: 30px;
+}
+
+/* line 407, sass/_profile-page.scss */
+.graph-bar {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 300px;
+  margin: 2px 4px 5px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+}
+/* line 416, sass/_profile-page.scss */
+.graph-bar.no-games {
+  background-color: #a8a8a8;
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 421, sass/_profile-page.scss */
+.graph-bar.no-games #graph-win, .graph-bar.no-games #graph-tie, .graph-bar.no-games #graph-loss {
+  display: none;
+}
+
+/* line 427, sass/_profile-page.scss */
+#graph-win, #graph-tie, #graph-loss {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 3px;
+  width: 100%;
+  -webkit-flex-basis: calc(100% / 3);
+      -ms-flex-preferred-size: calc(100% / 3);
+          flex-basis: calc(100% / 3);
+}
+
+/* line 436, sass/_profile-page.scss */
+#graph-win {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+/* line 442, sass/_profile-page.scss */
+#graph-tie {
+  background-color: #cdcdcd;
+}
+
+/* line 445, sass/_profile-page.scss */
+#graph-loss {
+  background-color: #6e6e6e;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+/* line 452, sass/_profile-page.scss */
+.no-bot .bot-column-content {
+  margin-top: 90px;
+}
+/* line 456, sass/_profile-page.scss */
+.no-bot #bot-info p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 35px;
+  margin-top: 43px;
+}
+/* line 463, sass/_profile-page.scss */
+.no-bot #bot-graph p {
+  text-align: center;
+  font-size: 25px;
+  line-height: 40px;
+  margin-top: 82px;
+}
+
+/* line 471, sass/_profile-page.scss */
+#edit-profile section#content > article {
+  width: 480px;
+}
+
+/* line 474, sass/_profile-page.scss */
+#edit-profile section#content > img {
+  width: 150px;
+  margin: 17px 10px 0 0;
+  border-radius: 175px;
+}
+
+/* line 479, sass/_profile-page.scss */
+#edit-profile-form {
+  width: 640px;
+  padding: 0;
+}
+
+/* line 483, sass/_profile-page.scss */
+#edit-profile .set-avatar-text {
+  margin: 10px auto 30px auto;
+  width: 640px;
+  padding: 0;
+  font-weight: bold;
+}
+
+/* line 489, sass/_profile-page.scss */
+.edit-institutes {
+  position: relative;
+  height: 130px;
+  width: 640px;
+  margin: 0 auto;
+}
+
+/* line 495, sass/_profile-page.scss */
+#add-institutes {
+  visibility: hidden;
+}
+
+/* line 498, sass/_profile-page.scss */
+#edit-profile .form-control > * {
+  margin-top: 0;
+}
+
+/* line 501, sass/_profile-page.scss */
+#edit-profile .token {
+  display: block;
+  background-color: white;
+  border: none;
+}
+
+/* line 506, sass/_profile-page.scss */
+#edit-profile label {
+  width: 640px;
+  margin: 0 auto;
+}
+/* line 510, sass/_profile-page.scss */
+#edit-profile label.text-center {
+  text-align: center;
+}
+/* line 514, sass/_profile-page.scss */
+#edit-profile label.forum-posts {
+  margin-top: 15px;
+}
+
+/* line 519, sass/_profile-page.scss */
+#edit-profile input {
+  display: block;
+}
+
+/* line 523, sass/_profile-page.scss */
+#edit-profile p {
+  margin: 0;
+}
+
+/* line 1, sass/_competition-style.scss */
+div.warlight-ai-challenge {
+  background: #f4e1ba;
+}
+
+/* line 5, sass/_competition-style.scss */
+div.heads-up-omaha {
+  background: #d9e4bb;
+}
+
+/* line 9, sass/_competition-style.scss */
+div.warlight-ai-challenge-2 {
+  background: #fef1d2;
+}
+
+/* line 13, sass/_competition-style.scss */
+div.texas-hold-em {
+  background: #ebe7f3;
+}
+
+/* line 17, sass/_competition-style.scss */
+div.ai-block-battle {
+  background: #dbe1f0;
+}
+
+/* line 21, sass/_competition-style.scss */
+div.four-in-a-row {
+  background: #dff2d8;
+}
+
+/* line 25, sass/_competition-style.scss */
+div.ultimate-tic-tac-toe {
+  background: #ffdcc8;
+}
+
+/* line 29, sass/_competition-style.scss */
+div.go {
+  background: #cce2f9;
+}
+
+/* line 35, sass/_competition-style.scss */
+.warlight-ai-challenge a {
+  color: #fbb817;
+}
+/* line 38, sass/_competition-style.scss */
+.warlight-ai-challenge a:hover {
+  color: #fbd266;
+}
+/* line 41, sass/_competition-style.scss */
+.warlight-ai-challenge a:visited {
+  color: #fbb817;
+}
+/* line 45, sass/_competition-style.scss */
+.warlight-ai-challenge #page {
+  background: -webkit-linear-gradient(left, #f4e1ba, white, #f4e1ba);
+  background: linear-gradient(to right, #f4e1ba, white, #f4e1ba);
+}
+/* line 48, sass/_competition-style.scss */
+.warlight-ai-challenge #page em {
+  color: #fbb817;
+}
+/* line 53, sass/_competition-style.scss */
+.warlight-ai-challenge #page ul#competition-menu > li:hover a {
+  color: #fbb817;
+}
+/* line 56, sass/_competition-style.scss */
+.warlight-ai-challenge #page ul#competition-menu > li:hover a.selected {
+  color: black;
+}
+/* line 65, sass/_competition-style.scss */
+.warlight-ai-challenge #menu #user-avatar:hover + #user-name > a {
+  color: #fbb817;
+}
+/* line 68, sass/_competition-style.scss */
+.warlight-ai-challenge #menu #user-avatar:active + #user-name > a {
+  color: #fbd266;
+}
+/* line 74, sass/_competition-style.scss */
+.warlight-ai-challenge #menu .menu-item a {
+  color: black;
+}
+/* line 77, sass/_competition-style.scss */
+.warlight-ai-challenge #menu .menu-item:hover {
+  color: #fbb817;
+}
+/* line 79, sass/_competition-style.scss */
+.warlight-ai-challenge #menu .menu-item:hover a {
+  color: #fbb817;
+}
+/* line 83, sass/_competition-style.scss */
+.warlight-ai-challenge #menu .menu-item:active {
+  color: #fbd266;
+}
+/* line 85, sass/_competition-style.scss */
+.warlight-ai-challenge #menu .menu-item:active a {
+  color: #fbd266;
+}
+/* line 92, sass/_competition-style.scss */
+.warlight-ai-challenge em a {
+  color: #fbb817;
+}
+/* line 96, sass/_competition-style.scss */
+.warlight-ai-challenge .button-round,
+.warlight-ai-challenge .button-square {
+  background-color: #fbb817;
+}
+/* line 101, sass/_competition-style.scss */
+.warlight-ai-challenge #game-log .token.active {
+  border-color: #fbb817;
+}
+/* line 105, sass/_competition-style.scss */
+.warlight-ai-challenge .finalsMatch-winner,
+.warlight-ai-challenge .finalsMatch-versus,
+.warlight-ai-challenge #leaderboard-table,
+.warlight-ai-challenge #leaderboard-sider,
+.warlight-ai-challenge .table-gameLog,
+.warlight-ai-challenge .div-search-gameLog,
+.warlight-ai-challenge #leaderboard-buttons li {
+  background-color: #f4e1ba;
+}
+/* line 115, sass/_competition-style.scss */
+.warlight-ai-challenge footer em {
+  color: #fbb817;
+}
+/* line 119, sass/_competition-style.scss */
+.warlight-ai-challenge footer a:active {
+  color: #fbb817;
+}
+/* line 123, sass/_competition-style.scss */
+.warlight-ai-challenge #graph-win {
+  background-color: #fbb817;
+}
+/* line 127, sass/_competition-style.scss */
+.warlight-ai-challenge .profile-rankingOverTime-graph-line {
+  stroke: #fbb817;
+}
+
+/* line 132, sass/_competition-style.scss */
+#bot-upload.warlight-ai-challenge select {
+  background-color: #fbb817;
+}
+
+/* line 137, sass/_competition-style.scss */
+#profile-tabs .profile-tab:hover.competition_warlight-ai-challenge {
+  background-color: #f4e1ba;
+}
+
+/* line 144, sass/_competition-style.scss */
+.heads-up-omaha a {
+  color: #8f438e;
+}
+/* line 147, sass/_competition-style.scss */
+.heads-up-omaha a:hover {
+  color: #a872a8;
+}
+/* line 150, sass/_competition-style.scss */
+.heads-up-omaha a:visited {
+  color: #8f438e;
+}
+/* line 154, sass/_competition-style.scss */
+.heads-up-omaha #page {
+  background: -webkit-linear-gradient(left, #d9e4bb, white, #d9e4bb);
+  background: linear-gradient(to right, #d9e4bb, white, #d9e4bb);
+}
+/* line 158, sass/_competition-style.scss */
+.heads-up-omaha #page ul#competition-menu > li:hover a {
+  color: #8f438e;
+}
+/* line 161, sass/_competition-style.scss */
+.heads-up-omaha #page ul#competition-menu > li:hover a.selected {
+  color: black;
+}
+/* line 167, sass/_competition-style.scss */
+.heads-up-omaha #page em {
+  color: #8f438e;
+}
+/* line 174, sass/_competition-style.scss */
+.heads-up-omaha #menu #user-avatar:hover + #user-name > a {
+  color: #8f438e;
+}
+/* line 177, sass/_competition-style.scss */
+.heads-up-omaha #menu #user-avatar:active + #user-name > a {
+  color: #a872a8;
+}
+/* line 183, sass/_competition-style.scss */
+.heads-up-omaha #menu .menu-item a {
+  color: black;
+}
+/* line 186, sass/_competition-style.scss */
+.heads-up-omaha #menu .menu-item:hover {
+  color: #8f438e;
+}
+/* line 188, sass/_competition-style.scss */
+.heads-up-omaha #menu .menu-item:hover a {
+  color: #8f438e;
+}
+/* line 192, sass/_competition-style.scss */
+.heads-up-omaha #menu .menu-item:active {
+  color: #a872a8;
+}
+/* line 194, sass/_competition-style.scss */
+.heads-up-omaha #menu .menu-item:active a {
+  color: #a872a8;
+}
+/* line 201, sass/_competition-style.scss */
+.heads-up-omaha em a {
+  color: #8f438e;
+}
+/* line 205, sass/_competition-style.scss */
+.heads-up-omaha .button-round,
+.heads-up-omaha .button-square {
+  background-color: #8f438e;
+}
+/* line 210, sass/_competition-style.scss */
+.heads-up-omaha #page .table-gameLog .button-round,
+.heads-up-omaha #page .button-round .fa {
+  color: #7d7d7d;
+}
+/* line 215, sass/_competition-style.scss */
+.heads-up-omaha #game-log .token.active {
+  border-color: #8f438e;
+}
+/* line 219, sass/_competition-style.scss */
+.heads-up-omaha .finalsMatch-winner,
+.heads-up-omaha .finalsMatch-versus,
+.heads-up-omaha #leaderboard-table,
+.heads-up-omaha #leaderboard-sider,
+.heads-up-omaha .table-gameLog,
+.heads-up-omaha .div-search-gameLog,
+.heads-up-omaha #leaderboard-buttons li {
+  background-color: #d9e4bb;
+}
+/* line 229, sass/_competition-style.scss */
+.heads-up-omaha footer em {
+  color: #8f438e;
+}
+/* line 232, sass/_competition-style.scss */
+.heads-up-omaha footer a:active {
+  color: #8f438e;
+}
+/* line 236, sass/_competition-style.scss */
+.heads-up-omaha #graph-win {
+  background-color: #8f438e;
+}
+/* line 240, sass/_competition-style.scss */
+.heads-up-omaha .profile-rankingOverTime-graph-line {
+  stroke: #8f438e;
+}
+
+/* line 245, sass/_competition-style.scss */
+#bot-upload.heads-up-omaha select {
+  background-color: #8f438e;
+}
+
+/* line 250, sass/_competition-style.scss */
+#profile-tabs .profile-tab:hover.competition_heads-up-omaha {
+  background-color: #d9e4bb;
+}
+
+/* line 257, sass/_competition-style.scss */
+.warlight-ai-challenge-2 a {
+  color: #fbb817;
+}
+/* line 260, sass/_competition-style.scss */
+.warlight-ai-challenge-2 a:hover {
+  color: #fbd266;
+}
+/* line 263, sass/_competition-style.scss */
+.warlight-ai-challenge-2 a:visited {
+  color: #fbb817;
+}
+/* line 267, sass/_competition-style.scss */
+.warlight-ai-challenge-2 #page {
+  background: -webkit-linear-gradient(left, #fef1d2, white, #fef1d2);
+  background: linear-gradient(to right, #fef1d2, white, #fef1d2);
+}
+/* line 270, sass/_competition-style.scss */
+.warlight-ai-challenge-2 #page em {
+  color: #fbb817;
+}
+/* line 275, sass/_competition-style.scss */
+.warlight-ai-challenge-2 #page ul#competition-menu > li:hover a {
+  color: #fbb817;
+}
+/* line 278, sass/_competition-style.scss */
+.warlight-ai-challenge-2 #page ul#competition-menu > li:hover a.selected {
+  color: black;
+}
+/* line 287, sass/_competition-style.scss */
+.warlight-ai-challenge-2 #menu #user-avatar:hover + #user-name > a {
+  color: #fbb817;
+}
+/* line 290, sass/_competition-style.scss */
+.warlight-ai-challenge-2 #menu #user-avatar:active + #user-name > a {
+  color: #fbd266;
+}
+/* line 296, sass/_competition-style.scss */
+.warlight-ai-challenge-2 #menu .menu-item a {
+  color: black;
+}
+/* line 299, sass/_competition-style.scss */
+.warlight-ai-challenge-2 #menu .menu-item:hover {
+  color: #fbb817;
+}
+/* line 301, sass/_competition-style.scss */
+.warlight-ai-challenge-2 #menu .menu-item:hover a {
+  color: #fbb817;
+}
+/* line 305, sass/_competition-style.scss */
+.warlight-ai-challenge-2 #menu .menu-item:active {
+  color: #fbd266;
+}
+/* line 307, sass/_competition-style.scss */
+.warlight-ai-challenge-2 #menu .menu-item:active a {
+  color: #fbd266;
+}
+/* line 314, sass/_competition-style.scss */
+.warlight-ai-challenge-2 em a {
+  color: #fbb817;
+}
+/* line 318, sass/_competition-style.scss */
+.warlight-ai-challenge-2 .button-round,
+.warlight-ai-challenge-2 .button-square {
+  background-color: #fbb817;
+}
+/* line 323, sass/_competition-style.scss */
+.warlight-ai-challenge-2 #game-log .token.active {
+  border-color: #fbb817;
+}
+/* line 327, sass/_competition-style.scss */
+.warlight-ai-challenge-2 .finalsMatch-winner,
+.warlight-ai-challenge-2 .finalsMatch-versus,
+.warlight-ai-challenge-2 #leaderboard-table,
+.warlight-ai-challenge-2 #leaderboard-sider,
+.warlight-ai-challenge-2 .table-gameLog,
+.warlight-ai-challenge-2 .div-search-gameLog,
+.warlight-ai-challenge-2 #leaderboard-buttons li {
+  background-color: #fef1d2;
+}
+/* line 337, sass/_competition-style.scss */
+.warlight-ai-challenge-2 footer em {
+  color: #fbb817;
+}
+/* line 341, sass/_competition-style.scss */
+.warlight-ai-challenge-2 footer a:active {
+  color: #fbb817;
+}
+/* line 345, sass/_competition-style.scss */
+.warlight-ai-challenge-2 #graph-win {
+  background-color: #fbb817;
+}
+/* line 349, sass/_competition-style.scss */
+.warlight-ai-challenge-2 .profile-rankingOverTime-graph-line {
+  stroke: #fbb817;
+}
+
+/* line 354, sass/_competition-style.scss */
+#bot-upload.warlight-ai-challenge-2 select {
+  background-color: #fbb817;
+}
+
+/* line 359, sass/_competition-style.scss */
+#profile-tabs .profile-tab:hover.competition_warlight-ai-challenge-2 {
+  background-color: #fef1d2;
+}
+
+/* line 366, sass/_competition-style.scss */
+.texas-hold-em a {
+  color: #a13120;
+}
+/* line 369, sass/_competition-style.scss */
+.texas-hold-em a:hover {
+  color: #bf3f30;
+}
+/* line 372, sass/_competition-style.scss */
+.texas-hold-em a:visited {
+  color: #a13120;
+}
+/* line 376, sass/_competition-style.scss */
+.texas-hold-em #page {
+  background: -webkit-linear-gradient(left, #ebe7f3, white, #ebe7f3);
+  background: linear-gradient(to right, #ebe7f3, white, #ebe7f3);
+}
+/* line 379, sass/_competition-style.scss */
+.texas-hold-em #page em {
+  color: #a13120;
+}
+/* line 384, sass/_competition-style.scss */
+.texas-hold-em #page ul#competition-menu > li:hover a {
+  color: #a13120;
+}
+/* line 387, sass/_competition-style.scss */
+.texas-hold-em #page ul#competition-menu > li:hover a.selected {
+  color: black;
+}
+/* line 396, sass/_competition-style.scss */
+.texas-hold-em #menu #user-avatar:hover + #user-name > a {
+  color: #a13120;
+}
+/* line 399, sass/_competition-style.scss */
+.texas-hold-em #menu #user-avatar:active + #user-name > a {
+  color: #bf3f30;
+}
+/* line 405, sass/_competition-style.scss */
+.texas-hold-em #menu .menu-item a {
+  color: black;
+}
+/* line 408, sass/_competition-style.scss */
+.texas-hold-em #menu .menu-item:hover {
+  color: #a13120;
+}
+/* line 410, sass/_competition-style.scss */
+.texas-hold-em #menu .menu-item:hover a {
+  color: #a13120;
+}
+/* line 414, sass/_competition-style.scss */
+.texas-hold-em #menu .menu-item:active {
+  color: #bf3f30;
+}
+/* line 416, sass/_competition-style.scss */
+.texas-hold-em #menu .menu-item:active a {
+  color: #bf3f30;
+}
+/* line 423, sass/_competition-style.scss */
+.texas-hold-em em a {
+  color: #a13120;
+}
+/* line 427, sass/_competition-style.scss */
+.texas-hold-em .button-round,
+.texas-hold-em .button-square {
+  background-color: #a13120;
+}
+/* line 432, sass/_competition-style.scss */
+.texas-hold-em #game-log .token.active {
+  border-color: #a13120;
+}
+/* line 436, sass/_competition-style.scss */
+.texas-hold-em #page .table-gameLog .button-round,
+.texas-hold-em #page .button-round .fa {
+  color: black;
+}
+/* line 441, sass/_competition-style.scss */
+.texas-hold-em .finalsMatch-winner,
+.texas-hold-em .finalsMatch-versus,
+.texas-hold-em #leaderboard-table,
+.texas-hold-em #leaderboard-sider,
+.texas-hold-em .table-gameLog,
+.texas-hold-em .div-search-gameLog,
+.texas-hold-em #leaderboard-buttons li {
+  background-color: #ebe7f3;
+}
+/* line 451, sass/_competition-style.scss */
+.texas-hold-em footer em {
+  color: #a13120;
+}
+/* line 455, sass/_competition-style.scss */
+.texas-hold-em footer a:active {
+  color: #a13120;
+}
+/* line 459, sass/_competition-style.scss */
+.texas-hold-em #graph-win {
+  background-color: #a13120;
+}
+/* line 463, sass/_competition-style.scss */
+.texas-hold-em .profile-rankingOverTime-graph-line {
+  stroke: #a13120;
+}
+
+/* line 468, sass/_competition-style.scss */
+#bot-upload.texas-hold-em select {
+  background-color: #a13120;
+}
+
+/* line 473, sass/_competition-style.scss */
+#profile-tabs .profile-tab:hover.competition_texas-hold-em {
+  background-color: #ebe7f3;
+}
+
+/* line 480, sass/_competition-style.scss */
+.ai-block-battle a {
+  color: #faa719;
+}
+/* line 483, sass/_competition-style.scss */
+.ai-block-battle a:hover {
+  color: #ffc562;
+}
+/* line 486, sass/_competition-style.scss */
+.ai-block-battle a:visited {
+  color: #faa719;
+}
+/* line 490, sass/_competition-style.scss */
+.ai-block-battle #page {
+  background: -webkit-linear-gradient(left, #dbe1f0, white, #dbe1f0);
+  background: linear-gradient(to right, #dbe1f0, white, #dbe1f0);
+}
+/* line 493, sass/_competition-style.scss */
+.ai-block-battle #page em {
+  color: #faa719;
+}
+/* line 498, sass/_competition-style.scss */
+.ai-block-battle #page ul#competition-menu > li:hover a {
+  color: #faa719;
+}
+/* line 501, sass/_competition-style.scss */
+.ai-block-battle #page ul#competition-menu > li:hover a.selected {
+  color: black;
+}
+/* line 507, sass/_competition-style.scss */
+.ai-block-battle #page #game-teaser {
+  background-color: #002237;
+}
+/* line 514, sass/_competition-style.scss */
+.ai-block-battle #menu #user-avatar:hover + #user-name > a {
+  color: #faa719;
+}
+/* line 517, sass/_competition-style.scss */
+.ai-block-battle #menu #user-avatar:active + #user-name > a {
+  color: #ffc562;
+}
+/* line 523, sass/_competition-style.scss */
+.ai-block-battle #menu .menu-item a {
+  color: black;
+}
+/* line 526, sass/_competition-style.scss */
+.ai-block-battle #menu .menu-item:hover {
+  color: #faa719;
+}
+/* line 528, sass/_competition-style.scss */
+.ai-block-battle #menu .menu-item:hover a {
+  color: #faa719;
+}
+/* line 532, sass/_competition-style.scss */
+.ai-block-battle #menu .menu-item:active {
+  color: #ffc562;
+}
+/* line 534, sass/_competition-style.scss */
+.ai-block-battle #menu .menu-item:active a {
+  color: #ffc562;
+}
+/* line 541, sass/_competition-style.scss */
+.ai-block-battle em a {
+  color: #faa719;
+}
+/* line 545, sass/_competition-style.scss */
+.ai-block-battle .button-round,
+.ai-block-battle .button-square {
+  background-color: #faa719;
+}
+/* line 550, sass/_competition-style.scss */
+.ai-block-battle #game-log .token.active {
+  border-color: #faa719;
+}
+/* line 554, sass/_competition-style.scss */
+.ai-block-battle #page .table-gameLog .button-round,
+.ai-block-battle #page .button-round .fa {
+  color: black;
+}
+/* line 559, sass/_competition-style.scss */
+.ai-block-battle .finalsMatch-winner,
+.ai-block-battle .finalsMatch-versus,
+.ai-block-battle #leaderboard-table,
+.ai-block-battle #leaderboard-sider,
+.ai-block-battle .table-gameLog,
+.ai-block-battle .div-search-gameLog,
+.ai-block-battle #leaderboard-buttons li {
+  background-color: #dbe1f0;
+}
+/* line 569, sass/_competition-style.scss */
+.ai-block-battle footer em {
+  color: #faa719;
+}
+/* line 573, sass/_competition-style.scss */
+.ai-block-battle footer a:active {
+  color: #faa719;
+}
+/* line 577, sass/_competition-style.scss */
+.ai-block-battle #graph-win {
+  background-color: #faa719;
+}
+/* line 581, sass/_competition-style.scss */
+.ai-block-battle .profile-rankingOverTime-graph-line {
+  stroke: #faa719;
+}
+
+/* line 586, sass/_competition-style.scss */
+#bot-upload.ai-block-battle select {
+  background-color: #faa719;
+}
+
+/* line 591, sass/_competition-style.scss */
+#profile-tabs .profile-tab:hover.competition_ai-block-battle {
+  background-color: #dbe1f0;
+}
+
+/* line 598, sass/_competition-style.scss */
+.four-in-a-row a {
+  color: #ff784f;
+}
+/* line 601, sass/_competition-style.scss */
+.four-in-a-row a:hover {
+  color: #f26642;
+}
+/* line 604, sass/_competition-style.scss */
+.four-in-a-row a:visited {
+  color: #ff784f;
+}
+/* line 608, sass/_competition-style.scss */
+.four-in-a-row #page {
+  background: -webkit-linear-gradient(left, #dff2d8, white, #dff2d8);
+  background: linear-gradient(to right, #dff2d8, white, #dff2d8);
+}
+/* line 611, sass/_competition-style.scss */
+.four-in-a-row #page em {
+  color: #ff784f;
+}
+/* line 616, sass/_competition-style.scss */
+.four-in-a-row #page ul#competition-menu > li:hover a {
+  color: #ff784f;
+}
+/* line 619, sass/_competition-style.scss */
+.four-in-a-row #page ul#competition-menu > li:hover a.selected {
+  color: black;
+}
+/* line 625, sass/_competition-style.scss */
+.four-in-a-row #page #game-teaser {
+  background-color: #002237;
+}
+/* line 632, sass/_competition-style.scss */
+.four-in-a-row #menu #user-avatar:hover + #user-name > a {
+  color: #ff784f;
+}
+/* line 635, sass/_competition-style.scss */
+.four-in-a-row #menu #user-avatar:active + #user-name > a {
+  color: #f26642;
+}
+/* line 641, sass/_competition-style.scss */
+.four-in-a-row #menu .menu-item a {
+  color: black;
+}
+/* line 644, sass/_competition-style.scss */
+.four-in-a-row #menu .menu-item:hover {
+  color: #ff784f;
+}
+/* line 646, sass/_competition-style.scss */
+.four-in-a-row #menu .menu-item:hover a {
+  color: #ff784f;
+}
+/* line 650, sass/_competition-style.scss */
+.four-in-a-row #menu .menu-item:active {
+  color: #f26642;
+}
+/* line 652, sass/_competition-style.scss */
+.four-in-a-row #menu .menu-item:active a {
+  color: #f26642;
+}
+/* line 659, sass/_competition-style.scss */
+.four-in-a-row em a {
+  color: #ff784f;
+}
+/* line 663, sass/_competition-style.scss */
+.four-in-a-row .button-round,
+.four-in-a-row .button-square {
+  background-color: #ff784f;
+}
+/* line 668, sass/_competition-style.scss */
+.four-in-a-row #game-log .token.active {
+  border-color: #ff784f;
+}
+/* line 672, sass/_competition-style.scss */
+.four-in-a-row #page .table-gameLog .button-round,
+.four-in-a-row #page .button-round .fa {
+  color: black;
+}
+/* line 677, sass/_competition-style.scss */
+.four-in-a-row .finalsMatch-winner,
+.four-in-a-row .finalsMatch-versus,
+.four-in-a-row #leaderboard-table,
+.four-in-a-row #leaderboard-sider,
+.four-in-a-row .table-gameLog,
+.four-in-a-row .div-search-gameLog,
+.four-in-a-row #leaderboard-buttons li {
+  background-color: #dff2d8;
+}
+/* line 687, sass/_competition-style.scss */
+.four-in-a-row footer em {
+  color: #ff784f;
+}
+/* line 691, sass/_competition-style.scss */
+.four-in-a-row footer a:active {
+  color: #ff784f;
+}
+/* line 695, sass/_competition-style.scss */
+.four-in-a-row #graph-win {
+  background-color: #ff784f;
+}
+/* line 699, sass/_competition-style.scss */
+.four-in-a-row .profile-rankingOverTime-graph-line {
+  stroke: #ff784f;
+}
+
+/* line 704, sass/_competition-style.scss */
+#bot-upload.four-in-a-row select {
+  background-color: #ff784f;
+}
+
+/* line 709, sass/_competition-style.scss */
+#profile-tabs .profile-tab:hover.competition_four-in-a-row {
+  background-color: #dff2d8;
+}
+
+/* line 716, sass/_competition-style.scss */
+.ultimate-tic-tac-toe a {
+  color: #6aa2fe;
+}
+/* line 719, sass/_competition-style.scss */
+.ultimate-tic-tac-toe a:hover {
+  color: #4571b9;
+}
+/* line 722, sass/_competition-style.scss */
+.ultimate-tic-tac-toe a:visited {
+  color: #6aa2fe;
+}
+/* line 726, sass/_competition-style.scss */
+.ultimate-tic-tac-toe #page {
+  background: -webkit-linear-gradient(left, #ffdcc8, white, #ffdcc8);
+  background: linear-gradient(to right, #ffdcc8, white, #ffdcc8);
+}
+/* line 729, sass/_competition-style.scss */
+.ultimate-tic-tac-toe #page em {
+  color: #6aa2fe;
+}
+/* line 734, sass/_competition-style.scss */
+.ultimate-tic-tac-toe #page ul#competition-menu > li:hover a {
+  color: #6aa2fe;
+}
+/* line 737, sass/_competition-style.scss */
+.ultimate-tic-tac-toe #page ul#competition-menu > li:hover a.selected {
+  color: black;
+}
+/* line 743, sass/_competition-style.scss */
+.ultimate-tic-tac-toe #page #game-teaser {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+/* line 750, sass/_competition-style.scss */
+.ultimate-tic-tac-toe #menu #user-avatar:hover + #user-name > a {
+  color: #6aa2fe;
+}
+/* line 753, sass/_competition-style.scss */
+.ultimate-tic-tac-toe #menu #user-avatar:active + #user-name > a {
+  color: #4571b9;
+}
+/* line 759, sass/_competition-style.scss */
+.ultimate-tic-tac-toe #menu .menu-item a {
+  color: black;
+}
+/* line 762, sass/_competition-style.scss */
+.ultimate-tic-tac-toe #menu .menu-item:hover {
+  color: #6aa2fe;
+}
+/* line 764, sass/_competition-style.scss */
+.ultimate-tic-tac-toe #menu .menu-item:hover a {
+  color: #6aa2fe;
+}
+/* line 768, sass/_competition-style.scss */
+.ultimate-tic-tac-toe #menu .menu-item:active {
+  color: #4571b9;
+}
+/* line 770, sass/_competition-style.scss */
+.ultimate-tic-tac-toe #menu .menu-item:active a {
+  color: #4571b9;
+}
+/* line 777, sass/_competition-style.scss */
+.ultimate-tic-tac-toe em a {
+  color: #6aa2fe;
+}
+/* line 781, sass/_competition-style.scss */
+.ultimate-tic-tac-toe .button-round,
+.ultimate-tic-tac-toe .button-square {
+  background-color: #6aa2fe;
+}
+/* line 786, sass/_competition-style.scss */
+.ultimate-tic-tac-toe #game-log .token.active {
+  border-color: #6aa2fe;
+}
+/* line 790, sass/_competition-style.scss */
+.ultimate-tic-tac-toe #page .table-gameLog .button-round,
+.ultimate-tic-tac-toe #page .button-round .fa {
+  color: black;
+}
+/* line 795, sass/_competition-style.scss */
+.ultimate-tic-tac-toe .finalsMatch-winner,
+.ultimate-tic-tac-toe .finalsMatch-versus,
+.ultimate-tic-tac-toe #leaderboard-table,
+.ultimate-tic-tac-toe #leaderboard-sider,
+.ultimate-tic-tac-toe .table-gameLog,
+.ultimate-tic-tac-toe .div-search-gameLog,
+.ultimate-tic-tac-toe #leaderboard-buttons li {
+  background-color: #ffdcc8;
+}
+/* line 805, sass/_competition-style.scss */
+.ultimate-tic-tac-toe footer em {
+  color: #6aa2fe;
+}
+/* line 809, sass/_competition-style.scss */
+.ultimate-tic-tac-toe footer a:active {
+  color: #6aa2fe;
+}
+/* line 813, sass/_competition-style.scss */
+.ultimate-tic-tac-toe #graph-win {
+  background-color: #6aa2fe;
+}
+/* line 817, sass/_competition-style.scss */
+.ultimate-tic-tac-toe .profile-rankingOverTime-graph-line {
+  stroke: #6aa2fe;
+}
+
+/* line 822, sass/_competition-style.scss */
+#bot-upload.ultimate-tic-tac-toe select {
+  background-color: #6aa2fe;
+}
+
+/* line 827, sass/_competition-style.scss */
+#profile-tabs .profile-tab:hover.competition_ultimate-tic-tac-toe {
+  background-color: #ffdcc8;
+}
+
+/* line 834, sass/_competition-style.scss */
+.go a {
+  color: #a63446;
+}
+/* line 837, sass/_competition-style.scss */
+.go a:hover {
+  color: #822836;
+}
+/* line 840, sass/_competition-style.scss */
+.go a:visited {
+  color: #a63446;
+}
+/* line 844, sass/_competition-style.scss */
+.go #page {
+  background: -webkit-linear-gradient(left, #cce2f9, white, #cce2f9);
+  background: linear-gradient(to right, #cce2f9, white, #cce2f9);
+}
+/* line 847, sass/_competition-style.scss */
+.go #page em {
+  color: #a63446;
+}
+/* line 852, sass/_competition-style.scss */
+.go #page ul#competition-menu > li:hover a {
+  color: #a63446;
+}
+/* line 855, sass/_competition-style.scss */
+.go #page ul#competition-menu > li:hover a.selected {
+  color: black;
+}
+/* line 861, sass/_competition-style.scss */
+.go #page #game-teaser {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+/* line 868, sass/_competition-style.scss */
+.go #menu #user-avatar:hover + #user-name > a {
+  color: #a63446;
+}
+/* line 871, sass/_competition-style.scss */
+.go #menu #user-avatar:active + #user-name > a {
+  color: #822836;
+}
+/* line 877, sass/_competition-style.scss */
+.go #menu .menu-item a {
+  color: black;
+}
+/* line 880, sass/_competition-style.scss */
+.go #menu .menu-item:hover {
+  color: #a63446;
+}
+/* line 882, sass/_competition-style.scss */
+.go #menu .menu-item:hover a {
+  color: #a63446;
+}
+/* line 886, sass/_competition-style.scss */
+.go #menu .menu-item:active {
+  color: #822836;
+}
+/* line 888, sass/_competition-style.scss */
+.go #menu .menu-item:active a {
+  color: #822836;
+}
+/* line 895, sass/_competition-style.scss */
+.go em a {
+  color: #a63446;
+}
+/* line 899, sass/_competition-style.scss */
+.go .button-round,
+.go .button-square {
+  background-color: #a63446;
+}
+/* line 904, sass/_competition-style.scss */
+.go #game-log .token.active {
+  border-color: #a63446;
+}
+/* line 908, sass/_competition-style.scss */
+.go #page .table-gameLog .button-round,
+.go #page .button-round .fa {
+  color: black;
+}
+/* line 913, sass/_competition-style.scss */
+.go .finalsMatch-winner,
+.go .finalsMatch-versus,
+.go #leaderboard-table,
+.go #leaderboard-sider,
+.go .table-gameLog,
+.go .div-search-gameLog,
+.go #leaderboard-buttons li {
+  background-color: #cce2f9;
+}
+/* line 923, sass/_competition-style.scss */
+.go footer em {
+  color: #a63446;
+}
+/* line 927, sass/_competition-style.scss */
+.go footer a:active {
+  color: #a63446;
+}
+/* line 931, sass/_competition-style.scss */
+.go #graph-win {
+  background-color: #a63446;
+}
+/* line 935, sass/_competition-style.scss */
+.go .profile-rankingOverTime-graph-line {
+  stroke: #a63446;
+}
+
+/* line 940, sass/_competition-style.scss */
+#bot-upload.go select {
+  background-color: #a63446;
+}
+
+/* line 945, sass/_competition-style.scss */
+#profile-tabs .profile-tab:hover.competition_go {
+  background-color: #cce2f9;
+}
