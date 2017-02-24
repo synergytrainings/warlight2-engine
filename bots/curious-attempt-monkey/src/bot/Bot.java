@@ -1,6 +1,6 @@
 /**
  * Warlight AI Game Bot
- *
+ * <p>
  * Last update: January 29, 2015
  *
  * @author Jim van Eeden
@@ -17,11 +17,11 @@ import move.AttackTransferMove;
 import move.PlaceArmiesMove;
 
 public interface Bot {
-	
-	public Region getStartingRegion(BotState state, Long timeOut);
-	
-	public ArrayList<PlaceArmiesMove> getPlaceArmiesMoves(BotState state, Long timeOut);
-	
-	public ArrayList<AttackTransferMove> getAttackTransferMoves(BotState state, Long timeOut);
+
+    public Region getStartingRegion(BotState state, Long timeOut);
+
+    public ArrayList<PlaceArmiesMove> getPlaceArmiesMoves(BotState state, Long timeOut);
+
+    public ArrayList<AttackTransferMove> getAttackTransferMoves(BotState state, Long timeOut);
 
 }
