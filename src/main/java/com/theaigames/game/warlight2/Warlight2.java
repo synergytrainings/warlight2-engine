@@ -41,9 +41,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Warlight2 class
- * 
+ *
  * Main class for Warlight2
- * 
+ *
  * @author Jim van Eeden <jim@starapple.nl>
  */
 
@@ -57,7 +57,7 @@ public class Warlight2 implements Logic
 	private int maxRounds;
 
 	private String secretKey, accessKey;
-	
+
 	private final int STARTING_ARMIES = 5;
 	private final long TIMEBANK_MAX = 10000l;
 	private final long TIME_PER_MOVE = 500l;
@@ -69,36 +69,36 @@ public class Warlight2 implements Logic
 		this.playerName1 = "player1";
 		this.playerName2 = "player2";
 	}
-	
-	
+
+
 	/**
 	 * sets up everything that's needed before a round can be played
 	 * @param players : list of bots that have already been initialized
 	 */
 	@Override
     public void setupGame(ArrayList<IOPlayer> players) throws IncorrectPlayerCountException, IOException {
-		
+
 		Map initMap, map;
-		
+
 		//System.out.println("setting up game");
-		
+
         // Determine array size is two players
         if (players.size() != 2) {
             throw new IncorrectPlayerCountException("Should be two players");
         }
-        
+
         this.player1 = new Player(playerName1, players.get(0), STARTING_ARMIES, TIMEBANK_MAX, TIME_PER_MOVE);
         this.player2 = new Player(playerName2, players.get(1), STARTING_ARMIES, TIMEBANK_MAX, TIME_PER_MOVE);
-        
+
         // get map string from database and setup the map
   		initMap = MapCreator.createMap(getMapString());
   		map = MapCreator.setupMap(initMap, SIZE_WASTELANDS);
   		this.maxRounds = MapCreator.determineMaxRounds(map);
-  		
+
   		// start the processor
   		//System.out.println("Starting game...");
   		this.processor = new Processor(map, player1, player2);
-	
+
   		sendSettings(player1);
   		sendSettings(player2);
   		MapCreator.sendSetupMapInfo(player1, map);
@@ -112,22 +112,22 @@ public class Warlight2 implements Logic
 		this.processor.recalculateStartingArmies(); //calculate how much armies the players get at the start of the round (depending on owned SuperRegions)
 		this.processor.sendAllInfo();
     }
-	
-	
+
+
 	/**
 	 * play one round of the game
 	 * @param roundNumber : round number
 	 */
 	@Override
-    public void playRound(int roundNumber) 
+    public void playRound(int roundNumber)
 	{
 		player1.getBot().addToDump(String.format("Round %d\n", roundNumber));
 		player2.getBot().addToDump(String.format("Round %d\n", roundNumber));
-		
+
 		this.processor.playRound(roundNumber);
 	}
-	
-	
+
+
 	/**
 	 * @return : True when the game is over
 	 */
@@ -139,45 +139,44 @@ public class Warlight2 implements Logic
         }
         return false;
     }
-	
+
 	/**
 	 * Sends all game settings to given player
 	 * @param player : player to send settings to
 	 */
 	private void sendSettings(Player player) {
 		player.sendInfo("settings timebank " + TIMEBANK_MAX);
-		player.sendInfo("settings time_per_move " + TIME_PER_MOVE); 
+		player.sendInfo("settings time_per_move " + TIME_PER_MOVE);
 		player.sendInfo("settings max_rounds " + this.maxRounds);
 		player.sendInfo("settings your_bot " + player.getName());
-		
+
 		if (player.getName().equals(player1.getName()))
 			player.sendInfo("settings opponent_bot " + player2.getName());
 		else
 			player.sendInfo("settings opponent_bot " + player1.getName());
 	}
-	
+
 	/**
 	 * Reads the string from the map file
 	 * @return : string representation of the map
 	 * @throws IOException
 	 */
-	private String getMapString() throws IOException 
+	private String getMapString() throws IOException
 	{
-		File file = new File(this.mapFile);
-	    StringBuilder fileContents = new StringBuilder((int) file.length());
-	    Scanner scanner = new Scanner(file);
-	    String lineSeparator = System.getProperty("line.separator");
 
-	    try {
-	        while(scanner.hasNextLine()) {        
+
+	    try (InputStream file = getClass().getResourceAsStream(this.mapFile);Scanner scanner = new Scanner(file)){
+
+
+            StringBuilder fileContents = new StringBuilder();
+            String lineSeparator = System.getProperty("line.separator");
+	        while(scanner.hasNextLine()) {
 	            fileContents.append(scanner.nextLine() + lineSeparator);
 	        }
 	        return fileContents.toString();
-	    } finally {
-	        scanner.close();
 	    }
 	}
-	
+
 	/**
 	 * close the bot processes, save, exit program
 	 */
@@ -189,14 +188,14 @@ public class Warlight2 implements Logic
 		Thread.sleep(100);
 
 		// write everything
-		try { 
-			this.saveGame(); 
+		try {
+			this.saveGame();
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
-		
+
 //		System.out.println("Done.");
-		
+
 //        System.exit(0);
 	}
 
@@ -208,7 +207,7 @@ public class Warlight2 implements Logic
 	 */
 	private String getPlayedGame(Player winner, String gameView)
 	{
-		StringBuilder out = new StringBuilder();		
+		StringBuilder out = new StringBuilder();
 
 		LinkedList<MoveResult> playedGame;
 		if(gameView.equals("player1"))
@@ -217,7 +216,7 @@ public class Warlight2 implements Logic
 			playedGame = this.processor.getPlayer2PlayedGame();
 		else
 			playedGame = this.processor.getFullPlayedGame();
-			
+
 		playedGame.removeLast();
 		int roundNr = 0;
 		for(MoveResult moveResult : playedGame)
@@ -234,7 +233,7 @@ public class Warlight2 implements Logic
 						AttackTransferMove atm = (AttackTransferMove) moveResult.getMove();
 						out.append(atm.getString() + "\n");
 					}
-					
+
 				}
 				out.append("map " + moveResult.getMap().getMapString() + "\n");
 			}
@@ -244,7 +243,7 @@ public class Warlight2 implements Logic
 				roundNr++;
 			}
 		}
-		
+
 		if(winner != null)
 			out.append(winner.getName() + " won\n");
 		else
@@ -254,27 +253,44 @@ public class Warlight2 implements Logic
 	}
 
 
-	/**
-	 * Does everything that is needed to store the output of a game
-	 */
-	public void saveGame() {
-		
+	public String getPlayedGame(){
 		Player winner = this.processor.getWinner();
 		int score = this.processor.getRoundNr() - 1;
-		
+
 		if(winner != null) {
 //			System.out.println("winner: " + winner.getName());
 		} else {
 //			System.out.println("winner: draw");
 		}
-		
+
 //		System.out.println("Saving the game...");
 		// do stuff here if you want to save results
-		
+
+		// save the full game:
+		return getPlayedGame(winner, "full game");
+	}
+
+	/**
+	 * Does everything that is needed to store the output of a game
+	 */
+	public void saveGame() {
+
+		Player winner = this.processor.getWinner();
+		int score = this.processor.getRoundNr() - 1;
+
+		if(winner != null) {
+//			System.out.println("winner: " + winner.getName());
+		} else {
+//			System.out.println("winner: draw");
+		}
+
+//		System.out.println("Saving the game...");
+		// do stuff here if you want to save results
+
 		// save the full game:
 		System.out.println(getPlayedGame(winner, "full game"));
 	}
-	
+
 	/**
 	 * main
 	 * @param args : the map file should be given, along with the commands that start the bot processes
@@ -289,14 +305,14 @@ public class Warlight2 implements Logic
 
 		// Construct engine
         Engine engine = new Engine();
-        
+
         // Set logic
         engine.setLogic(new Warlight2(mapFile));
-		
+
         // Add players
         engine.addPlayer(bot1Cmd);
         engine.addPlayer(bot2Cmd);
-		
+
         engine.start();
 	}
 }

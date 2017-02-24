@@ -1,0 +1,120 @@
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;neutral;2 5;neutral;2 6;neutral;2 7;neutral;2 8;neutral;2 9;neutral;2 10;neutral;6 11;neutral;6 12;neutral;6 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;2 25;neutral;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;6 33;neutral;2 34;neutral;2 35;neutral;2 36;neutral;2 37;neutral;2 38;neutral;2 39;neutral;2 40;neutral;2 41;neutral;2 42;neutral;2 
+round 0
+player1 place_armies 9 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;neutral;2 5;neutral;2 6;neutral;2 7;neutral;2 8;neutral;2 9;player1;2 10;neutral;6 11;neutral;6 12;neutral;6 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;2 25;neutral;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;6 33;neutral;2 34;neutral;2 35;neutral;2 36;neutral;2 37;neutral;2 38;neutral;2 39;neutral;2 40;neutral;2 41;neutral;2 42;neutral;2 
+player2 place_armies 4 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;player2;2 5;neutral;2 6;neutral;2 7;neutral;2 8;neutral;2 9;player1;2 10;neutral;6 11;neutral;6 12;neutral;6 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;2 25;neutral;2 26;neutral;2 27;neutral;2 28;neutral;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;6 33;neutral;2 34;neutral;2 35;neutral;2 36;neutral;2 37;neutral;2 38;neutral;2 39;neutral;2 40;neutral;2 41;neutral;2 42;neutral;2 
+player2 place_armies 28 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;player2;2 5;neutral;2 6;neutral;2 7;neutral;2 8;neutral;2 9;player1;2 10;neutral;6 11;neutral;6 12;neutral;6 13;neutral;2 14;neutral;2 15;neutral;2 16;neutral;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;2 25;neutral;2 26;neutral;2 27;neutral;2 28;player2;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;6 33;neutral;2 34;neutral;2 35;neutral;2 36;neutral;2 37;neutral;2 38;neutral;2 39;neutral;2 40;neutral;2 41;neutral;2 42;neutral;2 
+player1 place_armies 16 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;player2;2 5;neutral;2 6;neutral;2 7;neutral;2 8;neutral;2 9;player1;2 10;neutral;6 11;neutral;6 12;neutral;6 13;neutral;2 14;neutral;2 15;neutral;2 16;player1;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;2 25;neutral;2 26;neutral;2 27;neutral;2 28;player2;2 29;neutral;2 30;neutral;2 31;neutral;2 32;neutral;6 33;neutral;2 34;neutral;2 35;neutral;2 36;neutral;2 37;neutral;2 38;neutral;2 39;neutral;2 40;neutral;2 41;neutral;2 42;neutral;2 
+player1 place_armies 30 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;player2;2 5;neutral;2 6;neutral;2 7;neutral;2 8;neutral;2 9;player1;2 10;neutral;6 11;neutral;6 12;neutral;6 13;neutral;2 14;neutral;2 15;neutral;2 16;player1;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;2 25;neutral;2 26;neutral;2 27;neutral;2 28;player2;2 29;neutral;2 30;player1;2 31;neutral;2 32;neutral;6 33;neutral;2 34;neutral;2 35;neutral;2 36;neutral;2 37;neutral;2 38;neutral;2 39;neutral;2 40;neutral;2 41;neutral;2 42;neutral;2 
+player2 place_armies 34 2
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;player2;2 5;neutral;2 6;neutral;2 7;neutral;2 8;neutral;2 9;player1;2 10;neutral;6 11;neutral;6 12;neutral;6 13;neutral;2 14;neutral;2 15;neutral;2 16;player1;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;2 25;neutral;2 26;neutral;2 27;neutral;2 28;player2;2 29;neutral;2 30;player1;2 31;neutral;2 32;neutral;6 33;neutral;2 34;player2;2 35;neutral;2 36;neutral;2 37;neutral;2 38;neutral;2 39;neutral;2 40;neutral;2 41;neutral;2 42;neutral;2 
+map 1;neutral;2 2;neutral;2 3;neutral;2 4;player2;2 5;neutral;2 6;neutral;2 7;neutral;2 8;neutral;2 9;player1;2 10;neutral;6 11;neutral;6 12;neutral;6 13;neutral;2 14;neutral;2 15;neutral;2 16;player1;2 17;neutral;2 18;neutral;2 19;neutral;2 20;neutral;2 21;neutral;2 22;neutral;2 23;neutral;2 24;neutral;2 25;neutral;2 26;neutral;2 27;neutral;2 28;player2;2 29;neutral;2 30;player1;2 31;neutral;2 32;neutral;6 33;neutral;2 34;player2;2 35;neutral;2 36;neutral;2 37;neutral;2 38;neutral;2 39;neutral;2 40;neutral;2 41;neutral;2 42;neutral;2 
+round 1
+round 2
+round 3
+round 4
+round 5
+round 6
+round 7
+round 8
+round 9
+round 10
+round 11
+round 12
+round 13
+round 14
+round 15
+round 16
+round 17
+round 18
+round 19
+round 20
+round 21
+round 22
+round 23
+round 24
+round 25
+round 26
+round 27
+round 28
+round 29
+round 30
+round 31
+round 32
+round 33
+round 34
+round 35
+round 36
+round 37
+round 38
+round 39
+round 40
+round 41
+round 42
+round 43
+round 44
+round 45
+round 46
+round 47
+round 48
+round 49
+round 50
+round 51
+round 52
+round 53
+round 54
+round 55
+round 56
+round 57
+round 58
+round 59
+round 60
+round 61
+round 62
+round 63
+round 64
+round 65
+round 66
+round 67
+round 68
+round 69
+round 70
+round 71
+round 72
+round 73
+round 74
+round 75
+round 76
+round 77
+round 78
+round 79
+round 80
+round 81
+round 82
+round 83
+round 84
+round 85
+round 86
+round 87
+round 88
+round 89
+round 90
+round 91
+round 92
+round 93
+round 94
+round 95
+round 96
+round 97
+round 98
+round 99
+round 100
+round 101
+round 102
+round 103
+round 104
+Nobody won

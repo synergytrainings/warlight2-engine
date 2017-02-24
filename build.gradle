@@ -13,6 +13,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
+apply plugin: 'application'
 
 jar {
 	baseName = 'warlight'
@@ -27,6 +28,12 @@ repositories {
 
 
 dependencies {
+
+	compile group: 'org.springframework', name: 'spring-web'
+    compile group: 'org.springframework', name: 'spring-webmvc'
+	compile(group: 'org.springframework.boot', name: 'spring-boot-starter-web') {
+	}
 	compile('org.springframework.boot:spring-boot-starter')
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile group: 'org.json', name: 'json', version: '20160810'
+
 }
