@@ -1,1 +1,1 @@
-java -cp bots/curious-attempt-monkey/src bot.BotStarter
+java -cp bots/curious-attempt-monkey/classes/ bot.BotStarter
