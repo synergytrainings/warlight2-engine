@@ -67,7 +67,7 @@ public class Engine implements BotCommunication {
         Process process = Runtime.getRuntime().exec(command);
 
         // Attach IO to process
-        IOPlayer player = new IOPlayer(process);
+        IOPlayer player = new IOPlayer(process, this.players.size());
         
         // Add player
         this.players.add(player);

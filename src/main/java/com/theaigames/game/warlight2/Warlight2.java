@@ -288,7 +288,7 @@ public class Warlight2 implements Logic
 		// do stuff here if you want to save results
 
 		// save the full game:
-		System.out.println(getPlayedGame(winner, "full game"));
+//		System.out.println(getPlayedGame(winner, "full game"));
 	}
 
 	/**

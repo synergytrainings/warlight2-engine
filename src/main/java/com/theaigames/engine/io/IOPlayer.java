@@ -17,7 +17,10 @@
 
 package com.theaigames.engine.io;
 
+import org.apache.commons.io.output.TeeOutputStream;
+
 import java.io.IOException;
+import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -39,17 +42,24 @@ public class IOPlayer implements Runnable {
     private int errorCounter;
     private boolean finished;
     private final int maxErrors = 2;
-    
+    private int playerIndex;
     public volatile String response;
     
-    public IOPlayer(Process process) {
-        this.inputStream = new OutputStreamWriter(process.getOutputStream());
-    	this.outputGobbler = new InputStreamGobbler(process.getInputStream(), this, "output");
-    	this.errorGobbler = new InputStreamGobbler(process.getErrorStream(), this, "error");
+    public IOPlayer(Process process, int index) {
+
+        if(index==0){
+            this.inputStream = new OutputStreamWriter(process.getOutputStream());
+        }
+        else {
+            this.inputStream = new OutputStreamWriter(new TeeOutputStream(process.getOutputStream(), System.out));
+        }
+    	this.outputGobbler = new InputStreamGobbler(process.getInputStream(), this, "output", index==1);
+    	this.errorGobbler = new InputStreamGobbler(process.getErrorStream(), this, "error", index==1);
         this.process = process;
         this.dump = new StringBuilder();
         this.errorCounter = 0;
         this.finished = false;
+        this.playerIndex = index;
     }
     
     // processes a line by reading it or writing it

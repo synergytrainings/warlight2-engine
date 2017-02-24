@@ -35,12 +35,14 @@ public class InputStreamGobbler extends Thread {
 	private IOPlayer player;
 	private String type;
 	private StringBuffer buffer;
+	private boolean writeToConsole;
 
-	InputStreamGobbler(InputStream inputStream, IOPlayer player, String type) {
+	InputStreamGobbler(InputStream inputStream, IOPlayer player, String type, boolean writeToConsole) {
         this.inputStream = inputStream;
         this.player = player;
         this.type = type;
         this.buffer = new StringBuffer();
+        this.writeToConsole = writeToConsole;
     }
 
     public void run() {
@@ -55,6 +57,15 @@ public class InputStreamGobbler extends Thread {
                     if (this.type.equals("output"))
                 	   this.player.response = lastLine;
                     buffer.append(lastLine + "\n");
+                }
+                if(this.writeToConsole){
+                    if (this.type.equals("output")) {
+                        System.out.println(lastLine);
+                    }
+                    else {
+                        System.err.println(lastLine);
+                    }
+
                 }
             }
             try {
