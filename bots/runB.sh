@@ -1,1 +1,1 @@
-java -cp bots/beheh/src/ de.beheh.warlight2.Launcher
+java -cp bots/beheheh/src/ de.beheh.warlight2.Launcher

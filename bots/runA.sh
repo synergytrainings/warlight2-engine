@@ -1,1 +1,1 @@
-java -cp bots/AlexanderEkdahl/src bot.Main
+java -cp bots/AlexanderEkdahl1/src bot.Main
