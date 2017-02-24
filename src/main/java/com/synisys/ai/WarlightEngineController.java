@@ -56,7 +56,7 @@ public class WarlightEngineController {
         Date date = new Date();
         String dateString = dateFormat.format(date); //2016/11/16 12:08:43
 
-        String gameId = String.format("%s-%s-%s-%s-game.", bot1Name, bot2Name, map, dateString);
+        String gameId = String.format("%s-%s-%s-%s-game", bot1Name, bot2Name, map, dateString);
 
         saveResultFile(gameId, result);
 
@@ -73,7 +73,7 @@ public class WarlightEngineController {
         for (File file : files) {
             if (file.isFile()) {
                 sb.append(String.format("<a href=\"%s\" target=\"x\">%s</a><br>",
-                        "/competitions/warlight-ai-challenge-2/games/index.html?data-file=" + file.getName(), file.getName()));
+                        "/competitions/warlight-ai-challenge-2/games/index.html?data-file=" + file.getName() + ".", file.getName()));
             }
         }
 //        return String.format("<html><body><a href=\"%s\">%s</a></body></html>",
@@ -86,7 +86,7 @@ public class WarlightEngineController {
     public String view(@PathVariable("id") String id) throws Exception {
 
 
-        return  new String(Files.readAllBytes(Paths.get(uploadsDir + "/" + id + ".")));
+        return  new String(Files.readAllBytes(Paths.get(uploadsDir + "/" + id)));
     }
 
 
