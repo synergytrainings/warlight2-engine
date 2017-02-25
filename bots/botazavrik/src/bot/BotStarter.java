@@ -28,7 +28,6 @@ import move.AttackTransferMove;
 import move.PlaceArmiesMove;
 
 public class BotStarter implements Bot {
-    private static Random random = new Random(1234);
 
     @Override
     /**
@@ -40,9 +39,10 @@ public class BotStarter implements Bot {
         Integer bestRegionID = null;
         double bestScore = 0;
 
+
         for (Region region : state.getPickableStartingRegions()) {
             double score = region.getSuperRegion().score(state);
-//            System.err.println("Region "+region.getId()+" belongs to super region "+region.getSuperRegion().getId()+" of size "+region.getSuperRegion().getSubRegions().size());
+            System.err.println("Region "+region.getId()+" belongs to super region "+region.getSuperRegion().getId()+" of size "+region.getSuperRegion().getSubRegions().size());
             if (bestRegionID == null || score > bestScore) {
                 bestScore = score;
                 bestRegionID = region.getId();
@@ -65,7 +65,8 @@ public class BotStarter implements Bot {
         String myName = state.getMyPlayerName();
         int armiesLeft = state.getStartingArmies();
         int armies = armiesLeft;
-        LinkedList<Region> visibleRegions = borderRegions(state);
+        LinkedList<Region> visibleRegions;
+        visibleRegions = borderRegions(state);
 
         Collections.sort(visibleRegions, new Comparator<Region>() {
             private HashMap<Integer, Double> superRegionScores = new HashMap<Integer, Double>();
@@ -73,17 +74,23 @@ public class BotStarter implements Bot {
             private double score(Region r) {
                 if (!superRegionScores.containsKey(r.getSuperRegion().getId())) {
                     superRegionScores.put(r.getSuperRegion().getId(), r.getSuperRegion().score(state));
-//                    System.err.println("Region "+r.getId()+" is in super region that scores "+r.getSuperRegion().score(state));
+                    System.err.println("Region "+r.getId()+" is in super region that scores "+r.getSuperRegion().score(state));
                 }
                 double score = 0;
+
+                // region of opponent
                 if (!state.getMyPlayerName().equals(r.getSuperRegion().ownedByPlayer())) {
                     score += 100 * superRegionScores.get(r.getSuperRegion().getId());
                 }
+
+                // border with opponent
                 if (r.isBorderTo(state.getOpponentPlayerName())) {
-                    score += 10;
+                    score += 80 * superRegionScores.get(r.getSuperRegion().getId());
                 }
+
+                //just border
                 if (r.isBorder()) {
-                    score += 1;
+                    score += 70 * superRegionScores.get(r.getSuperRegion().getId());
                 }
 
                 return score;
@@ -97,8 +104,10 @@ public class BotStarter implements Bot {
 
         while (armiesLeft > 0) {
             Region region = visibleRegions.remove(0);
+            double onHowManyDeploy = visibleRegions.size() / 5;
             if (region.ownedByPlayer(myName)) {
-//                System.err.println("Region "+region.getId()+" is in super region that scores "+region.getSuperRegion().score(state));
+                armies = (int)Math.max(armiesLeft / onHowManyDeploy, 2) ;
+                System.err.println("Region "+region.getId()+" is in super region that scores "+region.getSuperRegion().score(state));
                 placeArmiesMoves.add(new PlaceArmiesMove(myName, region, armies));
                 armiesLeft -= armies;
             }
@@ -152,7 +161,7 @@ public class BotStarter implements Bot {
                         possibleToRegions.remove(toRegion);
                         continue;
                     }
-//                    System.err.println("Considering "+toRegion.getId()+" which has countNotByOwner of "+toRegion.getSuperRegion().countNotByOwner(myName));
+                    System.err.println("Considering "+toRegion.getId()+" which has countNotByOwner of "+toRegion.getSuperRegion().countNotByOwner(myName));
 
                     if (!toRegion.getPlayerName().equals(myName) && shouldAttack(fromRegion, toRegion)) //do an attack
                     {
@@ -184,7 +193,10 @@ public class BotStarter implements Bot {
         if (fromRegion.countByOwner(state.getOpponentPlayerName()) <= 1) {
             return fromRegion.getArmies() - 1;
         }
-        return (int) Math.min(fromRegion.getArmies() - 1, Math.max(4, toRegion.getArmies() * 2));
+        if(toRegion.getPlayerName().equals(state.getOpponentPlayerName())){
+            return (int)Math.ceil(toRegion.getArmies() * 2);
+        }
+        return (int)Math.ceil(toRegion.getArmies() * 1.6);
     }
 
     private boolean shouldAttack(Region fromRegion, Region toRegion) {
